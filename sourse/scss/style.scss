@@ -4,7 +4,7 @@ html{
 body{
 	font-family: 'Roboto', sans-serif;
 	font-size: 25px;
-	overflow-x: hidden;
+	overflow: hidden;
 	background: #EEE3F4;
 }
 /* blocks BEM */
@@ -100,6 +100,15 @@ body{
 		}
 	}
 }
+@media screen and (max-width: 1400px){
+	.application__image{
+		display: none;
+	}
+	.application{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
 /* application */
 .application{
 	padding-top: 173px;
@@ -163,12 +172,101 @@ body{
 			top: 314px;
 		}
 		& img:nth-child(2){
-			right: -17px;
+			right: 1px;
 			top: 414px;
 		}
 		& img:last-child{
-			right: -17px;
+			right: 1px;
 			top: -7px;
+		}
+	}
+}
+@media screen and (max-width: 767px){
+	.block-title{
+		font-size: 50px;
+		line-height: 48px;
+		max-width: 100%;
+	}
+	.application__subtitle {
+		margin-top: 26px;
+		max-width: 100%;
+		font-size: 15px;
+	}
+	.application__about{
+		width: 100%;
+		max-width: 100%;
+		text-align: center;
+	}
+	.application__button{
+		margin: 26px auto 0 auto;
+	}
+}
+/* devices */
+.device{
+	padding-top: 457px;
+	&-wrapper{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		margin-top: 55px;
+	}
+	&__item{
+		max-width: 100%;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&:first-child{
+			margin-right: 53px;
+			margin-bottom: 56px;
+		}
+		&:nth-child(2){
+			padding-left: 3px;
+			margin-bottom: 62px;
+		}
+		&:last-child{
+			width: 704px;
+			height: 755px;
+			margin-right: 142px;
+		}
+	}
+	&__title{
+		max-width: 900px;
+		margin: auto;
+		padding-left: 134px;
+		line-height: 94px;
+		&-inner{
+			text-align: left;
+		}
+	}
+	@media screen and (max-width: 1820px){
+		&-wrapper{
+			flex-direction: column;
+			align-items: center;
+		}
+		&__item{
+			padding-left: 0;
+			&:first-child{
+				margin-right: 0;
+			}
+			&:last-child{
+				margin-right: 160px;
+			}
+		}
+	}
+	@media screen and (max-width: 930px){
+		&__item {
+			height: fit-content!important;
+			& img{
+				max-width: 100vw;
+			}
 		}
 	}
 }
