@@ -201,11 +201,11 @@ body {
 }
 
 .application__image img:nth-child(2) {
-  right: -17px;
+  right: 1px;
   top: 414px;
 }
 
 .application__image img:last-child {
-  right: -17px;
+  right: 1px;
   top: -7px;
 }
