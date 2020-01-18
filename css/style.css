@@ -1,0 +1,231 @@
+@charset "UTF-8";
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  overflow-x: hidden;
+  background: #EEE3F4;
+}
+
+/* blocks BEM */
+.block-title {
+  font-weight: 500;
+  font-size: 80px;
+}
+
+.block-subtitle {
+  font-size: 24px;
+  line-height: 28px;
+  color: #828282;
+}
+
+/* mixins */
+.title {
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 94px;
+}
+
+.title strong {
+  background: -webkit-gradient(linear, left top, right top, color-stop(-0.39%, #4B48F5), color-stop(37.78%, #890041));
+  background: -webkit-linear-gradient(left, #4B48F5 -0.39%, #890041 37.78%);
+  background: -o-linear-gradient(left, #4B48F5 -0.39%, #890041 37.78%);
+  background: linear-gradient(to right, #4B48F5 -0.39%, #890041 37.78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.calltracking {
+  max-width: 1713px;
+  margin: auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 991px) {
+  .calltracking {
+    padding: 0px 15px;
+  }
+}
+
+.calltracking__image {
+  position: relative;
+  max-width: 985px;
+  max-height: 750px;
+  overflow: visible;
+}
+
+@media screen and (max-width: 1180px) {
+  .calltracking__image {
+    max-width: 100%;
+  }
+}
+
+.calltracking__image img {
+  display: block;
+  max-width: 100vw;
+}
+
+@media screen and (max-width: 1180px) {
+  .calltracking__image img {
+    margin-left: 60px;
+  }
+}
+
+.calltracking__about {
+  padding-top: 120px;
+}
+
+.calltracking__title {
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 70px;
+}
+
+.calltracking__subtitle {
+  max-width: 641px;
+  padding-top: 36px;
+  font-family: Roboto;
+  line-height: 29px;
+  color: #828282;
+}
+
+@media screen and (max-width: 1400px) {
+  .calltracking {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .calltracking__about {
+    padding-top: 0;
+  }
+  .calltracking__subtitle {
+    max-width: 933px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .calltracking__about {
+    text-align: center;
+  }
+  .calltracking__title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .calltracking__subtitle {
+    font-size: 15px;
+    line-height: 19px;
+  }
+}
+
+/* application */
+.application {
+  padding-top: 173px;
+  max-width: 1413px;
+  margin: auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.application__title {
+  line-height: 78px;
+  max-width: 477px;
+}
+
+.application__subtitle {
+  margin-top: 36px;
+  max-width: 543px;
+}
+
+.application__button {
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 45px;
+  max-width: 238px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  padding: 18px 46px;
+  border-radius: 100px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #EEE3F4;
+  background-clip: padding-box;
+  border: solid 1px transparent;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+.application__button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -1px;
+  /* !importanté */
+  border-radius: inherit;
+  /* !importanté */
+  background: -webkit-linear-gradient(348.57deg, #4B48F5 -0.39%, #890041 37.78%);
+  background: -o-linear-gradient(348.57deg, #4B48F5 -0.39%, #890041 37.78%);
+  background: linear-gradient(101.43deg, #4B48F5 -0.39%, #890041 37.78%);
+}
+
+.application__button a {
+  background: -webkit-gradient(linear, left top, right top, color-stop(-0.39%, #4B48F5), color-stop(37.78%, #890041));
+  background: -webkit-linear-gradient(left, #4B48F5 -0.39%, #890041 37.78%);
+  background: -o-linear-gradient(left, #4B48F5 -0.39%, #890041 37.78%);
+  background: linear-gradient(to right, #4B48F5 -0.39%, #890041 37.78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.application__image {
+  position: absolute;
+  right: 0px;
+  top: 430px;
+}
+
+.application__image-wrapper {
+  position: absolute;
+}
+
+.application__image img {
+  position: absolute;
+  right: 0;
+}
+
+.application__image img:first-child {
+  right: 50px;
+  top: 314px;
+}
+
+.application__image img:nth-child(2) {
+  right: -17px;
+  top: 414px;
+}
+
+.application__image img:last-child {
+  right: -17px;
+  top: -7px;
+}
