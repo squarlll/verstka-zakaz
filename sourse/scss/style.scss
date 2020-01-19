@@ -23,6 +23,18 @@ body{
 	font-size: 80px;
 	line-height: 94px;
 }
+@mixin subtitle{
+	font-weight: 500;
+	font-size: 60px;
+	line-height: 70px;
+	color: #000000;
+}
+@mixin text{
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 28px;
+	color: #828282;
+}
 @mixin gradient() {
 	background: linear-gradient(to right,#4B48F5 -0.39%, #890041 37.78%);
 	-webkit-background-clip: text;
@@ -30,10 +42,195 @@ body{
 }
 .title{
 	@include title();
-	strong{
+	p{
 		@include gradient();
+		display: inline-block;
 	}
 }
+.content{
+	max-width: 1446px;
+	margin: auto;
+}
+/* Header */
+.header{
+	padding-top: 3px;
+	width: 100%;
+	height: 517px;
+	background: url("../img/header/Rectangle 205.jpg") no-repeat center / cover;
+	&__content{
+		max-width: 1644px;
+		margin: 0 30px 0 236px;
+	}
+	&__row{
+		display: flex;
+		align-items: center;
+	}
+	&__logo{
+		margin-right: 44px;
+	}
+	&__menu{
+		display: flex;
+		.menu__item{
+			margin: 0 14px;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 20px;
+			color: #fff;
+		}
+	}
+	&__col{
+		margin-top: 19px;
+		margin-left: 562px;
+		display: flex;
+
+	}
+	&__search{
+		margin-right: 13px;
+	}
+	&__profile{
+		margin-right: 56px;
+	}
+	&__arrow{
+		margin-top: 15px;
+	}
+	&__row-2{
+		display: flex;
+		margin-top: 275px;
+	}
+	&__title{
+		font-family: Roboto;
+		font-weight: 500;
+		font-size: 100px;
+		line-height: 117px;
+		color: #FFFFFF;
+	}
+	&__text{
+		margin-top: 65px;
+		margin-left: 405px;
+		max-width: 392px;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 28px;
+		color: #FFFFFF;
+	}
+}
+
+/*What*/
+.what{
+	margin-top: 78px;
+	&__title{
+		max-width: 1664px;
+
+	}
+	&__content-1{
+		margin-left: 40px;
+		max-width: 1664px;
+		float: left;
+	}
+	&__block-1{
+
+		display: block;
+		margin-bottom: 788px;
+		display: flex;
+		.block-1__text{
+			margin-top: 78px;
+			p{
+				@include text();
+			}
+		}
+		.block-1__subtitle{
+			@include subtitle();
+			margin-bottom: 12px;
+		}
+		.block-1__img{
+			margin-right: -35px;
+		}
+	}
+	&__block-2{
+		margin-bottom: 115px;
+		width: 100%;
+		display: flex;
+		margin-left: 40px;
+		.block-2__img{
+			
+
+		}
+		.block-2__text{
+			margin-top: 193px;
+			margin-left: 42px;
+			
+			p{
+				max-width: 540px;
+				@include text();
+			}
+		}
+		.block-2__subtitle{
+			margin-bottom: 20px;
+			max-width: 550px;
+			@include subtitle();
+		}
+	}
+	&__block-3{
+		margin-right: 40px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		.block-3__title{
+			margin-top: 10px;
+			margin-bottom: -10px;
+			margin-right: 140px;
+		}
+		.block-img{
+
+		}
+	}
+}
+/* Calls */
+.calls{
+	margin-top: 13px;
+	&__title-block{
+		margin: 0 0 154px 242px;
+		a{
+			font-weight: 400;
+			font-size: 24px;
+			line-height: 28px;
+			color: #4F4F4F;
+		}
+	}
+	&__title{
+		font-size: 100px;
+	}
+	&__title-text{
+		margin-top: 45px;
+		margin-bottom: 25px;
+		max-width: 546px;
+		@include text();
+	}
+	&__block{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-width: 1367.59px;
+		margin: 0 auto;
+		.block__title{
+			margin-left: -50px;
+			transform: rotate(-3.19deg);
+		}
+		img{
+			margin-right: -140px;
+			}
+		.block__text{
+			margin-top: -123px;
+			margin-left: -185px;
+			max-width: 642px;
+			@include text();
+			font-size: 25px;
+		}
+	}
+}
+/* calltracking */
 .calltracking{
 	max-width: 1713px;
 	margin: auto;
@@ -119,6 +316,7 @@ body{
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	position: relative;
 	&__title{
 		line-height: 78px;
 		max-width: 477px;
@@ -135,7 +333,6 @@ body{
 		display: flex;
 		align-items: center;
 		position: relative;
-		padding: 18px 46px;
 		border-radius: 100px;
 		box-sizing: border-box;
 		$border: 1px;
@@ -148,18 +345,19 @@ body{
 			position: absolute;
 			top: 0; right: 0; bottom: 0; left: 0;
 			z-index: -1;
-			margin: -$border; /* !importanté */
-			border-radius: inherit; /* !importanté */
+			margin: -$border;
+			border-radius: inherit;
 			background: linear-gradient(101.43deg, #4B48F5 -0.39%, #890041 37.78%);
 		}
 		& a{
 			@include gradient();
+			padding: 18px 46px;
 		}
 	}
 	&__image{
 		position: absolute;
-		right: 0px;
-		top: 430px;
+		top: -320px;
+		right: -260px;
 		&-wrapper{
 			position: absolute;
 		}
