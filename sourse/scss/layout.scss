@@ -2,14 +2,12 @@ html{
 	overflow-x: hidden;
 }
 body{
-	font-family: 'Roboto', sans-serif;
-	font-size: 25px;
-	overflow: hidden;
 	background: #f4f4f4;
+	overflow: hidden;
 }
 /* blocks BEM */
 .block-title{
-	font-weight: 500;
+	font-family: 'SanFrancisco Semibold';;
 	font-size: 80px;
 }
 .block-subtitle{
@@ -19,7 +17,7 @@ body{
 }
 /* mixins */
 @mixin title{
-	font-weight: 500;
+	font-family: 'SanFrancisco Semibold';;
 	font-size: 80px;
 	line-height: 94px;
 }
@@ -63,7 +61,7 @@ body{
 	padding-top: 386px;
 }
 .crm__title{
-	font-weight: 500;
+	font-family: 'SanFrancisco Semibold';;
 	font-size: 100px;
 	line-height: 117px;
 	margin-left: 527px;
@@ -76,7 +74,7 @@ body{
 	margin-left: 521px;
 	margin-top: 22px;
 }
-@media screen and (max-width: 1670px){
+@media screen and (max-width: 1700px){
 	.crm__title{
 		font-size: 80px;
 		line-height: 107px;
@@ -86,7 +84,7 @@ body{
 		line-height: 32px;
 	}
 }
-@media screen and (max-width: 1430px){
+@media screen and (max-width: 1475px){
 	.main__crm{
 		padding: 386px 15px 0 15px;
 	}
@@ -124,7 +122,7 @@ body{
 		}
 	}
 }
-@media screen and (max-width: 876px){
+@media screen and (max-width: 960px){
 	.layout-main__img:nth-child(2){
 		display: none;
 	}
@@ -146,7 +144,7 @@ body{
 .idea{
 	padding-top: 314px;
 	&__title{
-		font-weight: 500;
+		font-family: 'SanFrancisco Semibold';;
 		font-size: 80px;
 		line-height: 95.4%;
 		text-align: center;
@@ -191,7 +189,7 @@ body{
 		color: #828282;
 		max-width: 736px;
 		& span{
-			font-weight: 500;
+			font-family: 'SanFrancisco Semibold';;
 			color: #000;
 		}
 	}
