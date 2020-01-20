@@ -508,10 +508,12 @@ body{
 			top: -7px;
 		}
 	}
-}
-@media screen and (max-width: 1400px){
-	.application{
+	@media screen and (max-width: 1400px){
 		justify-content: center;
+		text-align: center;
+		&__button{
+			margin: auto;
+		}
 	}
 }
 @media screen and (max-width: 767px){

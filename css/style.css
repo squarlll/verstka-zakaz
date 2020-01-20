@@ -635,6 +635,10 @@ body {
 @media screen and (max-width: 1400px) {
   .application {
     justify-content: center;
+    text-align: center;
+  }
+  .application__button {
+    margin: auto;
   }
 }
 
