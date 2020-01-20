@@ -638,7 +638,7 @@ body {
     text-align: center;
   }
   .application__button {
-    margin: auto;
+    margin: 45px auto 0 auto;
   }
 }
 
