@@ -1,9 +1,5 @@
-html{
-	overflow-x: hidden;
-}
 body{
 	background: #EEE3F4;
-	overflow: hidden;
 }
 /* blocks BEM */
 .block-title{
@@ -82,10 +78,11 @@ body{
 .header{
 	width: 100%;
 	height: 517px;
-	background: url("../img/header/Rectangle-205.jpg") no-repeat center / cover;
+	background: url("../img/header/Rectangle 205.jpg") no-repeat center / cover;
 	&__content{
 		max-width: 1644px;
 		margin: 0 30px 0 236px;
+		display: none;
 	}
 	&__row{
 		display: flex;
@@ -97,13 +94,13 @@ body{
 	&__menu{
 		display: flex;
 		.menu__item{
+			letter-spacing: initial;
 			margin: 0 21px;
 			font-family: 'Montserrat', sans-serif;
 			font-weight: 400;
 			font-size: 16px;
 			line-height: 20px;
 			color: #fff;
-			letter-spacing: initial;
 		}
 	}
 	&__col{
@@ -142,18 +139,15 @@ body{
 		color: #FFFFFF;
 	}
 }
-
 /*What*/
 .what{
 	margin-top: 78px;
-	&__title{
-		max-width: 1664px;
-
-	}
 	&__content-1{
-		margin-left: 40px;
-		max-width: 1664px;
-		float: left;
+		max-width: 1437px;
+		margin: auto;
+	}
+	&__title{
+		max-width: 100%;
 	}
 	&__block-1{
 
@@ -176,12 +170,10 @@ body{
 	}
 	&__block-2{
 		margin-bottom: 115px;
-		width: calc(100% - 40px);
+		width: 100%;
+		max-width: 1437px;
+		margin: auto;
 		display: flex;
-		.block-2__img{
-			
-
-		}
 		.block-2__text{
 			margin-top: 193px;
 			margin-left: 42px;
@@ -198,7 +190,7 @@ body{
 		}
 	}
 	&__block-3{
-		margin-right: 40px;
+		min-width: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -217,7 +209,8 @@ body{
 .calls{
 	margin-top: 61px;
 	&__title-block{
-		margin: 0 0 154px 242px;
+		max-width: 1437px;
+		margin: auto;
 		a{
 			font-weight: 400;
 			font-size: 24px;
@@ -235,6 +228,7 @@ body{
 		@include text();
 	}
 	&__block{
+		overflow: hidden;
 		padding-bottom: 180px;
 		display: flex;
 		flex-direction: column;
@@ -260,10 +254,9 @@ body{
 		margin-bottom: 190px;
 		padding-top: 27px;
 		display: flex;
-		justify-content: center;
-		
-		.forwarding__col-1{
-		}
+		justify-content: space-between;
+		max-width: 1437px;
+		margin: auto;
 		.forwarding__title{
 			@include subtitle();
 			font-size: 55px;
@@ -292,16 +285,23 @@ body{
 /* Control */
 .control{
 	margin-top: 13px;
+	max-width: 1437px;
+	margin: auto;
 	&__title-block{
 		margin: 0 0 154px 242px;
 	}
 	&__title{
-		font-size: 100px;
+		font-size: 80px;
+		line-height: 94px;
 		@include gradient();
 		font-family: 'SanFrancisco Semibold', sans-serif;
 		@media screen and (max-width: 991px){
-			font-size: 85px;
+			font-size: 70px;
 		}
+	}
+	&__text{
+		margin-top: 20px;
+		line-height: 29px;
 	}
 	&__title-text{
 		margin-top: 45px;
@@ -322,7 +322,7 @@ body{
 		}
 		img{
 			margin-right: -140px;
-			}
+		}
 		.block__text{
 			margin-top: -123px;
 			margin-left: -185px;
@@ -333,7 +333,7 @@ body{
 	}
 	&__forwarding{
 		margin-bottom: 190px;
-		padding: 27px 10px 0 10px;
+		padding-top: 27px;
 		display: flex;
 		justify-content: center;
 		.forwarding__title{
@@ -495,18 +495,17 @@ body{
 		}
 		& img{
 			position: absolute;
-			right: 0;
 		}
 		& img:first-child{
-			right: 50px;
+			right: 65px;
 			top: 314px;
 		}
 		& img:nth-child(2){
-			right: 1px;
+			right: -359px;
 			top: 414px;
 		}
 		& img:last-child{
-			right: 1px;
+			right: -303px;
 			top: -7px;
 		}
 	}

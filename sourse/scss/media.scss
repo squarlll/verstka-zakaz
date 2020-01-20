@@ -105,7 +105,6 @@
 			margin-right: -20px;
 			float: right;
 			width: 550px;
-			height: 500px;
 		}
 	}
 }
@@ -171,6 +170,8 @@
 	.what{
 		&__block-2{
 			flex-direction: column;
+			align-items: center;
+			text-align: center;
 			.block-2__text{
 				order: 0;
 			}
@@ -178,12 +179,14 @@
 				order: 1;
 			}
 		}
+		&__block-2 .block-2__text {
+		    margin-left: 0;
+		}
 	}
 }
 @media screen and (max-width: 660px){
 	.what{
 		&__block-2{
-			margin-left: -30px;
 			flex-direction: column;
 			align-items: center;
 			.block-2__text{
@@ -198,9 +201,7 @@
 				font-size: 40px;
 			}
 			.block-2__img img{
-				margin-left: 80px;
 				width: 450px;
-				height: 350px;
 			}
 		}
 	}
@@ -209,9 +210,9 @@
 	.what{
 		margin-left: 0;
 		&__block-2{
-			margin-left: -10px;
+			padding-left: 10px;
+			padding-right: 10px;
 			.block-2__text{
-				margin-right: 10px;
 				text-align: center;
 				p{
 					max-width: 350px;
@@ -219,15 +220,12 @@
 				}
 			}
 			.block-2__subtitle{
-				margin-right: 10px;
 				max-width: 350px;
 				font-size: 22px;
 				line-height: 1.5;
 			}
 			.block-2__img img{
 				width: 300px;
-				height: 300px;
-				margin-left: 60px;
 			}
 		}
 	}
@@ -243,7 +241,6 @@
 			}
 			.block-img img{
 				width: 800px;
-				height: 800px;
 				margin-right: -200px;
 			}
 		}
@@ -259,7 +256,6 @@
 			}
 			.block-img img{
 				width: 600px;
-				height: 600px;
 			}
 		}
 	}
@@ -274,7 +270,6 @@
 			.block-img img{
 				margin-right: -120px;
 				width: 500px;
-				height: 500px;
 			}
 		}
 	}
@@ -289,7 +284,6 @@
 			.block-img img{
 				margin-right: -120px;
 				width: 400px;
-				height: 350px;
 			}
 		}
 	}
@@ -303,7 +297,6 @@
 			}
 			.block-img img{
 				width: 300px;
-				height: 250px;
 			}
 		}
 	}
@@ -382,7 +375,6 @@
 			}
 			img{
 				width: 800px;
-				height: 750px;
 			}
 			.block__text{
 				margin-left: 10px;
@@ -399,7 +391,6 @@
 			}
 			img{
 				width: 600px;
-				height: 550px;
 			}
 			.block__text{
 				margin-top: -70px;
@@ -419,7 +410,6 @@
 			}
 			img{
 				width: 500px;
-				height: 450px;
 			}
 			.block__text{
 				margin-top: -50px;
@@ -441,7 +431,6 @@
 			img{
 				margin-right: 0;
 				width: 320px;
-				height: 300px;
 			}
 			.block__text{
 				margin-top: -30px;
@@ -464,7 +453,6 @@
 			img{
 				margin-right: -40px;
 				width: 320px;
-				height: 300px;
 			}
 			.block__text{
 				margin-top: -30px;

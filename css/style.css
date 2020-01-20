@@ -1,10 +1,5 @@
-html {
-  overflow-x: hidden;
-}
-
 body {
   background: #EEE3F4;
-  overflow: hidden;
 }
 
 /* blocks BEM */
@@ -78,12 +73,13 @@ body {
 .header {
   width: 100%;
   height: 517px;
-  background: url("../img/header/Rectangle-205.jpg") no-repeat center/cover;
+  background: url("../img/header/Rectangle 205.jpg") no-repeat center/cover;
 }
 
 .header__content {
   max-width: 1644px;
   margin: 0 30px 0 236px;
+  display: none;
 }
 
 .header__row {
@@ -100,13 +96,13 @@ body {
 }
 
 .header__menu .menu__item {
+  letter-spacing: initial;
   margin: 0 21px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #fff;
-  letter-spacing: initial;
 }
 
 .header__col {
@@ -155,14 +151,13 @@ body {
   margin-top: 78px;
 }
 
-.what__title {
-  max-width: 1664px;
+.what__content-1 {
+  max-width: 1437px;
+  margin: auto;
 }
 
-.what__content-1 {
-  margin-left: 40px;
-  max-width: 1664px;
-  float: left;
+.what__title {
+  max-width: 100%;
 }
 
 .what__block-1 {
@@ -196,7 +191,9 @@ body {
 
 .what__block-2 {
   margin-bottom: 115px;
-  width: calc(100% - 40px);
+  width: 100%;
+  max-width: 1437px;
+  margin: auto;
   display: flex;
 }
 
@@ -223,7 +220,7 @@ body {
 }
 
 .what__block-3 {
-  margin-right: 40px;
+  min-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -242,7 +239,8 @@ body {
 }
 
 .calls__title-block {
-  margin: 0 0 154px 242px;
+  max-width: 1437px;
+  margin: auto;
 }
 
 .calls__title-block a {
@@ -267,6 +265,7 @@ body {
 }
 
 .calls__block {
+  overflow: hidden;
   padding-bottom: 180px;
   display: flex;
   flex-direction: column;
@@ -299,7 +298,9 @@ body {
   margin-bottom: 190px;
   padding-top: 27px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  max-width: 1437px;
+  margin: auto;
 }
 
 .calls__forwarding .forwarding__title {
@@ -340,6 +341,8 @@ body {
 /* Control */
 .control {
   margin-top: 13px;
+  max-width: 1437px;
+  margin: auto;
 }
 
 .control__title-block {
@@ -347,7 +350,8 @@ body {
 }
 
 .control__title {
-  font-size: 100px;
+  font-size: 80px;
+  line-height: 94px;
   background: linear-gradient(to right, #4B48F5 -0.39%, #890041 37.78%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -356,8 +360,13 @@ body {
 
 @media screen and (max-width: 991px) {
   .control__title {
-    font-size: 85px;
+    font-size: 70px;
   }
+}
+
+.control__text {
+  margin-top: 20px;
+  line-height: 29px;
 }
 
 .control__title-text {
@@ -398,7 +407,7 @@ body {
 
 .control__forwarding {
   margin-bottom: 190px;
-  padding: 27px 10px 0 10px;
+  padding-top: 27px;
   display: flex;
   justify-content: center;
 }
@@ -606,21 +615,20 @@ body {
 
 .application__image img {
   position: absolute;
-  right: 0;
 }
 
 .application__image img:first-child {
-  right: 50px;
+  right: 65px;
   top: 314px;
 }
 
 .application__image img:nth-child(2) {
-  right: 1px;
+  right: -359px;
   top: 414px;
 }
 
 .application__image img:last-child {
-  right: 1px;
+  right: -303px;
   top: -7px;
 }
 
