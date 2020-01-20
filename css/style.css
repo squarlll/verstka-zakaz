@@ -627,7 +627,7 @@ body {
 }
 
 .application__image img:last-child {
-  right: -303px;
+  right: -1px;
   top: -7px;
 }
 
