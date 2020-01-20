@@ -161,7 +161,6 @@ body {
 }
 
 .what__block-1 {
-  overflow: hidden;
   display: block;
   margin-bottom: 788px;
   display: flex;
@@ -631,6 +630,12 @@ body {
 .application__image img:last-child {
   right: -303px;
   top: -7px;
+}
+
+@media screen and (max-width: 1400px) {
+  .application {
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 767px) {
