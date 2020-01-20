@@ -640,6 +640,12 @@ body {
   .application__button {
     margin: 45px auto 0 auto;
   }
+  .application__title {
+    max-width: 100%;
+  }
+  .application__subtitle {
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 767px) {
