@@ -267,7 +267,6 @@ body {
 
 .calls__block {
   padding-top: 234px;
-  overflow: hidden;
   padding-bottom: 180px;
   display: flex;
   flex-direction: column;
