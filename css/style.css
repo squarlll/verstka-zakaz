@@ -220,6 +220,7 @@ body {
 }
 
 .what__block-3 {
+  padding-top: 112px;
   min-width: 100%;
   display: flex;
   flex-direction: column;
@@ -235,7 +236,7 @@ body {
 
 /* Calls */
 .calls {
-  margin-top: 61px;
+  margin-top: 23px;
 }
 
 .calls__title-block {
@@ -265,6 +266,7 @@ body {
 }
 
 .calls__block {
+  padding-top: 234px;
   overflow: hidden;
   padding-bottom: 180px;
   display: flex;
@@ -296,7 +298,7 @@ body {
 
 .calls__forwarding {
   margin-bottom: 190px;
-  padding-top: 27px;
+  padding-top: 178px;
   display: flex;
   justify-content: space-between;
   max-width: 1437px;
@@ -312,7 +314,7 @@ body {
 }
 
 .calls__forwarding .forwarding__text {
-  margin-top: 20px;
+  padding-top: 20px;
   max-width: 422px;
   margin: auto;
   font-weight: 400;
@@ -407,7 +409,6 @@ body {
 
 .control__forwarding {
   margin-bottom: 190px;
-  padding-top: 27px;
   display: flex;
   justify-content: center;
 }
@@ -449,6 +450,7 @@ body {
 
 /* calltracking */
 .calltracking {
+  padding-top: 23px;
   max-width: 1713px;
   margin: auto;
   display: -webkit-flex;
@@ -721,7 +723,7 @@ body {
 }
 
 .device__title {
-  max-width: 940px;
+  max-width: 947px;
   margin: auto;
   padding-left: 154px;
   line-height: 94px;
