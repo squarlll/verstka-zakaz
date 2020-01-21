@@ -1,0 +1,356 @@
+html {
+  overflow-x: hidden; }
+
+body {
+  background: #000;
+  overflow: hidden; }
+
+/* blocks BEM */
+.block-title {
+  font-family: 'SanFrancisco Semibold';
+  font-size: 80px; }
+
+.block-subtitle {
+  font-size: 24px;
+  line-height: 28px;
+  color: #828282; }
+
+/* mixins */
+.title {
+  font-family: 'SanFrancisco Semibold';
+  font-size: 80px;
+  line-height: 94px; }
+  .title p {
+    background: linear-gradient(to right, #4B48F5 -0.39%, #890041 37.78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block; }
+
+.title-2 {
+  font-family: 'SanFrancisco Semibold';
+  font-size: 80px;
+  line-height: 94px; }
+  .title-2 p {
+    background: linear-gradient(110.44deg, #F58948 -0.39%, #F0704D 6.36%, #D57AA5 37.78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block; }
+
+.title-3 {
+  font-family: 'SanFrancisco Semibold';
+  font-size: 80px;
+  line-height: 94px; }
+  .title-3 p {
+    background: linear-gradient(105.52deg, #80E0FF -0.39%, #855AFF 37.78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block; }
+
+.title-4 {
+  font-family: 'SanFrancisco Semibold';
+  font-size: 80px;
+  line-height: 94px; }
+  .title-4 p {
+    background: linear-gradient(95.07deg, #48F5EB -0.39%, #6D8CDD 37.78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block; }
+
+.call-tracking__title {
+  margin-top: 105px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 117px;
+  color: #FFFFFF; }
+
+@media screen and (max-width: 1100px) {
+  .call-tracking__title {
+    font-size: 70px; } }
+
+@media screen and (max-width: 800px) {
+  .call-tracking__title {
+    font-size: 50px; } }
+
+@media screen and (max-width: 600px) {
+  .call-tracking__title {
+    font-size: 30px;
+    line-height: 1.5; } }
+
+@media screen and (max-width: 360px) {
+  .call-tracking__title {
+    font-size: 28px;
+    line-height: 1.5; } }
+
+/* Forget-it */
+.forget-it {
+  margin-top: 215px;
+  display: flex;
+  justify-content: space-between; }
+  .forget-it__subtitle {
+    margin-left: 242px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    background: linear-gradient(95.07deg, #48F5EB -0.39%, #6D8CDD 37.78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .forget-it__title {
+    margin-left: 242px;
+    max-width: 821px;
+    color: #fff; }
+  .forget-it-img-1 {
+    margin-top: 90px;
+    display: inline-block; }
+    .forget-it-img-1 img {
+      max-width: 450px; }
+  .forget-it__text {
+    margin-top: 100px;
+    float: right;
+    margin-left: 235px;
+    display: inline-block;
+    max-width: 452px;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 28px;
+    color: #F2F2F2; }
+  .forget-it__col-2 {
+    display: flex;
+    flex-direction: column; }
+  .forget-it-img-2 img {
+    margin-right: 280px;
+    max-width: 422px; }
+  .forget-it-img-3 img {
+    float: right;
+    max-width: 280px; }
+
+@media screen and (max-width: 1840px) {
+  .forget-it__subtitle {
+    margin-left: 100px; }
+  .forget-it__title {
+    margin-left: 100px; }
+  .forget-it__text {
+    margin-left: 50px; } }
+
+@media screen and (max-width: 1680px) {
+  .forget-it {
+    justify-content: center; }
+    .forget-it__subtitle {
+      margin-left: 10px; }
+    .forget-it__title {
+      max-width: 621px;
+      font-size: 60px;
+      margin-left: 10px; }
+    .forget-it__text {
+      margin-top: 40px;
+      display: block;
+      margin-left: 10px;
+      float: none; } }
+
+@media screen and (max-width: 1370px) {
+  .forget-it {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    .forget-it__subtitle {
+      margin-left: 0; }
+    .forget-it__title {
+      max-width: 621px;
+      font-size: 60px;
+      margin-left: 0; }
+    .forget-it__text {
+      margin-top: 90px;
+      display: block;
+      margin: 40px auto;
+      float: none; }
+    .forget-it-img-2 img {
+      margin-right: 0;
+      max-width: 422px; }
+    .forget-it-img-3 img {
+      margin-top: 30px;
+      float: none;
+      max-width: 280px; } }
+
+@media screen and (max-width: 590px) {
+  .forget-it__title {
+    font-size: 40px;
+    line-height: 1.5; } }
+
+@media screen and (max-width: 460px) {
+  .forget-it__title {
+    font-size: 25px;
+    line-height: 1.5; }
+  .forget-it__subtitle {
+    font-size: 30px; }
+  .forget-it-img-1 img {
+    max-width: 300px; }
+  .forget-it-img-2 img {
+    margin-right: 0;
+    max-width: 300px; } }
+
+/* Advertising-budget */
+.advertising-budget {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
+  .advertising-budget__title {
+    margin-bottom: 40px;
+    max-width: 888px;
+    color: #fff; }
+  .advertising-budget__text {
+    margin-bottom: 45px;
+    max-width: 797px;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 28px;
+    color: #F2F2F2; }
+  .advertising-budget-img img {
+    max-width: 1145px; }
+
+@media screen and (max-width: 1150px) {
+  .advertising-budget__title {
+    font-size: 50px;
+    line-height: 1.3; }
+  .advertising-budget__text {
+    font-size: 20px; }
+  .advertising-budget-img img {
+    max-width: 745px; } }
+
+@media screen and (max-width: 820px) {
+  .advertising-budget__title {
+    padding: 0 10px;
+    font-size: 30px;
+    line-height: 1.3; }
+  .advertising-budget__text {
+    padding: 0 15px;
+    font-size: 18px; }
+  .advertising-budget-img img {
+    max-width: 445px; } }
+
+@media screen and (max-width: 480px) {
+  .advertising-budget__title {
+    padding: 0 10px;
+    font-size: 25px;
+    line-height: 1.3; }
+  .advertising-budget__text {
+    padding: 0 15px;
+    font-size: 16px; }
+  .advertising-budget-img img {
+    max-width: 310px; } }
+
+/* Key-request */
+.key-request {
+  max-width: 984px;
+  margin: 90px auto 0; }
+  .key-request__title {
+    max-width: 821px;
+    color: #fff; }
+  .key-request__text {
+    margin-top: 35px;
+    margin-left: 350px;
+    max-width: 471px;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 28px;
+    color: #F2F2F2; }
+
+@media screen and (max-width: 1150px) {
+  .key-request {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    .key-request__text {
+      margin-left: 0; } }
+
+@media screen and (max-width: 820px) {
+  .key-request__title {
+    font-size: 50px;
+    line-height: 1.3; }
+  .key-request__text {
+    font-size: 20px; } }
+
+@media screen and (max-width: 520px) {
+  .key-request__title {
+    font-size: 30px; }
+  .key-request__text {
+    padding: 0 10px;
+    font-size: 18px; } }
+
+/* Numbers */
+.numbers {
+  max-width: 1500px;
+  margin: 190px auto 0; }
+  .numbers__title {
+    margin-bottom: 135px;
+    color: #fff; }
+  .numbers__content {
+    display: flex; }
+  .numbers__item {
+    margin: 0 46px 0 0; }
+    .numbers__item a {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+      color: #F2F2F2; }
+  .numbers__subtitle {
+    margin-bottom: 45px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 102.4%;
+    color: #fff; }
+  .numbers__text {
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #828282; }
+
+@media screen and (max-width: 1520px) {
+  .numbers {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .numbers__content {
+      flex-direction: column;
+      text-align: center; }
+    .numbers__item {
+      margin-bottom: 60px; }
+    .numbers__text {
+      max-width: 500px; } }
+
+@media screen and (max-width: 1100px) {
+  .numbers__title {
+    font-size: 50px; } }
+
+@media screen and (max-width: 700px) {
+  .numbers__title {
+    margin-bottom: 50px;
+    font-size: 30px; }
+  .numbers__item {
+    margin-bottom: 80px; }
+    .numbers__item a {
+      font-size: 20px; }
+  .numbers__subtitle {
+    font-size: 25px; }
+  .numbers__text {
+    margin-bottom: 20px;
+    padding: 0 10px;
+    font-size: 20px; } }
+
+@media screen and (max-width: 440px) {
+  .numbers__title {
+    font-size: 20px; }
+  .numbers__item {
+    margin-left: 20px;
+    margin-bottom: 80px; }
+    .numbers__item a {
+      font-size: 16px; }
+  .numbers__subtitle {
+    font-size: 18px; }
+  .numbers__text {
+    margin-bottom: 20px;
+    padding: 0 10px;
+    font-size: 18px; } }

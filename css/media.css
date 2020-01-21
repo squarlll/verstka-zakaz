@@ -382,6 +382,7 @@
   .control__forwarding .control__title {
     font-size: 65px; }
   .control__forwarding .control__text {
+    margin-left: 20px;
     font-size: 18px; }
   .control__forwarding .control__img {
     max-width: 420px; }
@@ -397,6 +398,7 @@
     font-size: 50px;
     line-height: 1.3; }
   .control__forwarding .control__text {
+    margin-left: 20px;
     font-size: 16px; }
   .control__forwarding .control__col-1 {
     margin: 0 auto 50px auto; }
