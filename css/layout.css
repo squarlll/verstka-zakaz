@@ -1334,7 +1334,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 170px;
+    padding-top: 300px;
     padding-right: 185px; }
     @media screen and (max-width: 1580px) {
       .role__functional {
