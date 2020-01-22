@@ -666,7 +666,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .block-title {
-    font-size: 50px;
+    font-size: 50px !important;
     line-height: 48px !important;
     max-width: 100%;
   }
@@ -687,7 +687,7 @@ body {
 
 @media screen and (max-width: 420px) {
   .block-title {
-    font-size: 40px;
+    font-size: 40px !important;
     line-height: 38px !important;
   }
 }
