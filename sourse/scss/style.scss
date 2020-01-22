@@ -712,6 +712,9 @@ body{
 		margin-right: -105px;
 		text-align: center;
 		background: #000;
+		&::before{
+			margin: -2px!important;
+		}
 	}
 }
 

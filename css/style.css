@@ -904,6 +904,10 @@ body {
   padding: 18px 35px;
 }
 
+.footer-2__button::before {
+  margin: -2px !important;
+}
+
 /* functions */
 .function {
   display: -webkit-flex;
