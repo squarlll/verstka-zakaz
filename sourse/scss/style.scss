@@ -1,5 +1,9 @@
+html{
+	overflow: hidden;
+}
 body{
 	background: #EEE3F4;
+	overflow-x: hidden;
 }
 /* blocks BEM */
 .block-title{
