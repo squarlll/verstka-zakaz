@@ -203,7 +203,15 @@ body{
 		line-height: 43px;
 	}
 }
+
+/* idea */
 .idea{
+	&-wrapper{
+		width: 100%;
+		max-width: 100%;
+		overflow: hidden;
+		padding-bottom: 160px;
+	}
 	padding: 314px 10px 0;
 	&__title{
 		font-family: 'SanFrancisco Semibold';;
@@ -557,11 +565,26 @@ body{
 .notifications{
 	margin-top: 220px;
 	display: flex;
+
+	&__telephone-1{
+		img{
+
+		}
+	}
 	&__telephone-2{
 		margin-left: -150px;
 		margin-top: -200px;
+		img{
+
+		}
 		&__block-text{
 			margin-top: 200px;
+		}
+		&__title{
+
+		}
+		&__text{
+
 		}
 	}
 }
@@ -571,6 +594,9 @@ body{
 	max-width: 1437px;
 	margin: 95px auto 0;
 	position: relative;
+	&-wrapper{
+		overflow: hidden;
+	}
 	&__title{
 		font-family: 'SanFrancisco Semibold', sans-serif;
 		max-width: 741px;
@@ -602,7 +628,6 @@ body{
 		position: absolute;
 		right: -39px;
 		top: 368px;
-		overflow: hidden;
 	}
 	&__step-1{
 		padding-top: 20px;
@@ -970,6 +995,11 @@ body{
 	max-width: 1437px;
 	margin: 400px auto 0 auto;
 	padding-left: 10px;
+	&-wrapper{
+		width: 100%;
+		max-width: 100%;
+		overflow: hidden;
+	}
 	@media screen and (max-width: 1378px){
 		padding-left: 0;
 	}
@@ -1156,6 +1186,17 @@ body{
 	display: flex;
 	justify-content: space-between;
 	position: relative;
+	&-wrapper{
+		width: 100%;
+		max-width: 100%;
+		height: 700px;
+		@media screen and (max-width: 1880px){
+			overflow: hidden;
+		}
+		@media screen and (max-width: 1350px){
+			overflow: visible;
+		}
+	}
 	&__text{
 		margin-top: 40px;
 		padding-left: 150px;
@@ -1247,7 +1288,7 @@ body{
 			margin: 45px auto 0;
 		}
 	}
-	@media screen and (max-width: 735px){
+	@media screen and (max-width: 767px){
 		&__images{
 			display: none;
 		}
@@ -1510,6 +1551,7 @@ body{
 }
 /* notifications */
 .notifications{
+	overflow: hidden;
 	margin-bottom: 120px;
 	display: flex;
 	margin-top: 154px;
@@ -1664,6 +1706,7 @@ body{
 /* role */
 .role{
 	padding-top: 160px;
+	overflow: hidden;
 	&__text{
 		max-width: 1437px;
 		margin: auto;
@@ -1690,7 +1733,7 @@ body{
 		display: -ms-flex;
 		display: -o-flex;
 		display: flex;
-		align-items: flex-end;
+		align-items: center;
 		flex-direction: column;
 		padding-top: 170px;
 		padding-right: 185px;
@@ -1719,7 +1762,28 @@ body{
 			color: #333333;
 		}
 		&__row-2{
-			margin-right: -174px;
+			margin-right: -347px;
+			@media screen and (max-width: 1580px){
+				margin-right: -217px!important;
+			}
+			@media screen and (max-width: 1240px){
+				margin-right: -167px!important;
+			}
+			@media screen and (max-width: 960px){
+				margin-right: -144px!important;
+			}
+			@media screen and (max-width: 767px){
+				margin-right: -135px!important;
+			}
+			@media screen and (max-width: 620px){
+				margin-right: -125px!important;
+			}
+			@media screen and (max-width: 510px){
+				margin-right: -118px!important;
+			}
+			@media screen and (max-width: 390px){
+				margin-right: -115px!important;
+			}		
 		}
 		&__row-1 .functional__image-wrapper,&__row-2 .functional__image-wrapper {
 			padding: 25px;
@@ -1737,6 +1801,27 @@ body{
 			}
 		}
 		&__row-1 {
+			@media screen and (max-width: 1580px){
+				margin-left: -50px;
+			}
+			@media screen and (max-width: 1240px){
+				margin-left: -30px!important;
+			}
+			@media screen and (max-width: 960px){
+				margin-left: -10px!important;
+			}
+			@media screen and (max-width: 767px){
+				margin-left: 10px!important;
+			}
+			@media screen and (max-width: 620px){
+				margin-left: 30px!important;
+			}
+			@media screen and (max-width: 510px){
+				margin-left: 40px!important;
+			}
+			@media screen and (max-width: 390px){
+				margin-left: 52px!important;
+			}
 			& .functional__image-wrapper:last-child {
 				& img {
 					margin-top: -173px;

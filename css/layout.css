@@ -153,8 +153,14 @@ body {
     font-size: 26px;
     line-height: 43px; } }
 
+/* idea */
 .idea {
   padding: 314px 10px 0; }
+  .idea-wrapper {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    padding-bottom: 160px; }
   .idea__title {
     font-family: 'SanFrancisco Semibold';
     font-size: 80px;
@@ -445,6 +451,8 @@ body {
   max-width: 1437px;
   margin: 95px auto 0;
   position: relative; }
+  .widget-wrapper {
+    overflow: hidden; }
   .widget__title {
     font-family: 'SanFrancisco Semibold', sans-serif;
     max-width: 741px;
@@ -474,8 +482,7 @@ body {
   .widget__ipad {
     position: absolute;
     right: -39px;
-    top: 368px;
-    overflow: hidden; }
+    top: 368px; }
   .widget__step-1 {
     padding-top: 20px;
     margin-right: 125px;
@@ -760,6 +767,10 @@ body {
   max-width: 1437px;
   margin: 400px auto 0 auto;
   padding-left: 10px; }
+  .tasks-wrapper {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden; }
   @media screen and (max-width: 1378px) {
     .tasks {
       padding-left: 0; } }
@@ -899,6 +910,16 @@ body {
   display: flex;
   justify-content: space-between;
   position: relative; }
+  .team-wrapper {
+    width: 100%;
+    max-width: 100%;
+    height: 700px; }
+    @media screen and (max-width: 1880px) {
+      .team-wrapper {
+        overflow: hidden; } }
+    @media screen and (max-width: 1350px) {
+      .team-wrapper {
+        overflow: visible; } }
   .team__text {
     margin-top: 40px;
     padding-left: 150px; }
@@ -969,7 +990,7 @@ body {
       max-width: 100%; }
     .team__button {
       margin: 45px auto 0; } }
-  @media screen and (max-width: 735px) {
+  @media screen and (max-width: 767px) {
     .team__images {
       display: none; } }
   @media screen and (max-width: 690px) {
@@ -1174,6 +1195,7 @@ body {
 
 /* notifications */
 .notifications {
+  overflow: hidden;
   margin-bottom: 120px;
   display: flex;
   margin-top: 154px; }
@@ -1285,7 +1307,8 @@ body {
 
 /* role */
 .role {
-  padding-top: 160px; }
+  padding-top: 160px;
+  overflow: hidden; }
   .role__text {
     max-width: 1437px;
     margin: auto;
@@ -1309,7 +1332,7 @@ body {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     flex-direction: column;
     padding-top: 170px;
     padding-right: 185px; }
@@ -1333,7 +1356,28 @@ body {
     line-height: 64px;
     color: #333333; }
   .role .functional__row-2 {
-    margin-right: -174px; }
+    margin-right: -347px; }
+    @media screen and (max-width: 1580px) {
+      .role .functional__row-2 {
+        margin-right: -217px !important; } }
+    @media screen and (max-width: 1240px) {
+      .role .functional__row-2 {
+        margin-right: -167px !important; } }
+    @media screen and (max-width: 960px) {
+      .role .functional__row-2 {
+        margin-right: -144px !important; } }
+    @media screen and (max-width: 767px) {
+      .role .functional__row-2 {
+        margin-right: -135px !important; } }
+    @media screen and (max-width: 620px) {
+      .role .functional__row-2 {
+        margin-right: -125px !important; } }
+    @media screen and (max-width: 510px) {
+      .role .functional__row-2 {
+        margin-right: -118px !important; } }
+    @media screen and (max-width: 390px) {
+      .role .functional__row-2 {
+        margin-right: -115px !important; } }
   .role .functional__row-1 .functional__image-wrapper, .role .functional__row-2 .functional__image-wrapper {
     padding: 25px; }
     @media screen and (max-width: 1580px) {
@@ -1348,6 +1392,27 @@ body {
     @media screen and (max-width: 510px) {
       .role .functional__row-1 .functional__image-wrapper, .role .functional__row-2 .functional__image-wrapper {
         padding: 3px; } }
+  @media screen and (max-width: 1580px) {
+    .role .functional__row-1 {
+      margin-left: -50px; } }
+  @media screen and (max-width: 1240px) {
+    .role .functional__row-1 {
+      margin-left: -30px !important; } }
+  @media screen and (max-width: 960px) {
+    .role .functional__row-1 {
+      margin-left: -10px !important; } }
+  @media screen and (max-width: 767px) {
+    .role .functional__row-1 {
+      margin-left: 10px !important; } }
+  @media screen and (max-width: 620px) {
+    .role .functional__row-1 {
+      margin-left: 30px !important; } }
+  @media screen and (max-width: 510px) {
+    .role .functional__row-1 {
+      margin-left: 40px !important; } }
+  @media screen and (max-width: 390px) {
+    .role .functional__row-1 {
+      margin-left: 52px !important; } }
   .role .functional__row-1 .functional__image-wrapper:last-child img {
     margin-top: -173px; }
     @media screen and (max-width: 1580px) {
