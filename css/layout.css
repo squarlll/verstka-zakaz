@@ -28,7 +28,7 @@ body {
   font-family: 'SanFrancisco Semibold';
   font-size: 80px;
   line-height: 94px;
-  letter-spacing: -2px; }
+  letter-spacing: -.5px; }
   .title-2 p {
     background: linear-gradient(to right, #4B48F5 -0.39%, #890041 37.78%);
     -webkit-background-clip: text;
@@ -482,7 +482,7 @@ body {
   .widget__ipad {
     position: absolute;
     right: -39px;
-    top: 528px; }
+    top: 415px; }
   .widget__step-1 {
     padding-top: 20px;
     margin-right: 125px;
@@ -658,11 +658,9 @@ body {
 
 /* Structure */
 .structure {
-  padding-top: 146px;
-  overflow-x: hidden; }
-  @media screen and (max-width: 1760px) {
-    .structure {
-      overflow-x: visible; } }
+  padding-top: 146px; }
+  .structure-wrapper {
+    overflow: hidden; }
   .structure__content {
     max-width: 1437px;
     margin: auto;
@@ -768,6 +766,7 @@ body {
   margin: 400px auto 0 auto;
   padding-left: 10px; }
   .tasks-wrapper {
+    padding-top: 445px;
     width: 100%;
     max-width: 100%;
     overflow: hidden; }
@@ -840,11 +839,6 @@ body {
       @media screen and (max-width: 1645px) {
         .tasks__row:nth-child(2) .tasks__calls {
           padding-left: 160px; } }
-      @media screen and (max-width: 1580px) {
-        .tasks__row:nth-child(2) .tasks__calls {
-          padding-left: 120px; }
-        .tasks__row:nth-child(2) .tasks__catalog {
-          padding-left: 186px; } }
       @media screen and (max-width: 1378px) {
         .tasks__row:nth-child(2) .tasks__calls {
           padding-left: 0; }
@@ -956,7 +950,9 @@ body {
       margin-bottom: 317px; }
   .team__button {
     background: #F4F4F4;
-    max-width: 437px; }
+    max-width: 437px;
+    margin-top: 75px;
+    margin-left: 5px; }
     .team__button a {
       background: linear-gradient(55.06deg, #C14079 4.82%, #2D499D 63.47%);
       -webkit-background-clip: text;
@@ -1042,7 +1038,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-bottom: -200px;
-  padding-top: 160px; }
+  margin-top: -140px; }
   @media screen and (max-width: 940px) {
     .calendar {
       padding-top: 1660px !important; } }
@@ -1094,7 +1090,8 @@ body {
     color: #828282;
     letter-spacing: -.85px; }
   .calendar__row-2 {
-    display: flex; }
+    display: flex;
+    margin-top: -120px; }
   .calendar__tablet-2 {
     position: relative; }
     .calendar__tablet-2 img {
@@ -1105,8 +1102,16 @@ body {
     position: relative; }
     .calendar__tablet-3 img {
       position: absolute;
-      top: -200px;
-      right: -1030px; }
+      top: -216px;
+      right: -806px; }
+  @media screen and (min-width: 2230px) {
+    .calendar__row-2 {
+      justify-content: center; }
+    .calendar__tablet-2 img {
+      left: 0; }
+    .calendar__tablet-3 img {
+      position: relative;
+      right: 0; } }
 
 @media screen and (max-width: 1920px) {
   .calendar {
@@ -1154,7 +1159,9 @@ body {
     font-size: 40px; }
   .calendar__text {
     max-width: 500px;
-    font-size: 18px; }
+    font-size: 18px; } }
+
+@media screen and (max-width: 1730px) {
   .calendar__tablet-3 {
     margin-top: 200px; } }
 
@@ -1198,7 +1205,7 @@ body {
   overflow: hidden;
   margin-bottom: 120px;
   display: flex;
-  margin-top: 154px; }
+  padding-top: 91px; }
   .notifications__telephone-block {
     display: flex; }
   .notifications__telephone-1 img {
@@ -1307,7 +1314,7 @@ body {
 
 /* role */
 .role {
-  padding-top: 160px;
+  margin-top: 0px;
   overflow: hidden; }
   .role__text {
     max-width: 1437px;
@@ -1336,10 +1343,6 @@ body {
     flex-direction: column;
     padding-top: 300px;
     padding-right: 185px; }
-    @media screen and (max-width: 1580px) {
-      .role__functional {
-        align-items: center;
-        padding-right: 82px; } }
   .role .functional__image-wrapper {
     position: relative; }
   .role .functional__text {
@@ -1441,7 +1444,7 @@ body {
     top: -250px; }
     @media screen and (max-width: 1580px) {
       .role .functional__row-1 .functional__image-wrapper:last-child .functional__text {
-        top: -241px; } }
+        top: -200px; } }
     @media screen and (max-width: 1240px) {
       .role .functional__row-1 .functional__image-wrapper:last-child .functional__text {
         top: -187px; } }
@@ -1707,3 +1710,14 @@ body {
     margin-left: 52px; }
     .functional__row-1 .functional__image-wrapper:last-child img {
       margin-top: -32px !important; } }
+
+@media screen and (max-width: 1580px) {
+  .role__functional {
+    align-items: center;
+    padding-right: 82px; } }
+
+@media screen and (max-width: 1580px) and (max-width: 1580px) {
+  .tasks__calls {
+    padding-left: 120px; }
+  .tasks__catalog {
+    padding-left: 186px; } }
