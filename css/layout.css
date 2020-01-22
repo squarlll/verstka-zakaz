@@ -1174,7 +1174,6 @@ body {
 
 /* notifications */
 .notifications {
-  overflow: hidden;
   margin-bottom: 120px;
   display: flex;
   margin-top: 154px; }

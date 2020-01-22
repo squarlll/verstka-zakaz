@@ -557,26 +557,11 @@ body{
 .notifications{
 	margin-top: 220px;
 	display: flex;
-
-	&__telephone-1{
-		img{
-
-		}
-	}
 	&__telephone-2{
 		margin-left: -150px;
 		margin-top: -200px;
-		img{
-
-		}
 		&__block-text{
 			margin-top: 200px;
-		}
-		&__title{
-
-		}
-		&__text{
-
 		}
 	}
 }
@@ -1525,7 +1510,6 @@ body{
 }
 /* notifications */
 .notifications{
-	overflow: hidden;
 	margin-bottom: 120px;
 	display: flex;
 	margin-top: 154px;
