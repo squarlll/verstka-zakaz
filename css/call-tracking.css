@@ -344,8 +344,7 @@ body {
   .numbers__title {
     font-size: 20px; }
   .numbers__item {
-    margin-left: 20px;
-    margin-bottom: 80px; }
+    margin: 0 auto 80px; }
     .numbers__item a {
       font-size: 16px; }
   .numbers__subtitle {
