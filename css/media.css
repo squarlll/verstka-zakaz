@@ -157,7 +157,8 @@
 
 @media screen and (max-width: 735px) {
   .calls__title-block {
-    margin-left: 10px;
+    margin-left: 0;
+    padding-left: 10px;
     padding-right: 10px; }
   .calls__title {
     font-size: 50px;
