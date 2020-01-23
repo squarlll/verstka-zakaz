@@ -271,6 +271,13 @@ body{
 		display: -ms-flex;
 		display: -o-flex;
 		display: flex;
+		padding-left: 10px;
+		padding-right: 10px;
+		@media screen and (max-width: 1235px){
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
 	}
 	&__title{
 		font-family: 'SanFrancisco Semibold', sans-serif;
@@ -278,6 +285,19 @@ body{
 		line-height: 94px;
 		color: #FFFFFF;
 		max-width: 685px;
+		@media screen and (max-width: 1235px){
+			max-width: 100%;
+			font-size: 55px;
+			line-height: 69px;
+		}
+		@media screen and (max-width: 992px){
+			font-size: 35px;
+			line-height: 49px;
+		}
+		@media screen and (max-width: 450px){
+			font-size: 25px;
+			line-height: 39px;
+		}
 	}
 	&__subtitle{
 		max-width: 421px;
@@ -287,6 +307,17 @@ body{
 		line-height: 126.69%;
 		color: #F2F2F2;
 		font-family: 'Segoe Script', sans-serif;
+		@media screen and (max-width: 1235px){
+			margin-left: 0;
+			max-width: 100%;
+			font-size: 20px;
+		}
+		@media screen and (max-width: 992px){
+			font-size: 17px;
+		}
+		@media screen and (max-width: 450px){
+			font-size: 14px;
+		}
 	}
 	&__image-row{
 		display: flex;
@@ -294,6 +325,11 @@ body{
 		@media screen and (max-width: 1490px){
 			flex-direction: column;
 	    	align-items: center;
+	    	& img{
+	    		max-width: 100%;
+	    		padding-left: 10px;
+	    		padding-right: 10px;
+	    	}
 		}
 	}
 	&__ipad{
@@ -306,7 +342,8 @@ body{
 			right: -280px;
 			top: 16px;
 			@media screen and (max-width: 1490px){
-				display: none;			}
+				display: none;		
+			}
 		}
 		&::after{
 			content: url('../img/call-tracking/Vector-4.svg');
@@ -381,6 +418,10 @@ body{
 				@media screen and (max-width: 1490px){
 					right: 80px;
 				}
+				@media screen and (max-width: 600px){
+					max-width: 543px;
+					top: 40px!important;
+				}
 			}
 			&:nth-child(3){
 				width: 254px;
@@ -398,6 +439,10 @@ body{
 					top: 32%;
 					left: 213px;
 				}
+				@media screen and (max-width: 600px){
+					max-width: 543px;
+					top: 70px!important;
+				}
 			}
 			&:last-child{
 				width: 290px;
@@ -412,9 +457,12 @@ body{
 					left: 0;
 				}
 				@media screen and (max-width: 1490px){
-					right: 95px;
 					top: 32%;
 					right: 80px;
+				}
+				@media screen and (max-width: 600px){
+					max-width: 543px;
+					top: 120px!important;
 				}
 			}
 		}
@@ -423,6 +471,9 @@ body{
 			flex-wrap: wrap;
 			max-width: 670px;
 			min-width: 0;
+		}
+		@media screen and (max-width: 600px){
+			max-width: 543px;
 		}
 	}
 }
