@@ -217,6 +217,7 @@
   .calendar__text {
     max-width: 500px;
     font-size: 18px;
+    line-height: 22px;
   }
 }
 
@@ -389,6 +390,7 @@
   .notifications__text {
     max-width: 400px;
     font-size: 16px;
+    font-size: 20px;
   }
 }
 
@@ -403,6 +405,9 @@
   }
   .notifications__telephone-2 {
     margin-left: -80px;
+  }
+  .notifications__text {
+    letter-spacing: -.5px;
   }
 }
 
@@ -421,6 +426,7 @@
   .notifications__text {
     max-width: 300px;
     font-size: 14px;
+    line-height: 18px;
   }
 }
 
@@ -443,12 +449,18 @@
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
-    margin-top: -80px;
+    margin-top: -20px;
     text-align: center;
     margin-left: 0;
   }
   .notifications__telephone-2 {
     margin-top: 0px;
     margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 831px) {
+  .notifications {
+    padding-top: 250px;
   }
 }

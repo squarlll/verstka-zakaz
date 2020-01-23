@@ -3,7 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>5CRM tasks and projects</title>
+	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 	<!-- fontawesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
@@ -13,26 +15,130 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/tasks-projects.css">
-	<link rel="stylesheet" href="css/device-functions.css">
+	<link rel="stylesheet" href="css/calendar-notifications.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
 <body> 
-	<div class="distance">
-		<div class="distance__col-1">
-			<div class="distance__block-text">
-				<div class="distance__title title">Расстояние — не преграда</div>
-				<div class="distance__text">
-					Абсолютно неважно где находятся ваши коллеги: в соседнем кабинете или на другом конце света. Для доступа к 5CRM нужен любой гаджет с выходом в интернет. 
+	<div class="wrapper">
+		<div class="tasks-projects">
+			<div class="tasks-projects__block-text">
+				<div class="tasks-projects__title">Задачи и проекты</div>
+				<div class="tasks-projects__text">
+					Все задачи под вашим контролем. Давайте поручения любым сотрудникам компании и следите за ходом их исполнения.
 				</div>
 			</div>
-			<div class="distance-img-1"><img src="img/tasks-projects/Rectangle 254.jpg" alt=""></div>
+			<div class="tasks-projects__content">
+				<div class="tasks-projects__img-1">
+					<img src="img/tasks-projects/image-145.png" alt="">
+				</div>
+				<div class="tasks-projects__img-2">
+					<img src="img/tasks-projects/Black-3.png" alt="">
+				</div>
+				<div class="tasks-projects__img-3">
+					<img src="img/tasks-projects/image-146.png" alt="">
+				</div>
+			</div>
 		</div>
-		<div class="distance__col-2">
-			<div class="distance-img-2"><img src="img/tasks-projects/Rectangle 252.jpg" alt=""></div>
-			<div class="distance-img-3"><img src="img/tasks-projects/Rectangle 253.jpg" alt=""></div>
+		<div class="personal">
+			<div class="personal__title title"><p>Личные</p></div>
+			<div class="personal__subtitle subtitle">Ни одна задача не потеряется.</div>
+			<div class="personal-img">
+				<img src="img/tasks-projects/image-150.png" alt="">
+			</div>
+		</div>
+		<div class="team">
+			<div class="team__content">
+				<div class="team__col-1">
+					<div class="team__title title">Командные</div>
+					<div class="team__img-block">
+						<div class="team__subtitle-1 subtitle">Доска для работы отдела</div>
+						<div class="team-img-1">
+							<img src="img/tasks-projects/image-147.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="team__col-2">
+					<div class="team__img-block">
+						<div class="team-img-2">
+							<img src="img/tasks-projects/Front&Back-1.png" alt="">
+						</div>
+						<div class="team__subtitle-2 subtitle">проектной команды</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="difficult-tasks">
+			<div class="difficult-tasks__col-1">
+				<div class="difficult-tasks__title title">
+					Сложные задачи в несколько этапов
+				</div>
+				<div class="difficult-tasks__text">
+					Если перед вами стоит задача, подразумевающая выполнение нескольких подзадач, вам пригодится чек-лист. Определите последовательность шагов и отмечайте выполнение промежуточных этапов.
+				</div>
+				<div class="difficult-tasks-img-1">
+					<img src="img/tasks-projects/Frame-4.png" alt="">
+				</div>
+			</div>
+			<div class="difficult-tasks__col-2">
+				<div class="difficult-tasks-img-2">
+					<img src="img/tasks-projects/checklist.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="calendar">
+	<div class="calendar__row-1">
+		 <div class="calendar__tablet-1">
+		 	<img src="img/layout/Front&Back-2.png" alt="">
+		 </div>
+		 <calendar class="calendar__block-text">
+		 	<div class="calendar__title title">Календарь дел и встреч</div>
+		 	<div class="calendar__text">
+		 		Создайте встречу, выберите время, место и тему обсуждения. Составьте список необходимых людей и им придет приглашение. Если на выбранное время у кого-то из участников уже запланирована встреча или отпуск, система оповестит вас об этом и предложит выбрать другое время.
+		 	</div>
+		 </calendar>
+	</div>
+	<div class="calendar__row-2">
+		<div class="calendar__tablet-2">
+			<img src="img/layout/image-187.png" alt="">
+		</div>
+		<div class="calendar__tablet-3">
+			<img src="img/layout/image-158.png" alt="">
 		</div>
 	</div>
-	 <footer class="footer">
+</div>
+
+<div class="notifications">
+	<div class="notifications__telephone-block">
+		<div class="notifications__telephone-1">
+			<img src="img/layout/Black-5.png" alt="">
+		</div>
+		<div class="notifications__telephone-2">
+			<img src="img/layout/Black-5.png" alt="">
+		</div>
+	</div>
+	<div class="notifications__block-text">
+		<div class="notifications__title title">Уведомления</div>
+		<div class="notifications__text">
+			Как только задача или встреча создана, всем задействованным сотрудникам приходит оповещение через SMS, email или Telegram. У недобросовестных коллег не будет возможности сделать вид, что они не знали о поставленных задачах.
+		</div>
+	</div>
+</div>
+		<div class="distance">
+			<div class="distance__col-1">
+				<div class="distance__block-text">
+					<div class="distance__title title">Расстояние — не преграда</div>
+					<div class="distance__text">
+						Абсолютно неважно где находятся ваши коллеги: в соседнем кабинете или на другом конце света. Для доступа к 5CRM нужен любой гаджет с выходом в интернет. 
+					</div>
+				</div>
+				<div class="distance-img-1"><img src="img/tasks-projects/Rectangle 254.jpg" alt=""></div>
+			</div>
+			<div class="distance__col-2">
+				<div class="distance-img-2"><img src="img/tasks-projects/Rectangle 252.jpg" alt=""></div>
+				<div class="distance-img-3"><img src="img/tasks-projects/Rectangle 253.jpg" alt=""></div>
+			</div>
+		</div>
+		 <footer class="footer">
 	<div class="footer__title title">
 		<p>Тысячи клиентов</p> уже применяют<br>наши инструменты. Попробуй и ты
 	</div>
@@ -42,5 +148,6 @@
 		</a>
 	</div>
 </footer>
+	</div>
 </body>
 </html>
