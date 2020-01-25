@@ -150,6 +150,9 @@ body{
 	}
 }
 @media screen and (max-width: 1350px){
+
+}
+@media screen and (max-width: 1239px){
 	.distance{
 		flex-direction: column;
 		align-items: center;
@@ -263,6 +266,34 @@ body{
 	}
 }
 @media screen and (max-width: 1870px){
+	.tasks-projects{
+		&__block-text{
+			margin-bottom: 100px;
+			margin-left: -150px;
+		}
+		&__img-1{
+			margin-left: 0;
+			img{
+				max-width: 100%;
+			}
+		}
+		&__img-2{
+			margin-top: -45px;
+			margin-left: 0;
+			img{
+			max-width: 100%;				
+			}
+		}
+		&__img-3{
+			margin-top: -130px;
+			margin-left: 0;
+			img{
+				max-width: 100%;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1239px){
 	.tasks-projects{
 		&__content{
 			flex-direction: column;
@@ -560,6 +591,16 @@ body{
 	}
 }
 @media screen and (max-width: 1300px){
+	.difficult-tasks{
+		&__title{
+			font-size: 60px;
+		}
+		&__text{
+			max-width: 550px;
+		}
+	}
+}
+@media screen and (max-width: 1239px){
 	.difficult-tasks{
 		flex-direction: column;
 		align-items: center;

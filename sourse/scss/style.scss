@@ -1,5 +1,9 @@
+html{
+	overflow-x: hidden;
+}
 body{
 	background: #EEE3F4;
+	overflow: hidden;
 }
 /* blocks BEM */
 .block-title{
@@ -36,7 +40,7 @@ body{
 }
 .title{
 	@include title();
-	p{
+	h2{
 		@include gradient();
 		display: inline-block;
 	}
@@ -187,7 +191,8 @@ body{
 	}
 	&__title{
 		max-width: 100%;
-		text-align: center;
+		margin-left: 10px;
+		letter-spacing: -2.5px;
 	}
 	&__block-1{
 		display: block;
@@ -195,32 +200,68 @@ body{
 		display: flex;
 		.block-1__text{
 			margin-top: 78px;
-			p{
+			min-width: 569px;
+			h2{
 				@include text();
+			}
+			p{
+				font-size: 24px;
+				line-height: 28px;
+				color: #828282;
 			}
 		}
 		.block-1__subtitle{
 			@include subtitle();
 			margin-bottom: 12px;
 		}
+		.block-1__img{
+			margin-left: -105px;
+			max-width: 120%;
+		}
+	}
+	@media screen and (max-width: 1780px){
+		.block-1__img{
+			margin-left: -55px;
+			max-width: 75%;
+		}
+	}
+	@media screen and (max-width: 1490px){
+		.block-1__img{
+			margin-left: -55px;
+			max-width: 70%;
+		}
+		.block-1__text{
+			padding-left: 10px;
+			min-width: 579px;
+		}
+	}
+	@media screen and (max-width: 1380px){
+		.block-1__img{
+			margin-left: -85px;
+		}
+	}
+	@media screen and (max-width: 1300px){
+		.block-1__img{
+			margin-left: -105px;
+		}
 	}
 	&__block-2{
 		margin-bottom: 115px;
 		width: 100%;
-		max-width: 1437px;
-		margin: auto;
+		max-width: 100%;
+		padding-left: 37px;
 		display: flex;
 		.block-2__text{
 			margin-top: 193px;
 			margin-left: 42px;
 			p{
-				max-width: 540px;
+				max-width: 495px;
 				@include text();
 			}
 		}
 		.block-2__subtitle{
 			margin-bottom: 20px;
-			max-width: 550px;
+			max-width: 562px;
 			@include subtitle();
 		}
 		.block-2__img img{
@@ -236,16 +277,23 @@ body{
 		.block-3__title{
 			margin-top: 10px;
 			margin-bottom: -10px;
-			margin-right: 140px;
 		}
 	}
-	.block-1__img{
-		max-width: 120%;
+	.block-img{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+		& img{
+			max-width: 120%;
+		}
 	}
 }
 /* Calls */
 .calls{
-	margin-top: 61px;
+	margin-top: 10px;
 	&__title-block{
 		max-width: 1437px;
 		margin: auto;
@@ -258,6 +306,9 @@ body{
 	}
 	&__title{
 		font-size: 100px;
+		& span{
+			@include gradient();
+		}
 	}
 	&__title-text{
 		margin-top: 45px;
@@ -273,7 +324,6 @@ body{
 		max-width: 1367.59px;
 		margin: 0 auto;
 		.block__title{
-			margin-left: -50px;
 			transform: rotate(-3.19deg);
 		}
 		& img{
@@ -284,10 +334,10 @@ body{
 		}
 		.block__text{
 			margin-top: -123px;
-			margin-left: -185px;
 			max-width: 642px;
 			@include text();
 			font-size: 25px;
+			margin-left: -210px;
 		}
 	}
 	&__forwarding{
@@ -295,8 +345,10 @@ body{
 		padding-top: 27px;
 		display: flex;
 		justify-content: space-between;
-		max-width: 1437px;
+		max-width: 1457px;
 		margin: auto;
+		padding-left: 10px;
+		padding-right: 10px;
 		.forwarding__title{
 			@include subtitle();
 			font-size: 55px;
@@ -316,9 +368,10 @@ body{
 		}
 		.forwarding__col-2{
 			margin-top: -70px;
+			margin-right: -250px;
 		}
 		.forwarding__img{
-			max-width: 1090px;
+			max-width: 1437px;
 		}
 	}
 }
@@ -427,7 +480,8 @@ body{
 		display: flex;
 		justify-content: center;
 		@media screen and (max-width: 1400px){
-			max-width: 100%;
+			max-width: 100vw;
+			width: 100vw;
 		}
 		& img{
 			display: block;
