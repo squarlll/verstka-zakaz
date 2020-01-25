@@ -57,7 +57,7 @@
 }
 /* What */
 /* block-1 */
-@media screen and (max-width: 1670px){
+@media screen and (max-width: 1240px){
 	.what{
 		&__content-1{
 			display: flex;
@@ -73,13 +73,15 @@
 				}
 			}
 		}
-	}
-}
-@media screen and (max-width: 930px){
-	.what{
+		.block-1__img{
+			margin-left: 0;
+			max-width: 120%;
+		}
 		.block-1__text{
-			p{
-				max-width: 500px;
+			padding-left: 0;
+			max-width: 100%;
+			& p {
+				max-width: 100%;
 			}
 		}
 	}
@@ -99,6 +101,13 @@
 		}
 	}
 }
+@media screen and (max-width: 560px){
+	.block-1__text{
+		min-width: 0!important;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
 @media screen and (max-width: 540px){
 	.what{
 		&__title{
@@ -107,7 +116,7 @@
 		.block-1__text{
 			margin-top: 10px;
 			p{
-				max-width: 300px;
+				max-width: 100%;
 				font-size: 16px;
 			}
 		}
@@ -124,15 +133,27 @@
 	}
 }
 /* block-2 */
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 1240px){
 	.what{
 		&__block-2{
+			padding-left: 0;
 			flex-direction: column;
 			.block-2__text{
 				order: 0;
+				padding-left: 10px;
+				padding-right: 10px;
+				margin-left: 0;
+				text-align: center;
+				& p {
+					max-width: 100%;
+				}
+			}
+			.block-2__subtitle{
+				max-width: 100%;
 			}
 			.block-2__img{
 				order: 1;
+				margin: auto;
 			}
 		}
 	}
@@ -176,23 +197,10 @@
 	}
 }
 /* block-3 */
-@media screen and (max-width: 1300px){
-	.what{
-		&__block-3{
-			margin-right: 0;
-			.block-3__title{
-				margin-left: 80px;
-				margin-right: 0;
-			}
-		}
-	}
-}
 @media screen and (max-width: 1100px){
 	.what{
 		&__block-3{
-			margin-left: -100px;
 			.block-3__title{
-				margin-right: 0;
 				font-size: 60px;
 			}
 		}
@@ -201,9 +209,9 @@
 @media screen and (max-width: 900px){
 	.what{
 		&__block-3{
-			margin-left: -50px;
 			.block-3__title{
 				font-size: 40px;
+				line-height: 50px;
 			}
 		}
 	}
@@ -221,7 +229,6 @@
 @media screen and (max-width: 500px){
 	.what{
 		&__block-3{
-			margin-left: -100px;
 			.block-3__title{
 				font-size: 25px;
 			}
@@ -317,11 +324,27 @@
 	.calls{
 		&__block{
 			.block__title{
-				margin-left: 0;
 				font-size: 40px;
 			}
+		}
+	}
+}
+@media screen and (max-width: 990px){
+	.calls{
+		&__block{
 			.block__text{
-				margin-left: 10px;
+				align-self: flex-start;
+				padding-left: 10px;
+				margin-left: 0;
+			}
+		}
+	}
+}
+@media screen and (max-width: 950px){
+	.calls{
+		&__block{
+			.block__title{
+				font-size: 40px;
 			}
 		}
 	}
@@ -330,13 +353,10 @@
 	.calls{
 		&__block{
 			.block__title{
-				margin-left: 40px;
 				font-size: 30px;
 			}
 			.block__text{
 				margin-top: -70px;
-				max-width: 520px;
-				margin-left: 90px;
 			}
 		}
 	}
@@ -345,12 +365,10 @@
 	.calls{
 		&__block{
 			.block__title{
-				margin-left: 60px;
 				font-size: 30px;
 			}
 			.block__text{
 				margin-top: -50px;
-				max-width: 420px;
 				font-size: 20px;
 			}
 		}
@@ -360,13 +378,12 @@
 	.calls{
 		&__block{
 			.block__title{
-				margin-left: 0;
 				font-size: 20px;
 			}
 			.block__text{
 				margin-top: -30px;
-				margin-left: -50px;
-				max-width: 250px;
+				padding-left: 10px;
+				padding-right: 10px;
 				font-size: 16px;
 			}
 		}
@@ -376,12 +393,10 @@
 	.calls{
 		&__block{
 			.block__title{
-				margin-left: 0;
 				font-size: 16px;
 			}
 			.block__text{
 				margin-top: -30px;
-				margin-left: -10px;
 				max-width: 250px;
 				font-size: 16px;
 			}
@@ -389,7 +404,15 @@
 	}
 }
 /* calls__forwarding */
-@media screen and (max-width: 1700px){
+@media screen and (max-width: 1460px){
+	.forwarding__col-2{
+		margin-right: -350px!important;
+		& img{
+			max-width: 1091px!important;
+		}
+	}
+}
+@media screen and (max-width: 1240px){
 	.calls{
 		&__forwarding{
 			flex-direction: column;
@@ -403,7 +426,7 @@
 			}
 			.forwarding__col-2{
 				margin-top: 0;
-				margin-right: 80px;
+				margin-right: 0!important;
 			}
 		}
 	}
@@ -429,13 +452,15 @@
 		}
 	}
 }
-@media screen and (max-width: 800px){
-	.calls{
-		&__forwarding{
-			.forwarding__img{
-				max-width: 590px;
-			}
-		}
+@media screen and (max-width: 880px){
+	.forwarding__col-2{
+		align-self: flex-start;
+		margin-left: -10px;
+	}
+}
+@media screen and (max-width: 770px){
+	.forwarding__col-2 img{
+		max-width: 148%!important;
 	}
 }
 @media screen and (max-width: 600px){
