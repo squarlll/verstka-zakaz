@@ -1,5 +1,10 @@
+html {
+  overflow-x: hidden;
+}
+
 body {
   background: #EEE3F4;
+  overflow: hidden;
 }
 
 /* blocks BEM */
@@ -21,7 +26,7 @@ body {
   line-height: 94px;
 }
 
-.title p {
+.title h2 {
   background: -webkit-gradient(linear, left top, right top, color-stop(-0.39%, #4B48F5), color-stop(37.78%, #890041));
   background: -webkit-linear-gradient(left, #4B48F5 -0.39%, #890041 37.78%);
   background: -o-linear-gradient(left, #4B48F5 -0.39%, #890041 37.78%);
@@ -193,7 +198,8 @@ body {
 
 .what__title {
   max-width: 100%;
-  text-align: center;
+  margin-left: 10px;
+  letter-spacing: -2.5px;
 }
 
 .what__block-1 {
@@ -206,10 +212,17 @@ body {
 
 .what__block-1 .block-1__text {
   margin-top: 78px;
+  min-width: 569px;
+}
+
+.what__block-1 .block-1__text h2 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #828282;
 }
 
 .what__block-1 .block-1__text p {
-  font-weight: 400;
   font-size: 24px;
   line-height: 28px;
   color: #828282;
@@ -223,11 +236,46 @@ body {
   margin-bottom: 12px;
 }
 
+.what__block-1 .block-1__img {
+  margin-left: -105px;
+  max-width: 120%;
+}
+
+@media screen and (max-width: 1780px) {
+  .what .block-1__img {
+    margin-left: -55px;
+    max-width: 75%;
+  }
+}
+
+@media screen and (max-width: 1490px) {
+  .what .block-1__img {
+    margin-left: -55px;
+    max-width: 70%;
+  }
+  .what .block-1__text {
+    padding-left: 10px;
+    min-width: 579px;
+  }
+}
+
+@media screen and (max-width: 1380px) {
+  .what .block-1__img {
+    margin-left: -85px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .what .block-1__img {
+    margin-left: -105px;
+  }
+}
+
 .what__block-2 {
   margin-bottom: 115px;
   width: 100%;
-  max-width: 1437px;
-  margin: auto;
+  max-width: 100%;
+  padding-left: 37px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -239,7 +287,7 @@ body {
 }
 
 .what__block-2 .block-2__text p {
-  max-width: 540px;
+  max-width: 495px;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
@@ -248,7 +296,7 @@ body {
 
 .what__block-2 .block-2__subtitle {
   margin-bottom: 20px;
-  max-width: 550px;
+  max-width: 562px;
   font-family: 'SanFrancisco Semibold';
   font-size: 60px;
   line-height: 70px;
@@ -277,16 +325,28 @@ body {
 .what__block-3 .block-3__title {
   margin-top: 10px;
   margin-bottom: -10px;
-  margin-right: 140px;
 }
 
-.what .block-1__img {
+.what .block-img {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.what .block-img img {
   max-width: 120%;
 }
 
 /* Calls */
 .calls {
-  margin-top: 61px;
+  margin-top: 10px;
 }
 
 .calls__title-block {
@@ -303,6 +363,15 @@ body {
 
 .calls__title {
   font-size: 100px;
+}
+
+.calls__title span {
+  background: -webkit-gradient(linear, left top, right top, color-stop(-0.39%, #4B48F5), color-stop(37.78%, #890041));
+  background: -webkit-linear-gradient(left, #4B48F5 -0.39%, #890041 37.78%);
+  background: -o-linear-gradient(left, #4B48F5 -0.39%, #890041 37.78%);
+  background: linear-gradient(to right, #4B48F5 -0.39%, #890041 37.78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .calls__title-text {
@@ -332,7 +401,6 @@ body {
 }
 
 .calls__block .block__title {
-  margin-left: -50px;
   -webkit-transform: rotate(-3.19deg);
   -ms-transform: rotate(-3.19deg);
   transform: rotate(-3.19deg);
@@ -350,13 +418,13 @@ body {
 
 .calls__block .block__text {
   margin-top: -123px;
-  margin-left: -185px;
   max-width: 642px;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
   color: #828282;
   font-size: 25px;
+  margin-left: -210px;
 }
 
 .calls__forwarding {
@@ -368,8 +436,10 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  max-width: 1437px;
+  max-width: 1457px;
   margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .calls__forwarding .forwarding__title {
@@ -403,10 +473,11 @@ body {
 
 .calls__forwarding .forwarding__col-2 {
   margin-top: -70px;
+  margin-right: -250px;
 }
 
 .calls__forwarding .forwarding__img {
-  max-width: 1090px;
+  max-width: 1437px;
 }
 
 /* Control */
@@ -579,7 +650,8 @@ body {
 
 @media screen and (max-width: 1400px) {
   .calltracking__image {
-    max-width: 100%;
+    max-width: 100vw;
+    width: 100vw;
   }
 }
 

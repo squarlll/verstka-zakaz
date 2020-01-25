@@ -178,7 +178,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1239px) {
   .distance {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -309,6 +309,33 @@ body {
 }
 
 @media screen and (max-width: 1870px) {
+  .tasks-projects__block-text {
+    margin-bottom: 100px;
+    margin-left: -150px;
+  }
+  .tasks-projects__img-1 {
+    margin-left: 0;
+  }
+  .tasks-projects__img-1 img {
+    max-width: 100%;
+  }
+  .tasks-projects__img-2 {
+    margin-top: -45px;
+    margin-left: 0;
+  }
+  .tasks-projects__img-2 img {
+    max-width: 100%;
+  }
+  .tasks-projects__img-3 {
+    margin-top: -130px;
+    margin-left: 0;
+  }
+  .tasks-projects__img-3 img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 1239px) {
   .tasks-projects__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -626,6 +653,15 @@ body {
 }
 
 @media screen and (max-width: 1300px) {
+  .difficult-tasks__title {
+    font-size: 60px;
+  }
+  .difficult-tasks__text {
+    max-width: 550px;
+  }
+}
+
+@media screen and (max-width: 1239px) {
   .difficult-tasks {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
