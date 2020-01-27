@@ -161,6 +161,8 @@ body{
 	position: relative;
 	&-wrapper{
 		overflow: hidden;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 	&__title{
 		font-family: 'SanFrancisco Semibold', sans-serif;
@@ -171,7 +173,7 @@ body{
 		font-size: 80px;
 		line-height: 95.4%;
 		margin-bottom: 122px;
-		@media screen and (max-width: 1365px){
+		@media screen and (max-width: 1239px){
 			font-size: 70px;
 			text-align: center;
 			margin: auto;
@@ -248,7 +250,41 @@ body{
 		line-height: 95.4%;
 		color: #4F4F4F;
 	}
-	@media screen and (max-width: 1365px){
+	@media screen and (max-width: 1400px){
+		&__step-1{
+			margin-right: 11px;
+		}
+		&__step-2{
+			max-width: 354px;
+		}
+		&__step-1, &__step-2{
+			font-size: 34px;
+			line-height: 44px;
+		}
+		&__step-3, &__step-4{
+			font-size: 45px;
+		}
+		&__step-3{
+			max-width: 550px;
+			&:before{
+				top: 50px;
+				right: -170px;
+			}
+		}
+		&__step-4{
+			max-width: 500px;
+			margin-top: -120px;
+		}
+	}
+	@media screen and (max-width: 1300px){
+		&__step-1{
+			margin-right: -40px;
+		}
+		&__step-3:before{
+			right: -150px;
+		}
+	}
+	@media screen and (max-width: 1239px){
 		&__ipad{
 			position: relative;
 			right: 0;
@@ -263,7 +299,6 @@ body{
 				max-width: 120%;
 			}
 		}
-
 		&__step-1{
 			float: none;
 			padding-top: 20px;

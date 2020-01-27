@@ -349,7 +349,7 @@ body{
 /* Functions */
 .functions{
 	padding-top: 0;
-	margin: auto;
+	margin: 203px auto 0;
 	&__title{
 		font-family: 'SanFrancisco Semibold';
 		font-weight: 500;
@@ -358,7 +358,7 @@ body{
 		text-align: center;
 		color: #000;
 		max-width: 1437px;
-		margin: 72px auto -60px;
+		margin: 0 auto -60px;
 		max-width: 1050px;
 	}
 	&__content{
@@ -370,7 +370,7 @@ body{
 	}
 	&__text{
 		max-width: 1337px;
-		margin: -103px auto 0 auto;
+		margin: -176px auto 0 auto;
 		@include text();
 		font-size: 25px;
 		line-height: 34px;
@@ -563,12 +563,14 @@ body{
 }
 
 /* Widget */
-.widget{
+.widget {
 	max-width: 1437px;
 	margin: 95px auto 0;
 	position: relative;
 	&-wrapper{
 		overflow: hidden;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 	&__title{
 		font-family: 'SanFrancisco Semibold', sans-serif;
@@ -579,7 +581,7 @@ body{
 		font-size: 80px;
 		line-height: 95.4%;
 		margin-bottom: 122px;
-		@media screen and (max-width: 1365px){
+		@media screen and (max-width: 1239px){
 			font-size: 70px;
 			text-align: center;
 			margin: auto;
@@ -656,7 +658,41 @@ body{
 		line-height: 95.4%;
 		color: #4F4F4F;
 	}
-	@media screen and (max-width: 1365px){
+	@media screen and (max-width: 1400px){
+		&__step-1{
+			margin-right: 11px;
+		}
+		&__step-2{
+			max-width: 354px;
+		}
+		&__step-1, &__step-2{
+			font-size: 34px;
+			line-height: 44px;
+		}
+		&__step-3, &__step-4{
+			font-size: 45px;
+		}
+		&__step-3{
+			max-width: 550px;
+			&:before{
+				top: 50px;
+				right: -170px;
+			}
+		}
+		&__step-4{
+			max-width: 500px;
+			margin-top: -120px;
+		}
+	}
+	@media screen and (max-width: 1300px){
+		&__step-1{
+			margin-right: -40px;
+		}
+		&__step-3:before{
+			right: -150px;
+		}
+	}
+	@media screen and (max-width: 1239px){
 		&__ipad{
 			position: relative;
 			right: 0;
@@ -671,7 +707,6 @@ body{
 				max-width: 120%;
 			}
 		}
-
 		&__step-1{
 			float: none;
 			padding-top: 20px;
@@ -1164,17 +1199,6 @@ body{
 	display: flex;
 	justify-content: space-between;
 	position: relative;
-	&-wrapper{
-		width: 100%;
-		max-width: 100%;
-		height: 700px;
-		@media screen and (max-width: 1880px){
-			overflow: hidden;
-		}
-		@media screen and (max-width: 1350px){
-			overflow: visible;
-		}
-	}
 	&__text{
 		margin-top: 40px;
 		padding-left: 150px;
@@ -1198,7 +1222,7 @@ body{
 		max-width: 582px;
 		margin-top: 17px;
 	}
-	&__functional{
+	&__images{
 		display: -webkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
@@ -1219,8 +1243,6 @@ body{
 	&__button{
 		background: #F4F4F4;
 		max-width: 437px;
-		margin-top: 75px;
-		margin-left: 5px;
 		& a{
 			background: linear-gradient(55.06deg, #C14079 4.82%, #2D499D 63.47%);
 			-webkit-background-clip: text;
@@ -1232,22 +1254,21 @@ body{
 		}
 	}
 	@media screen and (max-width: 1880px){
-		&__functional{
+		&__images{
 			margin-top: 0;
 			margin-right: -36px;
 		}
 	}
 	@media screen and (max-width: 1560px){
-		&__functional{
+		&__images{
 			position: absolute;
 			right: 50px;
 		}
 	}
-	@media screen and (max-width: 1350px){
-		&__functional{
-			top: 440px;
-			left: 50%;
-			transform: translate(-50%);
+	@media screen and (max-width: 1232px){
+		&__images{
+			top: 320px;
+			left: 50px;
 		}
 	}
 	@media screen and (max-width: 940px){
@@ -1262,14 +1283,10 @@ body{
 		&__subtitle{
 			font-size: 22px;
 			line-height: 24px;
-			max-width: 100%;
-		}
-		&__button{
-			margin: 45px auto 0;
 		}
 	}
-	@media screen and (max-width: 767px){
-		&__functional{
+	@media screen and (max-width: 835px){
+		&__images{
 			display: none;
 		}
 	}
@@ -1301,6 +1318,11 @@ body{
 		&__subtitle{
 			font-size: 16px;
 			line-height: 18px;
+		}
+	}
+	@media screen and (max-width: 835px){
+		&__images{
+			display: none;
 		}
 	}
 }
