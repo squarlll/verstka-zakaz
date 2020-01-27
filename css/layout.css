@@ -1003,6 +1003,18 @@ body {
 }
 
 @media screen and (max-width: 1760px) {
+  .structure-img {
+    margin-top: 30px;
+  }
+  .structure-img img {
+    left: -430px;
+  }
+  .structure__text-img {
+    margin-top: 210px;
+  }
+}
+
+@media screen and (max-width: 1239px) {
   .structure__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1019,6 +1031,7 @@ body {
     max-width: 100%;
   }
   .structure-img img {
+    margin-top: 60px;
     min-width: 100%;
     max-width: 100vw;
     left: 50%;
@@ -1034,6 +1047,7 @@ body {
     margin-left: 0;
   }
   .structure__text-img {
+    margin-top: 170px;
     max-width: 100%;
   }
 }

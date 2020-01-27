@@ -283,6 +283,7 @@
 			left: -280px;
 		}
 		&__telephone-2{
+			margin-bottom: 100px;
 			margin-left: 200px;
 			img{
 				max-width: 500px;
@@ -290,13 +291,6 @@
 		}
 		&__block-text{
 			margin-top: 0;
-		}
-	}
-}
-@media screen and (max-width: 1470px){
-	.notifications{
-		&__telephone-2{
-			margin-left: 50px;
 		}
 	}
 }
@@ -308,7 +302,6 @@
 			left: -280px;
 		}
 		&__telephone-2{
-			margin-left: 40px;
 			img{
 				max-width: 500px;
 			}
@@ -326,7 +319,7 @@
 		}
 	}
 }
-@media screen and (max-width: 950px){
+@media screen and (max-width: 1239px){
 	.notifications{
 		justify-content: center;
 		&__telephone-1{
@@ -342,8 +335,40 @@
 }
 @media screen and (max-width: 830px){
 	.notifications{
+		flex-direction: column;
+		align-items: center;
+		&__telephone-block{
+			order: 2;
+		}
+		&__block-text{
+			order: 1;
+			margin-top: -20px;
+			text-align: center;
+			margin-left: 0;
+		}
 		&__telephone-2{
-			margin-left: -80px;
+			margin-left: 0;
+			img{
+				max-width: 400px;
+			}
+			margin-top: 0;
+		}
+		&__title{
+			font-size: 30px;
+			margin-bottom: 0;
+		}
+		&__text{
+			margin-bottom: -40px;
+			max-width:300px;
+			font-size: 14px;
+			line-height: 18px;
+		}
+	}
+}
+@media screen and (max-width: 830px){
+	.notifications{
+		&__telephone-2{
+			margin-left: 0;
 			img{
 				max-width: 400px;
 			}
@@ -360,27 +385,8 @@
 		}
 	}
 }
-@media screen and (max-width: 540px){
-	.notifications{
-		flex-direction: column;
-		align-items: center;
-		&__telephone-block{
-			order: 2;
-		}
-		&__block-text{
-			order: 1;
-			margin-top: -20px;
-			text-align: center;
-			margin-left: 0;
-		}
-		&__telephone-2{
-			margin-top: 0px;
-			margin-left: 0;
-		}
-	}	
-}
 @media screen and (min-width: 831px){
 	.notifications{
-		padding-top: 250px;
+		margin-top: 250px;
 	}	
 }

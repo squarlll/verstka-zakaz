@@ -42,7 +42,9 @@ body{
 	@include title();
 	h2{
 		@include gradient();
-		display: inline-block;
+	}
+	span{
+		@include gradient();
 	}
 }
 @mixin button($color) {
@@ -246,9 +248,9 @@ body{
 		}
 	}
 	&__block-2{
-		margin-bottom: 115px;
+		margin: 0 auto 115px;
 		width: 100%;
-		max-width: 100%;
+		max-width: 1920px;
 		padding-left: 37px;
 		display: flex;
 		.block-2__text{
@@ -317,13 +319,14 @@ body{
 		@include text();
 	}
 	&__block{
-		padding-bottom: 180px;
+		margin-top: 154px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		max-width: 1367.59px;
+		max-width: 1467.59px;
 		margin: 0 auto;
 		.block__title{
+			margin-top: 100px;
 			transform: rotate(-3.19deg);
 		}
 		& img{
@@ -341,14 +344,11 @@ body{
 		}
 	}
 	&__forwarding{
-		margin-bottom: 190px;
-		padding-top: 27px;
 		display: flex;
 		justify-content: space-between;
 		max-width: 1457px;
-		margin: auto;
-		padding-left: 10px;
-		padding-right: 10px;
+		width: calc(100% - 20px);
+		margin: 120px auto 0;
 		.forwarding__title{
 			@include subtitle();
 			font-size: 55px;
@@ -377,9 +377,9 @@ body{
 }
 /* Control */
 .control{
-	margin-top: 13px;
 	max-width: 1437px;
-	margin: auto;
+	width: calc(100% - 20px);
+	margin: 121px auto 0;
 	&__title-block{
 		margin: 0 0 154px 242px;
 	}
@@ -392,6 +392,7 @@ body{
 		}
 	}
 	&__text{
+		@include text();
 		margin-top: 20px;
 		line-height: 29px;
 	}
@@ -428,7 +429,7 @@ body{
 		padding-top: 27px;
 		display: flex;
 		justify-content: center;
-		@media screen and (max-width: 1400px){
+		@media screen and (max-width: 1239px){
 			flex-direction: column;
 			align-items: center;
 			& .control__col-1{
@@ -479,9 +480,21 @@ body{
 		overflow: visible;
 		display: flex;
 		justify-content: center;
-		@media screen and (max-width: 1400px){
+		@media screen and (max-width: 1239px){
 			max-width: 100vw;
 			width: 100vw;
+			.calltracking__image {
+			    position: relative;
+			    max-width: 985px;
+			    max-height: 100%;
+			    overflow: visible;
+			    display: -webkit-box;
+			    display: -ms-flexbox;
+			    display: flex;
+			    -webkit-box-pack: center;
+			    -ms-flex-pack: center;
+			    justify-content: center;
+			}
 		}
 		& img{
 			display: block;
@@ -508,7 +521,7 @@ body{
 		line-height: 29px;
 		color: #828282;
 	}
-	@media screen and (max-width: 1400px){
+	@media screen and (max-width: 1239px){
 		flex-direction: column;
 		align-items: center;
 		&__about{
@@ -532,7 +545,7 @@ body{
 		}
 	}
 }
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1239px){
 	.application__image{
 		display: none;
 	}
@@ -544,6 +557,7 @@ body{
 /* application */
 .application{
 	padding-top: 173px;
+	width: calc(100% - 20px);
 	max-width: 1413px;
 	margin: auto;
 	display: -webkit-flex;

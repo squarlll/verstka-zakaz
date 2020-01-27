@@ -351,6 +351,7 @@
     left: -280px;
   }
   .notifications__telephone-2 {
+    margin-bottom: 100px;
     margin-left: 200px;
   }
   .notifications__telephone-2 img {
@@ -361,12 +362,6 @@
   }
 }
 
-@media screen and (max-width: 1470px) {
-  .notifications__telephone-2 {
-    margin-left: 50px;
-  }
-}
-
 @media screen and (max-width: 1300px) {
   .notifications {
     margin-bottom: 120px;
@@ -374,9 +369,6 @@
   .notifications__telephone-1 img {
     max-width: 500px;
     left: -280px;
-  }
-  .notifications__telephone-2 {
-    margin-left: 40px;
   }
   .notifications__telephone-2 img {
     max-width: 500px;
@@ -394,7 +386,7 @@
   }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1239px) {
   .notifications {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -412,25 +404,6 @@
 }
 
 @media screen and (max-width: 830px) {
-  .notifications__telephone-2 {
-    margin-left: -80px;
-    margin-top: 0px;
-  }
-  .notifications__telephone-2 img {
-    max-width: 400px;
-  }
-  .notifications__title {
-    font-size: 30px;
-    margin-bottom: 0;
-  }
-  .notifications__text {
-    max-width: 300px;
-    font-size: 14px;
-    line-height: 18px;
-  }
-}
-
-@media screen and (max-width: 540px) {
   .notifications {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -454,13 +427,45 @@
     margin-left: 0;
   }
   .notifications__telephone-2 {
-    margin-top: 0px;
     margin-left: 0;
+    margin-top: 0;
+  }
+  .notifications__telephone-2 img {
+    max-width: 400px;
+  }
+  .notifications__title {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+  .notifications__text {
+    margin-bottom: -40px;
+    max-width: 300px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .notifications__telephone-2 {
+    margin-left: 0;
+    margin-top: 0px;
+  }
+  .notifications__telephone-2 img {
+    max-width: 400px;
+  }
+  .notifications__title {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+  .notifications__text {
+    max-width: 300px;
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 
 @media screen and (min-width: 831px) {
   .notifications {
-    padding-top: 250px;
+    margin-top: 250px;
   }
 }

@@ -135,26 +135,16 @@ body{
 @media screen and (max-width: 700px){
 	.widget{
 		&__title{
-			font-size: 60px;
+			margin-bottom: 20px;
+			max-width: 350px;
+			font-size: 35px;
 			line-height: 1.2;
 		}
 		&__text{
-			max-width: 500px;
-			font-size: 20px;
-		}
-		&__subtitle{
-			font-size: 20px;
-		}
-	}
-}
-@media screen and (max-width: 700px){
-	.widget{
-		&__title{
-			max-width: 350px;
-			font-size: 35px;
-		}
-		&__text{
+			padding: 0 20px;
 			max-width: 400px;
+			font-size: 20px;
+			line-height: 1.5;
 		}
 		&__subtitle{
 			line-height: 1.2;
@@ -164,7 +154,6 @@ body{
 		}
 	}
 }
-
 /* Widget */
 .widget-2{
 	max-width: 1437px;
@@ -432,7 +421,7 @@ body{
 /* Orders */
 .orders{
 	max-width: 1500px;
-	margin: 0 auto;
+	margin: 350px auto 0;
 	display: flex;
 	justify-content: center;
 	&__title{

@@ -1,5 +1,5 @@
 body{
-	background: #EEE3F4;
+	background: #EAE2EB;
 }
 /* blocks BEM */
 .block-title{
@@ -225,7 +225,7 @@ body{
 }
 @media screen and (max-width: 1700px){
 	.customer-earnings{
-		margin-top: 0;
+		margin-top: 50px;
 	}
 }
 @media screen and (max-width: 1460px){
@@ -328,6 +328,7 @@ body{
 }
 @media screen and (max-width: 1890px){
 	.introduction{
+		margin-top: 0;
 		&-img{
 			margin-left: 0;
 		}
@@ -342,6 +343,13 @@ body{
 }
 @media screen and (max-width: 1300px){
 	.introduction{
+		&-img{
+			margin-left: -100px;
+		}
+	}
+}
+@media screen and (max-width: 1239px){
+	.introduction{
 		flex-direction: column;
 		align-items: center;
 		&__block-text{
@@ -351,6 +359,9 @@ body{
 		}
 		&__subtitle{
 			margin-bottom: 20px;
+		}
+		&-img{
+			margin-left: 0;
 		}
 	}
 }
@@ -366,7 +377,9 @@ body{
 }
 /* Development */
 .development{
+	margin-top: 200px;
 	display: flex;
+	justify-content: center;
 	&__col-1{
 		margin-top: 310px;
 		display: flex;
@@ -403,6 +416,11 @@ body{
 		@include text();
 	}
 }
+@media screen and (max-width: 2415px){
+	.development{
+		justify-content: flex-start;
+	}
+}
 @media screen and (max-width: 1920px){
 	.development{
 		&-img-1{
@@ -419,6 +437,22 @@ body{
 	}
 }
 @media screen and (max-width: 1520px){
+	.development{
+		margin-top: 350px;
+		&__text-2{
+			max-width: 462px;
+		}
+	}
+}
+@media screen and (max-width: 1320px){
+	.development{
+		margin-top: 350px;
+		&__text-2{
+			max-width: 362px;
+		}
+	}
+}
+@media screen and (max-width: 1239px){
 	.development{
 		flex-direction: column;
 		align-items: center;
@@ -449,6 +483,7 @@ body{
 			}
 		}
 		&__text-2{
+			max-width: 662px;
 			margin-top: -80px;
 			margin-left: 0;
 		}
@@ -542,5 +577,160 @@ body{
 	}
 	&__block-text-2{
 
+	}
+}
+/* Money */
+.money{
+	max-width: 1230px;
+	margin: 0 auto;
+	display: flex;
+	&__col{
+		&:last-child{
+			margin-left: 170px;
+		}
+	}
+	&__title{
+		margin-bottom: 75px;
+		max-width: 700.7px;
+		font-weight: 700;
+		font-size: 70px;
+		line-height: 95.19%;
+		text-transform: uppercase;
+		color: #000000;
+		transform: rotate(-3.02deg);
+	}
+	&__text{
+		max-width: 600px;
+		@include text();
+	}
+	&__block-img{
+		display: flex;
+	}
+	&__col-img{
+		&:first-child{
+			margin-top: -35px;
+			margin-right: 15px;
+		}
+	}
+	&-img{
+		width: 176px;
+		height: 152px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #EAE2EB;
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+		border-radius: 20px;
+		&:first-child{
+			margin-bottom: 15px;
+		}
+	}
+	@media screen and (max-width: 1300px){
+		&__col{
+			&:last-child{
+				margin-left: 100px;
+			}
+		}
+	}
+	@media screen and (max-width: 1239px){
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 100px;
+		&__title{
+			margin-bottom: 30px;
+			text-align: center;
+			font-size: 40px;
+		}
+		&__text{
+			text-align: center;
+		}
+		&__col{
+			&:last-child{
+				margin-top: 100px;
+				margin-left: 0;
+			}
+		}
+	}
+	@media screen and (max-width: 770px){
+		&__col{
+			&:first-child{
+				padding: 0 10px;
+			}
+		}
+		&__title{
+			font-size: 30px;
+		}
+		&__text{
+			font-size: 18px;
+		}
+	}
+	@media screen and (max-width: 400px){
+		&__block-img{
+
+			flex-direction: column;
+		}
+		&__col{
+			&:last-child{
+				margin-top: 40px;
+			}
+		}
+		&__col-img{
+			&:first-child{
+				margin-top: 0;
+				margin-right: 0;
+			}
+		}
+		&-img{
+			margin-bottom: 15px;
+		}
+	}
+	@media screen and (max-width: 363px){
+		&__title{
+			font-size: 25px;
+		}
+	}
+}
+/* Benefit */
+.benefit{
+	max-width: 1230px;
+	margin: 160px auto 0;
+	&__title{
+		margin-bottom: 15px;
+		font-weight: 700;
+		font-size: 70px;
+		line-height: 95.19%;
+		text-transform: uppercase;
+		color: #000000;
+	}
+	&__text{
+		max-width: 737px;
+		@include text();
+	}
+	@media screen and (max-width: 1239px){
+		&__title{
+			text-align: center;
+			font-size: 40px;
+		}
+		&__text{
+			margin: 0 auto;
+			text-align: center;
+		}
+	}
+	@media screen and (max-width: 770px){
+		padding: 0 10px;
+		&__title{
+			line-height: 1.5;
+			font-size: 30px;
+		}
+		&__text{
+			max-width: 600px;
+			font-size: 18px;
+		}
+	}
+	@media screen and (max-width: 360px){
+		&__title{
+			font-size: 25px;
+		}
 	}
 }
