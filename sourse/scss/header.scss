@@ -26,6 +26,11 @@
 		height: 9px;
 		margin: 10px;
 		box-sizing: content-box;
+		transition: .5s;
+		& span{
+			transition: .5s;
+			transform-origin: center;
+		}
 		& span:first-child{
 			display: block;
 			width: 17px;
@@ -191,4 +196,17 @@
 }
 .menu-active{
 	height: 100vh!important;
+}
+.hamburger-active{
+	& span{
+		transition: .5s;
+	}
+	& span:first-child{
+		transform: rotate(45deg);
+		top: 0px;
+	}
+	& span:last-child{
+		transform: rotate(-45deg);
+		top: 0px;
+	}
 }
