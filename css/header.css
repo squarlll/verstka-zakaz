@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .header {
   height: 55px;
   position: fixed;
@@ -189,7 +188,7 @@
 .header-bottom {
   position: fixed;
   top: 55px;
-  padding-top: 1п4px;
+  padding-top: 14px;
   padding-bottom: 23px;
   width: 100%;
   background: #F2F2F2;
@@ -211,6 +210,10 @@
   align-items: center;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.header-bottom__wrapper a:first-child {
+  margin-left: 0;
 }
 
 .header__item {
@@ -348,6 +351,10 @@
   border-bottom: none !important;
   margin-top: 20px;
   margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 20px !important;
+  letter-spacing: 1px;
 }
 
 .menu__second-level .level__item-text {

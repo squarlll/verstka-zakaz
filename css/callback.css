@@ -53,7 +53,7 @@ body {
 
 /* Widget */
 .widget {
-  margin-top: 245px;
+  margin-top: 312px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,7 +136,7 @@ body {
 /* Widget */
 .widget-2 {
   max-width: 1437px;
-  margin: 95px auto 0;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -144,19 +144,18 @@ body {
   overflow: hidden;
   padding-left: 10px;
   padding-right: 10px;
+  margin-top: -42px;
 }
 
 .widget-2__title {
   font-family: 'SanFrancisco Semibold', sans-serif;
   max-width: 741px;
-  background: -webkit-gradient(linear, left top, right top, from(#02A5A2), to(#0471BF));
-  background: -webkit-linear-gradient(left, #02A5A2, #0471BF);
-  background: -o-linear-gradient(left, #02A5A2, #0471BF);
-  background: linear-gradient(to right, #02A5A2, #0471BF);
+  background: -webkit-gradient(linear, left top, right top, from(#4B48F5), to(#890041));
+  background: -webkit-linear-gradient(left, #4B48F5, #890041);
+  background: -o-linear-gradient(left, #4B48F5, #890041);
+  background: linear-gradient(to right, #4B48F5, #890041);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 80px;
-  line-height: 95.4%;
   margin-bottom: 122px;
 }
 
@@ -495,6 +494,7 @@ body {
 }
 
 .orders__title {
+  margin-top: -11px;
   margin-bottom: 30px;
   max-width: 788px;
 }
@@ -529,6 +529,7 @@ body {
   -o-transition: 1s;
   transition: 1s;
   max-width: 420px;
+  margin-top: 38px;
 }
 
 .orders__button:before {
@@ -578,7 +579,6 @@ body {
 }
 
 .orders__social .social__item {
-  padding-top: 40px;
   margin: 0 7.5px;
   width: 194px;
   height: 167px;
@@ -589,9 +589,6 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -599,10 +596,20 @@ body {
   -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
+  position: relative;
+  letter-spacing: -.6px;
 }
 
 .orders__social .social__item img {
-  margin-bottom: 30px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .orders__social .social__name {
@@ -611,6 +618,12 @@ body {
   line-height: 16px;
   text-align: center;
   color: #828282;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
 }
 
 @media screen and (max-width: 1540px) {
@@ -654,6 +667,7 @@ body {
   }
   .orders__social {
     margin: 0 auto;
+    padding-left: 0;
   }
 }
 
@@ -661,11 +675,17 @@ body {
   .orders {
     padding: 0;
   }
+  .orders__col:last-child {
+    width: 100%;
+  }
   .orders__social {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    width: 100%;
+    padding-left: 7.5px;
+    padding-right: 7.5px;
   }
   .orders__social .social__row {
     -webkit-box-orient: vertical;
@@ -673,9 +693,14 @@ body {
     -ms-flex-direction: column;
     flex-direction: column;
     margin: 0;
+    width: 50%;
   }
   .orders__social .social__item {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    width: calc(100% - 15px);
+  }
+  .orders__social .social__name {
+    font-size: 12px;
   }
 }
 
@@ -695,14 +720,9 @@ body {
     font-size: 18px;
     padding: 10px 20px;
   }
-  .orders__social {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-  .orders__social .social__item {
-    margin: 20px 0;
+  .orders .social__item {
+    height: 130px;
+    padding-top: 0;
   }
 }
 
@@ -1153,7 +1173,7 @@ body {
 /* Clients */
 .clients {
   max-width: 960px;
-  margin: 330px auto 0;
+  margin: 338px auto 0;
 }
 
 .clients__title {
@@ -1256,4 +1276,21 @@ body {
   .clients__title {
     font-size: 25px;
   }
+}
+
+.free-connection ~ footer {
+  background: #000;
+  color: #fff;
+  margin-top: 183px;
+  padding-top: 144px;
+  padding-bottom: 147px;
+}
+
+.free-connection ~ footer .title span {
+  background: -webkit-gradient(linear, left top, right top, from(#F58948), to(#D57AA5));
+  background: -webkit-linear-gradient(left, #F58948, #D57AA5);
+  background: -o-linear-gradient(left, #F58948, #D57AA5);
+  background: linear-gradient(to right, #F58948, #D57AA5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

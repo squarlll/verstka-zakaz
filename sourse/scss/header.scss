@@ -141,7 +141,7 @@
 	&-bottom{
 		position: fixed;
 	    top: 55px;
-	    padding-top: 1п4px;
+	    padding-top: 14px;
 	    padding-bottom: 23px;
 	    width: 100%;
 	    background: #F2F2F2;
@@ -157,6 +157,9 @@
 			align-items: center;
 			padding-left: 10px;
 			padding-right: 10px;
+			& a:first-child{
+				margin-left: 0;
+			}
 		}
 	}
 	&__item{
@@ -275,6 +278,10 @@
 		border-bottom: none!important;
 		margin-top: 20px;
 		margin-bottom: 20px;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 16px;
+		line-height: 20px!important;
+		letter-spacing: 1px;
 	}
 	.level__item-text{
 		padding-left: 30px;
