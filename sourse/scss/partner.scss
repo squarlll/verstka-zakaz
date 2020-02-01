@@ -531,58 +531,255 @@ body{
 .business{
 	display: flex;
 	flex-direction: column;
-	max-width: 990px;
-	margin: 0 auto;
-	&__row-1{
-
+	align-items: center;
+	&__title{
+		max-width: 600.7px;
+		font-weight: 700;
+		font-size: 70px;
+		line-height: 95.19%;
+		text-transform: uppercase;
+		color: #000000;
+		transform: rotate(-3.02deg);
 	}
-	&__col-1{
-
+	&__row{
+		display: flex;
 	}
-	&-img-1{
-		img{
-
+	&__item{
+		margin-top: 90px;
+		margin-left: 200px;
+		.business__block-text{
+			max-width: 660px;
+			margin-top: -95px;
+			margin-left: 170px;
 		}
 	}
-	&__block-text-1{
+	&__item-2{
+		margin-top: 165px;
+		margin-left: 100px;
+		.business__text-img{
+			margin-left: 135px;
+		}
+		.business-img{
+			margin-left: -30px;
+		}
+	}
+	&__item-3{
+		margin-top: 380px;	
+		.business__text-img{
+			margin-left: -60px;
+			margin-bottom: -10px;
+		}
+		.business-img{
+			position: relative;
+			left: -250px;
+		}
+		.business__block-text{
+			max-width: 684px;
+			margin-top: -90px;
+			margin-left: -80px;
+		}
+	}
+	&__text-img{
+		font-family: 'Segoe Script', sans-serif;
+		font-weight: 400;
+		font-size: 40px;
+		line-height: 100.19%;
+	}
+	&__block-text{
 
 	}
 	&__subtitle{
-
+		margin-bottom: 10px;
 	}
 	&__text{
-
+		max-width: 942px;
+		@include text();
 	}
-	&__block-img-1{
-
-	}
-	&__text-img{
-
-	}
-	&-img-2{
-		img{
-
+	@media screen and (max-width: 1850px){
+		&__item-2{
+			margin-left: 200px;
 		}
 	}
-	&__col-2{
-
-	}
-	&__block-img-2{
-
-	}
-	&-img-3{
-		img{
-
+	@media screen and (max-width: 1650px){
+		&__item{
+			margin-left: 250px;
+		}
+		&__item-2{
+			margin-left: 300px;
 		}
 	}
-	&__block-text-2{
-
+	@media screen and (max-width: 1550px){
+		padding: 0 10px;
+		&__item{
+			margin-left: 250px;
+			.business-img{
+				img{
+					max-width: 880px;
+				}	
+			}
+		}
+		&__item-2{
+			.business__text-img{
+				margin-left: 80px;
+			}
+			.business-img{
+				img{
+					max-width: 605px;
+				}
+			}
+		}
+		&__item-3{
+			margin-left: 70px;
+			.business-img{
+				img{
+					max-width: 810px;
+				}
+			}
+			.business__block-text{
+				max-width: 484px;
+				margin-top: -90px;
+				margin-left: -140px;
+			}
+		}
+	}
+	@media screen and (max-width: 1440px){
+		&__title{
+			max-width: 800px;
+		}
+	}
+	@media screen and (max-width: 1270px){
+		padding: 0 10px;
+		&__item{
+			margin-left: 250px;
+			.business-img{
+				img{
+					max-width: 705px;
+				}	
+			}
+		}
+		&__item-2{
+			.business__text-img{
+				margin-left: 80px;
+			}
+			.business-img{
+				img{
+					max-width: 505px;
+				}
+			}
+		}
+		&__item-3{
+			margin-left: 170px;
+			.business__text-img{
+				margin-left: -120px;
+			}
+			.business-img{
+				img{
+					max-width: 650px;
+				}
+			}
+			.business__block-text{
+				max-width: 484px;
+				margin-top: -90px;
+				margin-left: -140px;
+			}
+		}
+	}
+	@media screen and (max-width: 1239px){
+		margin-top: 100px;
+		&__row{
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}	
+		&__title{
+			margin-bottom: 30px;
+			font-size: 50px;
+		}
+		&__subtitle{
+			font-size: 25px;
+		}
+		&__text{
+			margin: 0 auto;
+			max-width: 742px;
+		}
+		&__item{
+			margin: 90px auto 0;
+			.business__block-text{
+				margin: 0 auto;
+			}
+			.business-img{
+				img{
+					max-width: 100%;
+				}
+			}
+		}
+		&__item-2{
+			margin-top: 165px;
+			margin-left: 0;
+			.business__text-img{
+				margin: 0 auto;
+			}
+			.business-img{
+				margin-left: 0;
+			}
+			.business-img{
+				img{
+					max-width: 70%;
+				}
+			}
+		}
+		&__item-3{
+			margin: 165px auto 0;	
+			.business__text-img{
+				margin-left: 0;
+				margin-bottom: 0;
+			}
+			.business-img{
+				left: 0;
+				img{
+					max-width: 100%;
+				}
+			}
+			.business__block-text{
+				margin: 0 auto 0;
+				max-width: 684px;
+			}
+		}
+	}
+	@media screen and (max-width: 700px){
+		&__title{
+			font-size: 30px;
+		}
+		&__text{
+			font-size: 20px;
+		}
+		&__text-img{
+			font-size: 25px;
+		}		
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Money */
 .money{
 	max-width: 1230px;
-	margin: 0 auto;
+	margin: 170px auto 0;
 	display: flex;
 	&__col{
 		&:last-child{

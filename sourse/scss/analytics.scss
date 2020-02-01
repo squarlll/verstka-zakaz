@@ -429,6 +429,7 @@ body{
 		}
 		&__block-text{ 
 			font-size: 18px;
+			line-height: 1.7;
 		}
 	}
 }
@@ -519,6 +520,72 @@ body{
 		}
 		&__text{
 			font-size: 20px;
+		}
+	}
+}
+/* Google-analytics */
+.google-analytics{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 210px auto 0;
+	&__title{
+		margin-left: -335px;
+		max-width: 875px;
+		@include title();
+	}
+	&__content{
+		margin-top: 40px;
+		margin-left: -40px;
+		display: flex;
+	}
+	&__col{
+
+	}
+	&-img{
+		img{
+
+		}
+	}
+	&__text{
+		max-width: 700px;
+		font-family: 'Segoe Script', sans-serif;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 124.1%;
+	}
+	&__block-text-1{
+		width: 342px;
+		height: 234px;
+		max-width: 312px;
+		font-family: 'Segoe Script', sans-serif;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 124.1%;
+		background: url("../img/analytics/Ellipse-17.png") no-repeat center / cover;
+		&:before{
+			content:'';
+			width: 135.36px;
+			height: 139.5px;
+			display: inline-block;
+			background: url("../img/analytics/vector-11.png") no-repeat center / cover;
+		}
+	}
+	&__block-text-2{
+		width: 270.5px;
+		height: 173.5px;
+		max-width: 312px;
+		font-family: 'Segoe Script', sans-serif;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 124.1%;
+		background: url("../img/analytics/Ellipse-18.png") no-repeat center / cover;
+		&:after{
+			content:'';
+			width: 185.63px;
+			height: 125px;
+			display: inline-block;
+			background: url("../img/analytics/vector-12.png") no-repeat center / cover;
 		}
 	}
 }
