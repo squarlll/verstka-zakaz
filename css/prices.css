@@ -1,3 +1,4 @@
+/* mixins */
 html {
   overflow-x: hidden;
 }
@@ -7,11 +8,43 @@ body {
   overflow: hidden;
 }
 
-/* mixins */
 /* Prices */
 .prices {
   max-width: 1430px;
+  margin: 186px auto 0;
+}
+
+.prices__button-wrapper {
+  display: inline-block;
+  position: relative;
+  background: -webkit-linear-gradient(354.53deg, #4B48F5 -0.39%, #890041 37.78%);
+  background: -o-linear-gradient(354.53deg, #4B48F5 -0.39%, #890041 37.78%);
+  background: linear-gradient(95.47deg, #4B48F5 -0.39%, #890041 37.78%);
+  border-radius: 30px;
+  padding: 1px;
   margin: 0 auto;
+  text-align: center;
+}
+
+.prices__button {
+  display: inline-block;
+  text-align: center;
+  padding: 16px 35px;
+  color: #fff;
+  background: #E5E5E5;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.prices__button a {
+  font-size: 18px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(-0.39%, #4B48F5), color-stop(37.78%, #890041));
+  background: -webkit-linear-gradient(left, #4B48F5 -0.39%, #890041 37.78%);
+  background: -o-linear-gradient(left, #4B48F5 -0.39%, #890041 37.78%);
+  background: linear-gradient(to right, #4B48F5 -0.39%, #890041 37.78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
 }
 
 .prices h2 {
@@ -59,52 +92,11 @@ body {
 }
 
 .prices__button {
-  font-size: 24px;
-  line-height: 28px;
-  margin-top: 45px;
-  max-width: 470px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-  border-radius: 100px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  background: #E5E5E5;
-  background-clip: padding-box;
-  border: solid 1px transparent;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
   max-width: 310px;
+}
+
+.prices__button-wrapper {
   margin: 170px 0;
-}
-
-.prices__button:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  margin: -1px;
-  border-radius: inherit;
-  background: -webkit-linear-gradient(354.53deg, #4B48F5 -0.39%, #890041 37.78%);
-  background: -o-linear-gradient(354.53deg, #4B48F5 -0.39%, #890041 37.78%);
-  background: linear-gradient(95.47deg, #4B48F5 -0.39%, #890041 37.78%);
-}
-
-.prices__button a {
-  background: -webkit-linear-gradient(354.53deg, #4B48F5 -0.39%, #890041 37.78%);
-  background: -o-linear-gradient(354.53deg, #4B48F5 -0.39%, #890041 37.78%);
-  background: linear-gradient(95.47deg, #4B48F5 -0.39%, #890041 37.78%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding: 18px 35px;
 }
 
 .prices__button a {
@@ -140,7 +132,7 @@ body {
     font-size: 30px;
     text-align: center;
   }
-  .prices__button {
+  .prices__button-wrapper {
     margin: 70px auto 0;
   }
 }
@@ -180,7 +172,7 @@ body {
   .prices__subtitle {
     font-size: 20px;
   }
-  .prices__button {
+  .prices__button-wrapper {
     margin: 40px auto 0;
   }
 }

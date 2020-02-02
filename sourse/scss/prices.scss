@@ -1,10 +1,4 @@
-html{
-	overflow-x: hidden;
-}
-body{
-	background: #E5E5E5; 
-	overflow: hidden;
-}
+$button-body: #E5E5E5;
 /* mixins */
 @mixin title-1{
 	font-family: 'SanFrancisco Semibold';
@@ -31,54 +25,55 @@ body{
 	line-height: 100.19%;
 	color: #4F4F4F;
 }
-@mixin gradient() {
-	background: linear-gradient(95.47deg, #4B48F5 -0.39%, #890041 37.78%);
+@mixin button($property) {
+	&__button-wrapper {
+		display: inline-block;
+		position: relative;
+		background: $property;
+		border-radius: 30px;
+		padding: 1px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	&__button{
+		display: inline-block;
+		text-align: center;
+		padding: 16px 35px;
+		color: #fff;
+		background: $button-body;
+		border-radius: 30px;
+		cursor: pointer;
+		& a{
+			font-size: 18px;
+			background: linear-gradient(to right, #4B48F5 -0.39%, #890041 37.78%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			margin: 0;
+		}
+	}
+}
+@mixin gradient($property) {
+	background: $property;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-@mixin gradient-2() {
-	background: linear-gradient(100.9deg, #80E0FF -0.39%, #855AFF 37.78%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+html{
+	overflow-x: hidden;
 }
-@mixin button($background, $border-color){
-	font-size: 24px;
-	line-height: 28px;
-	margin-top: 45px;
-	max-width: 470px;
-	display: flex;
-	align-items: center;
-	position: relative;
-	border-radius: 100px;
-	box-sizing: border-box;
-	$border: 1px;
-	background: $background;
-	background-clip: padding-box;
-	border: solid $border transparent;
-	transition: 1s;
-	&:before {
-	content: '';
-	position: absolute;
-	top: 0; right: 0; bottom: 0; left: 0;
-	z-index: -1;
-	margin: -$border;
-	border-radius: inherit;
-	background: $border-color;
-	}
-	& a{
-	@include gradient();
-	padding: 18px 35px;
-	}
-} 
+body{
+	background: $button-body;
+	overflow: hidden;
+}
 /* Prices */
 .prices{
 	max-width: 1430px;
-	margin: 0 auto;
+	margin: 186px auto 0;
+	@include button(linear-gradient(95.47deg, #4B48F5 -0.39%, #890041 37.78%));
 	h2{
 		margin-top: 30px;
 		max-width: 1252px;
 		@include title-2();
-		@include gradient-2();
+		@include gradient(linear-gradient(100.9deg, #80E0FF -0.39%, #855AFF 37.78%));
 	}
 	h3{
 		margin-left: -90px;
@@ -100,9 +95,10 @@ body{
 		@include subtitle();
 	}
 	&__button{
-		@include button(#E5E5E5, linear-gradient(95.47deg, #4B48F5 -0.39%, #890041 37.78%));
 		max-width: 310px;
-		margin: 170px 0;
+		&-wrapper{
+			margin: 170px 0;
+		}
 		a{
 			padding: 18px 70px;
 			letter-spacing: 0px;
@@ -131,7 +127,7 @@ body{
 			font-size: 30px;
 			text-align: center;
 		}
-		&__button{
+		&__button-wrapper{
 			margin: 70px auto 0;
 		}
 	}
@@ -165,7 +161,7 @@ body{
 		&__subtitle{
 			font-size: 20px;
 		}
-		&__button{
+		&__button-wrapper{
 			margin: 40px auto 0;
 		}
 	}
@@ -195,7 +191,7 @@ body{
 			font-size: 95px;
 		}
 		p{
-			@include gradient();
+			@include gradient(linear-gradient(95.47deg, #4B48F5 -0.39%, #890041 37.78%));
 		}
 	}
 	&__block-text{
