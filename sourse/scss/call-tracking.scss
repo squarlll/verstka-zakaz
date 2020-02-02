@@ -1,8 +1,9 @@
+$button-body:#000;
 html{
 	overflow-x: hidden;
 }
 body{
-	background: #000; 
+	background: $button-body; 
 	overflow: hidden;
 }
 /* blocks BEM */
@@ -21,23 +22,8 @@ body{
 	font-size: 80px;
 	line-height: 94px;
 }
-@mixin gradient() {
-	background: linear-gradient(to right,#4B48F5 -0.39%, #890041 37.78%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-@mixin gradient-2() {
-	background: linear-gradient(110.44deg, #F58948 -0.39%, #F0704D 6.36%, #D57AA5 37.78%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-@mixin gradient-3() {
-	background: linear-gradient(105.52deg, #80E0FF -0.39%, #855AFF 37.78%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-@mixin gradient-4() {
-	background: linear-gradient(95.07deg, #48F5EB -0.39%, #6D8CDD 37.78%);
+@mixin gradient($property) {
+	background: $property;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -50,32 +36,58 @@ body{
 .title{
 	@include title();
 	p{
-		@include gradient();
+		@include gradient(linear-gradient(to right,#4B48F5 -0.39%, #890041 37.78%));
 		display: inline-block;
 	}
 }
 .title-2{
 	@include title();
 	p{
-		@include gradient-2();
+		@include gradient(linear-gradient(110.44deg, #F58948 -0.39%, #F0704D 6.36%, #D57AA5 37.78%));
 		display: inline-block;
 	}
 }
 .title-3{
 	@include title();
 	p{
-		@include gradient-3();
+		@include gradient(linear-gradient(105.52deg, #80E0FF -0.39%, #855AFF 37.78%));
 		display: inline-block;
 	}
 }
 .title-4{
 	@include title();
 	p{
-		@include gradient-4();
+		@include gradient(linear-gradient(95.07deg, #48F5EB -0.39%, #6D8CDD 37.78%));
 		display: inline-block;
 	}
 }
-
+@mixin button($property) {
+	&__button-wrapper {
+		display: inline-block;
+		position: relative;
+		background: $property;
+		border-radius: 30px;
+		padding: 1px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	&__button{
+		display: inline-block;
+		text-align: center;
+		padding: 16px 35px;
+		color: #fff;
+		background: #F5E9DD;
+		border-radius: 30px;
+		cursor: pointer;
+		& a{
+			font-size: 18px;
+			background: linear-gradient(to right, #4B48F5 -0.39%, #890041 37.78%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			margin: 0;
+		}
+	}
+}
 .call-tracking__title{
 	margin-top: 105px;
 	text-align: center;
@@ -121,7 +133,7 @@ body{
 		font-weight: 700;
 		font-size: 40px;
 		line-height: 47px;
-		@include gradient-4();
+		@include gradient(linear-gradient(95.07deg, #48F5EB -0.39%, #6D8CDD 37.78%));
 
 	}
 	&__title{
@@ -683,7 +695,7 @@ body{
 			text-align: center;
 		}
 		&__item{
-			margin-bottom: 60px;
+			margin: 0 auto 60px;
 		}
 		&__text{
 			max-width: 500px;
@@ -724,12 +736,8 @@ body{
 		&__title{
 			font-size: 20px;
 		}
-		&__item{
-			margin-left: 20px;
-			margin-bottom: 80px;
-			a{
-				font-size: 16px;
-			}
+		&__item a{
+			font-size: 16px;
 		}
 		&__subtitle{
 			font-size: 18px;
@@ -738,6 +746,31 @@ body{
 			margin-bottom: 20px;
 			padding: 0 10px;
 			font-size: 18px;
+		}
+	}
+}
+.forget-it ~ .device,.forget-it ~ .function-wrapper{
+	background:#fff;
+	color: #000!important;
+}
+.forget-it ~ .device{
+	padding-top: 75px;
+}
+.forget-it ~ .function-wrapper{
+	margin-top: -2px;
+	padding-bottom: 189px;
+}
+.numbers ~ .footer{
+	& .footer{
+		@include button(linear-gradient(to right,#4B48F5 -0.39%, #890041 37.78%));
+		& .footer .footer__button a{
+			font-size: 17px !important;
+		}
+	}
+	& .footer__button{
+		background: $button-body;
+		&-wrapper{
+			margin-top: 57px;
 		}
 	}
 }

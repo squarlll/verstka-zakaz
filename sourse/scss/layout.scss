@@ -1,5 +1,6 @@
+$button-body:#f4f4f4;
 body{
-	background: #f4f4f4;
+	background: $button-body;
 }
 /* blocks BEM */
 .block-title{
@@ -17,13 +18,8 @@ body{
 	font-size: 80px;
 	line-height: 94px;
 }
-@mixin gradient() {
-	background: linear-gradient(to right,#4B48F5 -0.39%, #890041 37.78%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-@mixin gradient-2() {
-	background: linear-gradient(to right,#4B48F5 -0.39%, #890041 37.78%);
+@mixin gradient($property) {
+	background: $property;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -37,7 +33,7 @@ body{
 	@include title();
 	letter-spacing: -1px;
 	p{
-		@include gradient();
+		@include gradient(linear-gradient(to right,#4B48F5 -0.39%, #890041 37.78%));
 		display: inline-block;
 	}
 }
@@ -45,8 +41,40 @@ body{
 	@include title();
 	letter-spacing: -.5px;
 	p{
-		@include gradient();
+		@include gradient(linear-gradient(to right,#4B48F5 -0.39%, #890041 37.78%));
 		display: inline-block;
+	}
+}
+@mixin button($property) {
+	&__button-wrapper {
+		display: inline-block;
+		position: relative;
+		background: $property;
+		border-radius: 30px;
+		padding: 1px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	&__button{
+		display: inline-block;
+		text-align: center;
+		padding: 16px 35px;
+		color: #fff;
+		background: #F5E9DD;
+		border-radius: 30px;
+		cursor: pointer;
+		& a{
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			font-size: 18px;
+			background: $property;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			margin: 0;
+		}
 	}
 }
 /* layout-main */
@@ -196,6 +224,9 @@ body{
 			display: none;
 		}
 	}
+	.main__crm{
+		padding-top: 100px;
+	}
 }
 @media screen and (max-width: 480px){
 	.crm__title{
@@ -219,9 +250,7 @@ body{
 		line-height: 95.4%;
 		text-align: center;
 		& span{
-			background: linear-gradient(to right,#02A5A2, #0471BF);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
+			@include gradient(linear-gradient(to right,#02A5A2, #0471BF));
 		}
 	}
 	&__subtitle{
@@ -575,9 +604,7 @@ body{
 	&__title{
 		font-family: 'SanFrancisco Semibold', sans-serif;
 		max-width: 741px;
-		background: linear-gradient(to right,#02A5A2, #0471BF);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
+		@include gradient(linear-gradient(to right,#02A5A2, #0471BF));
 		font-size: 80px;
 		line-height: 95.4%;
 		margin-bottom: 122px;
@@ -1021,8 +1048,8 @@ body{
 		max-width: 100%;
 		overflow: hidden;
 	}
-	@media screen and (max-width: 1378px){
-		padding-left: 0;
+	@media screen and (max-width: 1239px){
+		padding-right: 10px;
 	}
 	&__row{
 		display: -webkit-flex;
@@ -1039,7 +1066,7 @@ body{
 				margin-top: 25px;
 				letter-spacing: -.65px;
 			}
-			@media screen and (max-width: 1378px){
+			@media screen and (max-width: 1239px){
 				flex-direction: column;
 				align-items: center;
 				& .tasks__text{
@@ -1091,7 +1118,7 @@ body{
 				}
 			}
 		}
-		@media screen and (max-width: 1378px){
+		@media screen and (max-width: 1239px){
 			flex-direction: column;
 			align-items: center;
 			.tasks__catalog{
@@ -1112,7 +1139,7 @@ body{
 					padding-left: 160px;
 				}
 			}
-			@media screen and (max-width: 1378px){
+			@media screen and (max-width: 1239px){
 				.tasks__calls{
 					padding-left: 0;
 				}
@@ -1129,7 +1156,6 @@ body{
 		}
 	}
 	&__text{
-		padding-right: 10px;
 		max-width: 752px;
 	}
 	&__title{
@@ -1182,7 +1208,7 @@ body{
 		& img{
 			max-width: 100%;
 		}
-		@media screen and (max-width: 1378px){
+		@media screen and (max-width: 1239px){
 			margin-left: 0;
 		}
 	}
@@ -1199,6 +1225,7 @@ body{
 	display: flex;
 	justify-content: space-between;
 	position: relative;
+	@include button(linear-gradient(to right,#C14079, #2D499D))
 	&__text{
 		margin-top: 40px;
 		padding-left: 150px;
@@ -1210,9 +1237,7 @@ body{
 		max-width: 618px;
 		letter-spacing: -3px;
 		& span{
-			background: linear-gradient(to right,#C14079, #2D499D);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
+			@include gradient(linear-gradient(to right,#C14079, #2D499D));
 		}
 	}
 	&__subtitle{
@@ -1241,16 +1266,9 @@ body{
 		}
 	}
 	&__button{
-		background: #F4F4F4;
-		max-width: 437px;
-		& a{
-			background: linear-gradient(55.06deg, #C14079 4.82%, #2D499D 63.47%);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-		}
-		&::before{
-			margin: -2px;
-			background: linear-gradient(55.06deg, #C14079 4.82%, #2D499D 63.47%);
+		background:$button-body;
+		&-wrapper{
+			margin-top: 85px;
 		}
 	}
 	@media screen and (max-width: 1880px){
@@ -1266,14 +1284,28 @@ body{
 		}
 	}
 	@media screen and (max-width: 1232px){
+		flex-direction: column;
+		align-items: center;
+		&__text{
+			padding-left: 0;
+		}
 		&__images{
-			top: 320px;
-			left: 50px;
+			position: relative;
+			top: 50px;
+			right: 0;
+			left: 0;
 		}
 	}
 	@media screen and (max-width: 940px){
 		&__text{
 			padding: 0 10px;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
 		}
 		&__title{
 			text-align: center;
@@ -1283,6 +1315,8 @@ body{
 		&__subtitle{
 			font-size: 22px;
 			line-height: 24px;
+			text-align: center;
+			margin: auto;
 		}
 	}
 	@media screen and (max-width: 835px){
@@ -1318,11 +1352,6 @@ body{
 		&__subtitle{
 			font-size: 16px;
 			line-height: 18px;
-		}
-	}
-	@media screen and (max-width: 835px){
-		&__images{
-			display: none;
 		}
 	}
 }
@@ -1847,6 +1876,24 @@ body{
 		}
 		.tasks__catalog{
 			padding-left: 186px;
+		}
+	}
+}
+
+.layout-main ~ .footer{
+	background:#000;
+	padding-left: 10px;
+	padding-right: 10px;
+	& .footer__title span{
+		@include gradient(linear-gradient(90.21deg, #F58948, #D57AA5));
+	}
+	& .footer{
+		@include button(linear-gradient(90.21deg, #F58948, #D57AA5));
+		&__button{
+			background: #000;
+			&-wrapper{
+				margin-top: 57px;
+			}
 		}
 	}
 }

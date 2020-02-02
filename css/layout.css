@@ -203,6 +203,9 @@ body {
   .layout-main__img:first-child {
     display: none;
   }
+  .main__crm {
+    padding-top: 100px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1174,9 +1177,9 @@ body {
   overflow: hidden;
 }
 
-@media screen and (max-width: 1378px) {
+@media screen and (max-width: 1239px) {
   .tasks {
-    padding-left: 0;
+    padding-right: 10px;
   }
 }
 
@@ -1201,7 +1204,7 @@ body {
   letter-spacing: -.65px;
 }
 
-@media screen and (max-width: 1378px) {
+@media screen and (max-width: 1239px) {
   .tasks__row:first-child {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1264,7 +1267,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1378px) {
+@media screen and (max-width: 1239px) {
   .tasks__row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1298,7 +1301,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1378px) {
+@media screen and (max-width: 1239px) {
   .tasks__row:nth-child(2) .tasks__calls {
     padding-left: 0;
   }
@@ -1318,7 +1321,6 @@ body {
 }
 
 .tasks__text {
-  padding-right: 10px;
   max-width: 752px;
 }
 
@@ -1386,7 +1388,7 @@ body {
   max-width: 100%;
 }
 
-@media screen and (max-width: 1378px) {
+@media screen and (max-width: 1239px) {
   .tasks__image {
     margin-left: 0;
   }
@@ -1407,6 +1409,47 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   position: relative;
+}
+
+.team__button-wrapper {
+  display: inline-block;
+  position: relative;
+  background: -webkit-gradient(linear, left top, right top, from(#C14079), to(#2D499D));
+  background: -webkit-linear-gradient(left, #C14079, #2D499D);
+  background: -o-linear-gradient(left, #C14079, #2D499D);
+  background: linear-gradient(to right, #C14079, #2D499D);
+  border-radius: 30px;
+  padding: 1px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.team__button {
+  display: inline-block;
+  text-align: center;
+  padding: 16px 35px;
+  color: #fff;
+  background: #F5E9DD;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.team__button a {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 18px;
+  background: -webkit-gradient(linear, left top, right top, from(#C14079), to(#2D499D));
+  background: -webkit-linear-gradient(left, #C14079, #2D499D);
+  background: -o-linear-gradient(left, #C14079, #2D499D);
+  background: linear-gradient(to right, #C14079, #2D499D);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
 }
 
 .team__text {
@@ -1465,23 +1508,11 @@ body {
 }
 
 .team__button {
-  background: #F4F4F4;
-  max-width: 437px;
+  background: #f4f4f4;
 }
 
-.team__button a {
-  background: -webkit-linear-gradient(34.94deg, #C14079 4.82%, #2D499D 63.47%);
-  background: -o-linear-gradient(34.94deg, #C14079 4.82%, #2D499D 63.47%);
-  background: linear-gradient(55.06deg, #C14079 4.82%, #2D499D 63.47%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.team__button::before {
-  margin: -2px;
-  background: -webkit-linear-gradient(34.94deg, #C14079 4.82%, #2D499D 63.47%);
-  background: -o-linear-gradient(34.94deg, #C14079 4.82%, #2D499D 63.47%);
-  background: linear-gradient(55.06deg, #C14079 4.82%, #2D499D 63.47%);
+.team__button-wrapper {
+  margin-top: 85px;
 }
 
 @media screen and (max-width: 1880px) {
@@ -1499,15 +1530,43 @@ body {
 }
 
 @media screen and (max-width: 1232px) {
+  .team {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .team__text {
+    padding-left: 0;
+  }
   .team__images {
-    top: 320px;
-    left: 50px;
+    position: relative;
+    top: 50px;
+    right: 0;
+    left: 0;
   }
 }
 
 @media screen and (max-width: 940px) {
   .team__text {
     padding: 0 10px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .team__title {
     text-align: center;
@@ -1517,6 +1576,8 @@ body {
   .team__subtitle {
     font-size: 22px;
     line-height: 24px;
+    text-align: center;
+    margin: auto;
   }
 }
 
@@ -1556,12 +1617,6 @@ body {
   .team__subtitle {
     font-size: 16px;
     line-height: 18px;
-  }
-}
-
-@media screen and (max-width: 835px) {
-  .team__images {
-    display: none;
   }
 }
 
@@ -2294,4 +2349,65 @@ body {
   .tasks__catalog {
     padding-left: 186px;
   }
+}
+
+.layout-main ~ .footer {
+  background: #000;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.layout-main ~ .footer .footer__title span {
+  background: -webkit-linear-gradient(359.79deg, #F58948, #D57AA5);
+  background: -o-linear-gradient(359.79deg, #F58948, #D57AA5);
+  background: linear-gradient(90.21deg, #F58948, #D57AA5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.layout-main ~ .footer .footer__button-wrapper {
+  display: inline-block;
+  position: relative;
+  background: -webkit-linear-gradient(359.79deg, #F58948, #D57AA5);
+  background: -o-linear-gradient(359.79deg, #F58948, #D57AA5);
+  background: linear-gradient(90.21deg, #F58948, #D57AA5);
+  border-radius: 30px;
+  padding: 1px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.layout-main ~ .footer .footer__button {
+  display: inline-block;
+  text-align: center;
+  padding: 16px 35px;
+  color: #fff;
+  background: #F5E9DD;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.layout-main ~ .footer .footer__button a {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 18px;
+  background: -webkit-linear-gradient(359.79deg, #F58948, #D57AA5);
+  background: -o-linear-gradient(359.79deg, #F58948, #D57AA5);
+  background: linear-gradient(90.21deg, #F58948, #D57AA5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.layout-main ~ .footer .footer__button {
+  background: #000;
+}
+
+.layout-main ~ .footer .footer__button-wrapper {
+  margin-top: 57px;
 }

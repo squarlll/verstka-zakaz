@@ -26,12 +26,14 @@
 		display: none;
 		width: 17px;
 		height: 9px;
-		margin: 10px;
+		padding: 10px;
 		box-sizing: content-box;
 		transition: .5s;
 		& span{
 			transition: .5s;
-			transform-origin: center;
+			transform-origin: left;
+			left: 50%;
+			transform: translate(-50%, 0);
 		}
 		& span:first-child{
 			display: block;
@@ -40,8 +42,8 @@
 			background: #fff;
 			border-radius: 0.5px;
 			position: absolute;
-			left: 0px;
 			z-index: 1;
+			top: 11px;
 		}
 		& span:last-child{
 			display: block;
@@ -50,8 +52,7 @@
 			background: #fff;
 			border-radius: 0.5px;
 			position: absolute;
-			left: 0px;
-			top: 7px;
+			top: 19px;
 			z-index: 1;
 		}
 	}
@@ -141,7 +142,8 @@
 	    padding-top: 14px;
 	    padding-bottom: 23px;
 	    width: 100%;
-	    background: #F2F2F2;
+	    background: rgba(242, 242, 242, .72);
+	    backdrop-filter: saturate(180%) blur(20px);
 	    z-index: 111;
 		&__wrapper{
 			max-width: 1437px;
@@ -250,14 +252,15 @@
 .hamburger-active{
 	& span{
 		transition: .5s;
+		left: 12px;
 	}
 	& span:first-child{
 		transform: rotate(45deg);
-		top: 0px;
+		top: 8px;
 	}
 	& span:last-child{
 		transform: rotate(-45deg);
-		top: 0px;
+		top: 20px;
 	}
 }
 

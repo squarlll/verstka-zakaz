@@ -851,7 +851,7 @@ body {
     text-align: center;
   }
   .numbers__item {
-    margin-bottom: 60px;
+    margin: 0 auto 60px;
   }
   .numbers__text {
     max-width: 500px;
@@ -889,10 +889,6 @@ body {
   .numbers__title {
     font-size: 20px;
   }
-  .numbers__item {
-    margin-left: 20px;
-    margin-bottom: 80px;
-  }
   .numbers__item a {
     font-size: 16px;
   }
@@ -904,4 +900,64 @@ body {
     padding: 0 10px;
     font-size: 18px;
   }
+}
+
+.forget-it ~ .device, .forget-it ~ .function-wrapper {
+  background: #fff;
+  color: #000 !important;
+}
+
+.forget-it ~ .device {
+  padding-top: 75px;
+}
+
+.forget-it ~ .function-wrapper {
+  margin-top: -2px;
+  padding-bottom: 189px;
+}
+
+.numbers ~ .footer .footer__button-wrapper {
+  display: inline-block;
+  position: relative;
+  background: -webkit-gradient(linear, left top, right top, color-stop(-0.39%, #4B48F5), color-stop(37.78%, #890041));
+  background: -webkit-linear-gradient(left, #4B48F5 -0.39%, #890041 37.78%);
+  background: -o-linear-gradient(left, #4B48F5 -0.39%, #890041 37.78%);
+  background: linear-gradient(to right, #4B48F5 -0.39%, #890041 37.78%);
+  border-radius: 30px;
+  padding: 1px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.numbers ~ .footer .footer__button {
+  display: inline-block;
+  text-align: center;
+  padding: 16px 35px;
+  color: #fff;
+  background: #F5E9DD;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.numbers ~ .footer .footer__button a {
+  font-size: 18px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(-0.39%, #4B48F5), color-stop(37.78%, #890041));
+  background: -webkit-linear-gradient(left, #4B48F5 -0.39%, #890041 37.78%);
+  background: -o-linear-gradient(left, #4B48F5 -0.39%, #890041 37.78%);
+  background: linear-gradient(to right, #4B48F5 -0.39%, #890041 37.78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.numbers ~ .footer .footer .footer .footer__button a {
+  font-size: 17px !important;
+}
+
+.numbers ~ .footer .footer__button {
+  background: #000;
+}
+
+.numbers ~ .footer .footer__button-wrapper {
+  margin-top: 57px;
 }
