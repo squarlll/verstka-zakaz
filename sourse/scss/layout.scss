@@ -261,6 +261,7 @@ body{
 		max-width: 929px;
 		margin: auto;
 		padding-top: 10px;
+		letter-spacing: -.5px;
 	}
 	&__ipad{
 		display: -webkit-flex;
@@ -408,6 +409,9 @@ body{
 		&-inner{
 			max-width: 939px;
 		}
+	}
+	@media screen and (max-width: 768px){
+		margin: 35px auto 0;
 	}
 }
 @media screen and (max-width: 1330px){
@@ -1415,6 +1419,9 @@ body{
 		flex-direction: column;
 		padding-top: 300px;
 		padding-right: 185px;
+		@media screen and (max-width: 768px){
+			padding-top: 150px;
+		}
 	}
 	.functional{
 		&__image-wrapper{
