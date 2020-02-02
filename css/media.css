@@ -514,12 +514,6 @@
     font-size: 30px;
     line-height: 44px;
   }
-  .footer__button {
-    margin-top: 30px;
-  }
-  .footer__button a {
-    padding: 18px 20px;
-  }
 }
 
 @media screen and (max-width: 540px) {
@@ -537,9 +531,6 @@
   .footer__button {
     font-size: 18px;
   }
-  .footer__button a {
-    padding: 12px 20px;
-  }
 }
 
 @media screen and (max-width: 370px) {
@@ -549,11 +540,7 @@
     line-height: 25px;
   }
   .footer__button {
-    margin: 30 5px;
     font-size: 16px;
-  }
-  .footer__button a {
-    padding: 12px 15px;
   }
 }
 
