@@ -10,6 +10,10 @@ body {
 
 /* mixins */
 /* Analytics */
+.analytics {
+  margin-top: 209px;
+}
+
 .analytics__title {
   margin: 0 auto 70px;
   max-width: 1021px;
@@ -494,7 +498,7 @@ body {
 /* Track */
 .track {
   max-width: 1440px;
-  margin: 215px auto 0px;
+  margin: 230px auto 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -670,11 +674,11 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 210px auto 0;
+  margin: 175px auto 0;
 }
 
 .google-analytics__title {
-  margin-left: -335px;
+  margin-left: 25px;
   max-width: 875px;
   font-family: 'SanFrancisco Semibold';
   font-size: 80px;
@@ -689,7 +693,27 @@ body {
   display: flex;
 }
 
+.google-analytics-img {
+  margin-top: 35px;
+  position: relative;
+}
+
+.google-analytics-img::before {
+  content: url("../img/analytics/Vector-11.svg");
+  position: absolute;
+  top: -30px;
+  right: -180px;
+}
+
+.google-analytics-img::after {
+  content: url("../img/analytics/Vector-12.svg");
+  position: absolute;
+  bottom: 0;
+}
+
 .google-analytics__text {
+  margin-top: 15px;
+  margin-left: 25px;
   max-width: 700px;
   font-family: 'Segoe Script', sans-serif;
   font-weight: 700;
@@ -698,39 +722,210 @@ body {
 }
 
 .google-analytics__block-text-1 {
-  width: 342px;
-  height: 234px;
+  position: relative;
+  top: 410px;
+  left: 200px;
   max-width: 312px;
   font-family: 'Segoe Script', sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 124.1%;
-  background: url("../img/analytics/Ellipse-17.png") no-repeat center/cover;
 }
 
-.google-analytics__block-text-1:before {
-  content: '';
-  width: 135.36px;
-  height: 139.5px;
-  display: inline-block;
-  background: url("../img/analytics/vector-11.png") no-repeat center/cover;
+.google-analytics__block-text-1::after {
+  content: "";
+  display: block;
+  width: 342px;
+  height: 234px;
+  position: absolute;
+  top: -70px;
+  left: -50px;
+  background: url("../img/analytics/Ellipse-17.svg");
 }
 
 .google-analytics__block-text-2 {
-  width: 270.5px;
-  height: 173.5px;
+  position: relative;
+  top: 565px;
+  left: 75px;
   max-width: 312px;
   font-family: 'Segoe Script', sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 124.1%;
-  background: url("../img/analytics/Ellipse-18.png") no-repeat center/cover;
 }
 
-.google-analytics__block-text-2:after {
-  content: '';
-  width: 185.63px;
-  height: 125px;
-  display: inline-block;
-  background: url("../img/analytics/vector-12.png") no-repeat center/cover;
+.google-analytics__block-text-2::after {
+  content: "";
+  display: block;
+  width: 270.5px;
+  height: 173.5px;
+  position: absolute;
+  top: -60px;
+  left: -50px;
+  background: url("../img/analytics/Ellipse-18.svg");
+}
+
+@media screen and (max-width: 1570px) {
+  .google-analytics__content {
+    margin-left: -180px;
+  }
+}
+
+@media screen and (max-width: 1410px) {
+  .google-analytics__title {
+    max-width: 750px;
+    font-size: 60px;
+  }
+  .google-analytics__content {
+    margin-left: 0;
+  }
+  .google-analytics-img {
+    margin-left: -80px;
+  }
+  .google-analytics-img img {
+    width: 710px;
+  }
+  .google-analytics-img::before {
+    right: -20px;
+  }
+  .google-analytics-img::after {
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+  .google-analytics__block-text-1 {
+    left: 30px;
+  }
+  .google-analytics__block-text-2 {
+    left: 120px;
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  .google-analytics {
+    margin-bottom: 700px;
+  }
+  .google-analytics__title {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 40px;
+    line-height: 1.3;
+  }
+  .google-analytics__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .google-analytics-img {
+    margin: 35px auto 0;
+    text-align: center;
+  }
+  .google-analytics-img img {
+    max-width: 100%;
+  }
+  .google-analytics-img::before {
+    top: 550px;
+    right: -40px;
+    -webkit-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    transform: rotate(60deg);
+  }
+  .google-analytics-img::after {
+    left: 0;
+    top: 700px;
+    -webkit-transform: rotate(130deg);
+    -ms-transform: rotate(130deg);
+    transform: rotate(130deg);
+  }
+  .google-analytics__text {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .google-analytics__block-text-1 {
+    top: 200px;
+    left: -150px;
+  }
+  .google-analytics__block-text-2 {
+    top: 100px;
+    left: 280px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .google-analytics {
+    margin-bottom: 700px;
+  }
+  .google-analytics__title {
+    padding: 0 10px;
+    font-size: 30px;
+  }
+  .google-analytics__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .google-analytics-img {
+    margin: 15px auto 0;
+    text-align: center;
+  }
+  .google-analytics-img img {
+    max-width: 100%;
+  }
+  .google-analytics-img::before {
+    display: none;
+  }
+  .google-analytics-img::after {
+    display: none;
+  }
+  .google-analytics__text {
+    padding: 0 10px;
+    font-size: 25px;
+  }
+  .google-analytics__block-text-1 {
+    text-align: center;
+    top: 100px;
+    left: 0;
+  }
+  .google-analytics__block-text-1::after {
+    top: -70px;
+    left: 0;
+  }
+  .google-analytics__block-text-2 {
+    text-align: center;
+    top: 250px;
+    left: 0;
+  }
+  .google-analytics__block-text-2::after {
+    top: -70px;
+    left: 10px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .google-analytics__title {
+    font-size: 24px;
+  }
+  .google-analytics__text {
+    font-size: 20px;
+  }
+  .google-analytics__block-text-1 {
+    top: 100px;
+    left: 0;
+  }
+  .google-analytics__block-text-1::after {
+    width: 310px;
+    height: 212px;
+    top: -70px;
+    left: 0;
+    background-size: 310px;
+  }
 }
