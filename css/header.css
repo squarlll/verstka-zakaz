@@ -1,7 +1,5 @@
 .header {
   height: 67px;
-  position: fixed;
-  top: 0;
   z-index: 11;
   width: 100%;
   background: rgba(0, 0, 0, 0.8);
@@ -16,7 +14,6 @@
   width: 100%;
   height: 517px;
   background: url("../img/header/Rectangle 205.jpg") no-repeat center/cover;
-  margin-top: 194px;
 }
 
 .header__text {
@@ -41,7 +38,7 @@
 }
 
 .header__title {
-  font-weight: 500;
+  font-family: "SanFrancisco Semibold", sans-serif;
   font-size: 100px;
   line-height: 1.17;
   color: #FFF;
@@ -80,8 +77,8 @@
 
 .header__menu-btn {
   position: absolute;
-  top: calc(50% - 14px);
-  left: 12px;
+  top: 19px;
+  left: 15px;
   display: none;
   width: 17px;
   height: 9px;
@@ -254,8 +251,6 @@
 }
 
 .header-bottom {
-  position: fixed;
-  top: 67px;
   padding-top: 14px;
   padding-bottom: 23px;
   width: 100%;
@@ -329,9 +324,6 @@
 }
 
 @media screen and (max-width: 910px) {
-  .header-wrapper {
-    margin-top: 65px;
-  }
   .header__inner {
     width: 100%;
   }

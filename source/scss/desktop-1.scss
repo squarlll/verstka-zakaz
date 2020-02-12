@@ -1,0 +1,76 @@
+html{
+	overflow-x: hidden;
+}
+body{
+	background: #E5E5E5; 
+	overflow: hidden;
+	color: #fff;
+}
+/* mixins */
+@mixin title{
+	font-family: 'SanFrancisco Semibold';;
+	font-size: 80px;
+	line-height: 80px;
+}
+@mixin text{
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 29px;
+	color: #828282;
+}
+@mixin subtitle{
+	font-weight: 500;
+	font-size: 40px;
+	line-height: 36px;
+}
+@mixin gradient() {
+	background: linear-gradient(88.59deg, #F0704D 23.65%, #B50B00 104.3%); 
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.container{
+	width: 1000px;
+}
+.scroll
+{
+    position: fixed;
+    bottom: 0;
+}
+/* Individual-decision */
+.individual-decision{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 250;
+    line-height: 0;
+    min-width: 1920px;
+    min-height: 1080px;
+    &__title{
+    	margin-top: 200px;
+    	font-weight: 700;
+    	font-size: 150px;
+    	line-height: 95.19%;
+    	text-align: center;
+    	@include gradient();
+    }
+}
+/* Block-text */
+.block-text{
+	position: relative;
+	margin: 0 auto;
+	z-index: 250;
+	line-height: 0;
+	min-width: 1920px;
+	left: 100px;
+	&__content{
+		position: absolute;
+		left: 1920px;
+		font-weight: 500;
+		font-size: 40px;
+		line-height: 47px;
+		color: #828282;
+		strong{
+
+		}
+	}
+}

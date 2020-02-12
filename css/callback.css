@@ -1275,6 +1275,112 @@ body {
   }
 }
 
+.delivery-setting-wrapper {
+  max-width: 1437px;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.delivery-setting__row-1 {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.delivery-setting__text {
+  margin-left: -100px;
+}
+
+.delivery-setting__title {
+  font-family: 'SanFrancisco Semibold', sans-serif;
+  font-size: 80px;
+  line-height: 1;
+  color: #000000;
+  max-width: 587px;
+}
+
+.delivery-setting__subtitle {
+  font-size: 25px;
+  line-height: 1.16;
+  color: #828282;
+  max-width: 530px;
+}
+
+.delivery-setting__image {
+  margin-left: -350px;
+}
+
+.delivery-setting__row-2 {
+  margin-top: -110px;
+}
+
+.delivery-setting__problem {
+  font-family: 'SanFrancisco Semibold', sans-serif;
+  font-size: 45px;
+  line-height: 95.4%;
+  color: #4F4F4F;
+  max-width: 568px;
+}
+
+.delivery-setting__things {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 42px;
+  position: relative;
+}
+
+.delivery-setting__things .things-arrow::after {
+  content: url("../img/callback/Vector-8.svg");
+  position: absolute;
+  bottom: -140px;
+}
+
+.delivery-setting__result {
+  font-size: 25px;
+  line-height: 29px;
+  color: #828282;
+  max-width: 530px;
+  margin-left: 135px;
+  position: relative;
+}
+
+.delivery-setting__result::after {
+  content: "";
+  width: 636px;
+  height: 260px;
+  background: url("../img/callback/Vector-9.svg") no-repeat center;
+  position: absolute;
+  left: -60px;
+  top: -75px;
+}
+
+.things__text {
+  max-width: 378px;
+  margin-right: 32px;
+  font-family: 'Segoe Script', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 124.1%;
+  color: #828282;
+  letter-spacing: -.4px;
+}
+
 .free-connection ~ .footer {
   background: #000;
   color: #fff;
