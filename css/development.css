@@ -1,0 +1,307 @@
+/* hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
+/**
+  * important: keep position fixed, you can however use top:0 instead of bottom:0
+  * if you want to make it stick to the top of the browser
+  */
+.scroll {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+/* mixins */
+.header, .header-bottom {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.header-bottom {
+  position: fixed;
+  top: 67px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.development__title {
+  height: 100vh;
+  width: 1920px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.development__title h1 {
+  font-family: 'SanFrancisco Semibold';
+  max-width: 1400px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 150px;
+  line-height: 95.19%;
+  text-align: center;
+  background: -webkit-linear-gradient(1.41deg, #F0704D 23.65%, #B50B00 104.3%);
+  background: -o-linear-gradient(1.41deg, #F0704D 23.65%, #B50B00 104.3%);
+  background: linear-gradient(88.59deg, #F0704D 23.65%, #B50B00 104.3%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 1920px) {
+  .development__title {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .development__title h1 {
+    font-size: 120px;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .development__title h1 {
+    font-size: 90px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .development__title h1 {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .development__title h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .development__title h1 {
+    font-size: 33px;
+  }
+}
+
+.who-needs {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 30px;
+  left: 1920px;
+}
+
+.who-needs__title {
+  font-family: 'SanFrancisco Semibold';
+  font-size: 80px;
+  line-height: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.who-needs__subtitle {
+  font-size: 25px;
+  line-height: 116%;
+  text-align: center;
+  color: #828282;
+  max-width: 800px;
+  margin: 24px auto 0;
+}
+
+.who-needs__image {
+  margin-bottom: -400px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.who-needs__image img {
+  max-width: 120%;
+  margin-top: -20px;
+}
+
+@media screen and (max-width: 1920px) {
+  .who-needs {
+    left: 100vw;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .who-needs__title {
+    font-size: 65px;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .who-needs__title {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .who-needs__title {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .who-needs__title {
+    font-size: 20px;
+  }
+}
+
+.necessary {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 40px;
+  line-height: 117.5%;
+  left: 3840px;
+  color: #828282;
+}
+
+.necessary__inner {
+  max-width: 1134px;
+  margin: auto;
+}
+
+.necessary strong {
+  font-family: 'SanFrancisco Semibold';
+  color: #333;
+}
+
+@media screen and (max-width: 1920px) {
+  .necessary {
+    left: 200vw;
+  }
+}
+
+.guarantee {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  left: 5760px;
+  text-align: center;
+}
+
+.guarantee__title {
+  font-family: 'SanFrancisco Semibold';
+  background: -webkit-linear-gradient(5.3deg, #F0704D 23.65%, #B50B00 104.3%);
+  background: -o-linear-gradient(5.3deg, #F0704D 23.65%, #B50B00 104.3%);
+  background: linear-gradient(84.7deg, #F0704D 23.65%, #B50B00 104.3%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 100px;
+  line-height: 100.19%;
+}
+
+.guarantee__subtitle {
+  font-size: 30px;
+  line-height: 35px;
+  color: #828282;
+  max-width: 900px;
+  margin: 24px auto 0;
+}
+
+@media screen and (max-width: 1920px) {
+  .guarantee {
+    left: 300vw;
+  }
+}
+
+.front {
+  z-index: 500;
+  width: 10000px;
+}
+
+.page {
+  position: absolute;
+  top: 100px;
+  height: 100vh;
+  width: 1920px;
+}
+
+@media screen and (max-width: 1920px) {
+  .page {
+    width: 100vw;
+  }
+}
+
+.documentation {
+  left: 2450px;
+  width: 700px;
+}
+
+.options {
+  width: 700px;
+  left: 3800px;
+}
+
+.download {
+  width: 500px;
+  left: 5100px;
+}
+
+.license {
+  padding: 100px 30px 30px 30px;
+}

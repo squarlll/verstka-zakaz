@@ -1,0 +1,291 @@
+/* hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
+body
+{
+}
+
+/**
+  * important: keep position fixed, you can however use top:0 instead of bottom:0
+  * if you want to make it stick to the top of the browser
+  */
+.scroll
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+/* mixins */
+@mixin title{
+    font-family: 'SanFrancisco Semibold';
+    font-size: 80px;
+    line-height: 94px;
+}
+@mixin subtitle{
+    font-family: 'SanFrancisco Semibold';
+    font-size: 60px;
+    line-height: 70px;
+    color: #000000;
+}
+@mixin text{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #828282;
+}
+@mixin gradient($property) {
+    background: $property;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@mixin button($property) {
+    &__button-wrapper {
+        display: inline-block;
+        position: relative;
+        background: $property;
+        border-radius: 30px;
+        padding: 1px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__button{
+        display: flex;
+        text-align: center;
+        padding: 19px 25px;
+        color: #fff;
+        background: #F5E9DD;
+        border-radius: 30px;
+        cursor: pointer;
+        & a{
+            font-size: 18px;
+            background: linear-gradient(to right,
+            #4B48F5 -0.39%, #890041 37.78%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 0;
+        }
+    }
+}
+.header,.header-bottom
+{
+    position: fixed;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1000;
+}
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1000;
+}
+.header-bottom
+{
+    position: fixed;
+    top: 67px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1000;
+}
+.development{
+    &__title{
+        height: 100vh;
+        width: 1920px;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & h1 {
+            font-family: 'SanFrancisco Semibold';
+            max-width: 1400px;
+            align-items: center;
+            font-size: 150px;
+            line-height: 95.19%;
+            text-align: center;
+            @include gradient(linear-gradient(88.59deg, #F0704D 23.65%, #B50B00 104.3%));
+        }
+    }
+    @media screen and (max-width: 1920px) {
+        &__title{
+            width: 100vw;
+        }
+    }
+    @media screen and (max-width: 1400px) {
+        &__title h1{
+            font-size: 120px;
+        }
+    }
+    @media screen and (max-width: 1120px) {
+        &__title h1{
+            font-size: 90px;
+        }
+    }
+    @media screen and (max-width: 850px) {
+        &__title h1{
+            font-size: 70px;
+        }
+    }
+    @media screen and (max-width: 680px) {
+        &__title h1{
+            font-size: 40px;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        &__title h1{
+            font-size: 33px;
+        }
+    }
+}
+.who-needs{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    left: 1920px;
+    &__title{
+        font-family: 'SanFrancisco Semibold';
+        font-size: 80px;
+        line-height: 100%;
+        text-align: center;
+        color: #000;
+    }
+    &__subtitle{
+        font-size: 25px;
+        line-height: 116%;
+        text-align: center;
+        color: #828282;
+        max-width: 800px;
+        margin: 24px auto 0;
+    }
+    &__image{
+        margin-bottom: -400px;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        & img{
+            max-width: 120%;
+            margin-top: -20px;
+        }
+    }
+    @media screen and (max-width: 1920px) {
+        left: 100vw;
+    }
+    @media screen and (max-width: 1400px) {
+        &__title {
+            font-size: 65px;
+        }
+    }
+    @media screen and (max-width: 1120px) {
+        &__title {
+            font-size: 50px;
+        }
+    }
+    @media screen and (max-width: 850px) {
+        &__title {
+            font-size: 35px;
+        }
+    }
+    @media screen and (max-width: 680px) {
+        &__title {
+            font-size: 20px;
+        }
+    }
+}
+.necessary{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    line-height: 117.5%;
+    left: 3840px;
+    color: #828282;
+    &__inner{
+        max-width: 1134px;
+        margin: auto;
+    }
+    & strong{
+        font-family: 'SanFrancisco Semibold';
+        color: #333;
+    }
+    @media screen and (max-width: 1920px) {
+        left: 200vw;
+    }
+}
+.guarantee{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 5760px;
+    text-align: center;
+    &__title{
+        font-family: 'SanFrancisco Semibold';
+        @include gradient(linear-gradient(84.7deg, #F0704D 23.65%, #B50B00 104.3%));
+        font-size: 100px;
+        line-height: 100.19%;
+    }
+    &__subtitle{
+        font-size: 30px;
+        line-height: 35px;
+        color: #828282;
+        max-width: 900px;
+        margin: 24px auto 0;
+    }
+    @media screen and (max-width: 1920px) {
+        left: 300vw;
+    }
+}
+.front {
+    z-index: 500;
+    width: 10000px;
+}
+.page {
+    position: absolute;
+    top: 100px;
+    height: 100vh;
+    width: 1920px;
+    @media screen and (max-width: 1920px) {
+        width: 100vw;
+    }
+}
+.documentation {
+    left: 2450px;
+    width: 700px;
+}
+
+.options
+{
+    width: 700px;
+    left: 3800px;
+}
+
+.download
+{
+    width: 500px;
+    left: 5100px;
+}
+
+.license
+{
+    padding: 100px 30px 30px 30px;
+}
