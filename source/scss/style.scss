@@ -1,6 +1,7 @@
 $button-body:#FBFBFB;
 html{
 	overflow-x: hidden;
+	-webkit-text-size-adjust: none;
 }
 body{
 	background: $button-body;
