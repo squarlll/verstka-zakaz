@@ -1098,6 +1098,7 @@ body {
   }
   .scroll {
     position: relative;
+    left: 0 !important;
   }
   .development__title {
     margin-top: 30px;
