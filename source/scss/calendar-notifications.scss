@@ -43,6 +43,10 @@
 		@media screen and (max-width: 1730px){
 			margin-left: 0;
 		}
+		@media screen and (max-width: 1200px){
+			margin: 0 auto;
+			text-align: center;
+		}
 	}
 	&__title{
 		max-width: 563px;
@@ -54,6 +58,10 @@
 		font-size: 80px;
 		line-height: 95.4%;
 		color: #000;
+		@media screen and (max-width: 1200px){
+			margin: 0 auto;
+			font-size: 60px;
+		}
 	}
 	&__text{
 		@include text();
@@ -64,6 +72,9 @@
 		line-height: 29px;
 		color: #828282;
 		letter-spacing: -.85px;
+		@media screen and (max-width: 1200px){
+			margin-top: 10px;
+		}
 	}
 	&__row-2{
 		display: flex;
@@ -335,6 +346,7 @@
 }
 @media screen and (max-width: 830px){
 	.notifications{
+		margin-top: 100px;
 		flex-direction: column;
 		align-items: center;
 		&__telephone-block{
@@ -355,7 +367,7 @@
 		}
 		&__title{
 			font-size: 30px;
-			margin-bottom: 0;
+			margin-bottom: 0px;
 		}
 		&__text{
 			margin-bottom: -40px;
@@ -376,7 +388,7 @@
 		}
 		&__title{
 			font-size: 30px;
-			margin-bottom: 0;
+			margin-bottom: -20px;
 		}
 		&__text{
 			max-width:300px;

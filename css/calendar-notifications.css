@@ -64,6 +64,13 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .calendar__block-text {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
 .calendar__title {
   max-width: 563px;
   margin-top: 165px;
@@ -74,6 +81,13 @@
   font-size: 80px;
   line-height: 95.4%;
   color: #000;
+}
+
+@media screen and (max-width: 1200px) {
+  .calendar__title {
+    margin: 0 auto;
+    font-size: 60px;
+  }
 }
 
 .calendar__text {
@@ -88,6 +102,12 @@
   line-height: 29px;
   color: #828282;
   letter-spacing: -.85px;
+}
+
+@media screen and (max-width: 1200px) {
+  .calendar__text {
+    margin-top: 10px;
+  }
 }
 
 .calendar__row-2 {
@@ -405,6 +425,7 @@
 
 @media screen and (max-width: 830px) {
   .notifications {
+    margin-top: 100px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -435,7 +456,7 @@
   }
   .notifications__title {
     font-size: 30px;
-    margin-bottom: 0;
+    margin-bottom: 0px;
   }
   .notifications__text {
     margin-bottom: -40px;
@@ -455,7 +476,7 @@
   }
   .notifications__title {
     font-size: 30px;
-    margin-bottom: 0;
+    margin-bottom: -20px;
   }
   .notifications__text {
     max-width: 300px;

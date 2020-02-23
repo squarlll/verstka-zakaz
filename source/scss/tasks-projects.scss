@@ -156,6 +156,10 @@ body{
 	.distance{
 		flex-direction: column;
 		align-items: center;
+		&__title{
+			margin: 0 auto ;
+			font-size: 60px;
+		}
 		&__col-1{
 			margin-bottom: 80px;
 			display: flex;
@@ -173,13 +177,9 @@ body{
 			max-width: 100%;
 			@include text();
 		}
-		&__title{
-			margin-bottom: 60px;
-			max-width: 100%;
-		}
 	}
 }
-@media screen and (max-width: 740px){
+@media screen and (max-width: 870px){
 	.distance{
 		&__title{
 			font-size: 40px;
@@ -204,12 +204,16 @@ body{
 				max-width: 310px;
 			}
 		}
+		&__title{
+			font-size: 35px;
+			line-height: 1.1;
+		}
 	}
 }
 @media screen and (max-width: 390px){
 	.distance{
 		&__title{
-			font-size: 30px;
+			font-size: 35px;
 		}
 		&__text{
 			font-size: 18px;
@@ -331,6 +335,7 @@ body{
 @media screen and (max-width: 1000px){
 	.tasks-projects{
 		&__title{
+			margin-bottom: 0;
 			font-size: 60px;
 		}
 		&__text{
@@ -349,7 +354,7 @@ body{
 			margin-top: -100px;
 		}
 		&__title{
-			margin-bottom: 0;
+			margin-bottom: -30px;
 			font-size: 40px;
 		}
 		&__text{
@@ -363,6 +368,7 @@ body{
 @media screen and (max-width: 540px){
 	.tasks-projects{
 		&__title{
+			margin-bottom: -40px;
 			font-size: 30px;
 		}
 		&__text{
@@ -543,6 +549,7 @@ body{
 @media screen and (max-width: 770px){
 	.team{
 		&__title{
+			margin-bottom: -30px;
 			font-size: 30px;
 		}
 		&__subtitle-1{
@@ -551,7 +558,7 @@ body{
 		}
 		&__subtitle-2{
 			font-size: 20px;
-			margin-top: -20px;
+			margin-top: -40px;
 		}
 	}
 }

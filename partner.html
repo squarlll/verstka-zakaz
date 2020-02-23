@@ -33,37 +33,40 @@
 					</form>
 					<li>
 						<a class="header__link possibility" href="#">
-							Возможности
+							<div>Возможности</div>
+							<i class="fas fa-angle-right"></i>
 						</a>
 					</li>
 					<li>
-						<a class="header__link" href="#">
+						<a class="header__link header__cost" href="#">
 							Цены
 						</a>
 					</li>
 					<li>
-						<a class="header__link" href="#">
+						<a class="header__link header__introduction" href="#">
 							Внедрение
 						</a>
 					</li>
 					<li>
-						<a class="header__link" href="#">
+						<a class="header__link header__development" href="#">
 							Разработка
 						</a>
 					</li>
 					<li>
-						<a class="header__link" href="#">
-							Контакты
+						<a class="header__link header__numbers" href="#">
+							Номера
 						</a>
 					</li>
 					<li>
-						<a class="header__link" href="#">
-							Помощь
+						<a class="header__link header__contact" href="#">
+							<div>Контакты</div>
+							<i class="fas fa-angle-right"></i>
 						</a>
 					</li>
 				</ul>
 
-				<ul class="menu__second-level">
+				<!-- mobile menu possibility -->
+				<ul class="menu__second-level mobile-menu__possibility">
 					<div class="second-level__back">
 						<i class="fas fa-chevron-left"></i>
 						<div>Возможности</div>
@@ -123,10 +126,81 @@
 							<div class="level__item-img">
 								<img src="img/header/smartphone-1.svg" alt="">
 							</div>
-							<div class="header__item-text">
+							<div class="level__item-text">
 								Коллбэк Виджет
 							</div>
 						</a>
+					</li>
+				</ul>
+
+				<!-- mobile menu contacts -->
+				<ul class="menu__second-level mobile-menu__contacts">
+					<div class="second-level__back">
+						<i class="fas fa-chevron-left"></i>
+						<div>Контакты</div>
+					</div>
+					<li>
+						<a href="#" class="level__item">
+							<div class="level__item-img">
+								<img src="img/header/svg/telegram.svg" alt="">
+							</div>
+							<div class="level__item-text">
+								Телеграм
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="level__item">
+							<div class="level__item-img">
+								<img src="img/header/svg/vk.svg" alt="">
+							</div>
+							<div class="level__item-text">
+								Вконтакте
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="level__item">
+							<div class="level__item-img">
+								<img src="img/header/svg/viber.svg" alt="">
+							</div>
+							<div class="level__item-text">
+								Вайбер
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="level__item">
+							<div class="level__item-img">
+								<img src="img/header/svg/instagram.svg" alt="">
+							</div>
+							<div class="level__item-text">
+								Инстаграм
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="level__item">
+							<div class="level__item-img">
+								<img src="img/header/svg/facebook.svg" alt="">
+							</div>
+							<div class="level__item-text">
+								Фейсбук
+							</div>
+						</a>
+					</li>
+					<li>
+						<div class="header__info">
+							<div class="header__tel">
+								<a href="tel:+74951453350">+7 (495) 145-33-50</a>
+							</div>
+							<div class="header__email">
+								<a href="mailto:info@5crm.ru">info@5crm.ru</a>
+							</div>
+							<div class="header__location">
+								<a href="#">Мытищи, Шараповский<br>проезд строение 7</a>
+							</div>
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -146,7 +220,7 @@
 	</div>
 </header>
 <div class="header-bottom">
-	<div class="header-bottom__wrapper">
+	<div class="header-bottom__possibility menu-bottom_active">
 		<a href="#" class="header__item">
 			<div class="header__item-img">
 				<img src="img/header/desk-1.svg" alt="">
@@ -195,6 +269,59 @@
 				Коллбэк Виджет
 			</div>
 		</a>
+	</div>
+	<div class="header-bottom__contact">
+		<a href="#" class="header__item">
+			<div class="header__item-img">
+				<img src="img/header/svg/telegram.svg" alt="">
+			</div>
+			<div class="header__item-text">
+				Телеграм
+			</div>
+		</a>
+		<a href="#" class="header__item">
+			<div class="header__item-img">
+				<img src="img/header/svg/vk.svg" alt="">
+			</div>
+			<div class="header__item-text">
+				Вконтакте
+			</div>
+		</a>
+		<a href="#" class="header__item">
+			<div class="header__item-img">
+				<img src="img/header/svg/viber.svg" alt="">
+			</div>
+			<div class="header__item-text">
+				Вайбер
+			</div>
+		</a>
+		<a href="#" class="header__item">
+			<div class="header__item-img">
+				<img src="img/header/svg/instagram.svg" alt="">
+			</div>
+			<div class="header__item-text">
+				Инстаграм
+			</div>
+		</a>
+		<a href="#" class="header__item">
+			<div class="header__item-img">
+				<img src="img/header/svg/facebook.svg" alt="">
+			</div>
+			<div class="header__item-text">
+				Фейсбук
+			</div>
+		</a>
+		<div class="header__info">
+			<div class="header__tel">
+				<a href="tel:+74951453350">+7 (495) 145-33-50</a>
+			</div>
+			<div class="header__email">
+				<a href="mailto:info@5crm.ru">info@5crm.ru</a>
+			</div>
+			<div class="header__location">
+				<a href="#">Мытищи, Шараповский<br>проезд строение 7</a>
+			</div>
+		</div>
 	</div>
 </div>
 			<div class="affiliate-program">
@@ -262,47 +389,50 @@
 					</div>
 				</div>
 			</div>
-		<!--<div class="business">
-				<div class="business__row-1">
+		<!-- business -->
+			<div class="business">
+				<div class="business__row">
 					<div class="business__title">Начни бизнес с нуля</div>
 					<div class="business__text">
 						Если вы ищете перспективную нишу для заработка денег, то вы ее нашли. Продажа лицензий на использование CRM-системы или отдельных модулей приносит стабильный пассивный заработок. Вы один раз подключаете клиента и получаете деньги до тех пор, пока клиент пользуется продуктом. Процесс напоминает нефтяную вышку, которая приносит деньги, хотите вы того или нет.
 					</div>
 				</div>
-				<div class="business__row-2">
-					<div class="business__col-1">
-						<div class="business-img-1">
-							<img src="img/partner/image-153.png" alt="">
-						</div>
-						<div class="business__block-text-1">
-							<div class="business__subtitle subtitle">Перспективы рынка</div>
-							<div class="business__text">
-								“Хотелки” клиентов растут с каждым днем. Создавайте уникальные IT-решения под конкретных заказчиков. Если вы разбираетесь в языках программирования и системах интеграции, то запросто сможете зарабатывать на продаже дополнительного функционала.
+				<div class="business__row">
+					<div class="business__col">
+						<div class="business__item">
+							<div class="business-img">
+								<img src="img/partner/image-153.png" alt="">
+							</div>
+							<div class="business__block-text">
+								<div class="business__subtitle subtitle">Перспективы рынка</div>
+								<div class="business__text">
+									“Хотелки” клиентов растут с каждым днем. Создавайте уникальные IT-решения под конкретных заказчиков. Если вы разбираетесь в языках программирования и системах интеграции, то запросто сможете зарабатывать на продаже дополнительного функционала.
+								</div>
 							</div>
 						</div>
-						<div class="business__block-img-1">
+						<div class="business__item-2">
 							<div class="business__text-img">Минимальные вложения</div>
-							<div class="business-img-2">
+							<div class="business-img">
 								<img src="img/partner/Black-17.png" alt="">
 							</div>
 						</div>
 					</div>
-					<div class="business__col-2">
-						<div class="business__block-img-2">
+					<div class="business__col">
+						<div class="business__item-3">
 							<div class="business__text-img">Отличный продукт</div>
-							<div class="business-img-3">
+							<div class="business-img">
 								<img src="img/partner/image-33.png" alt="">
 							</div>
-						</div>
-						<div class="business__block-text-2">
-							<div class="business__subtitle subtitle">Помощь партнерам</div>
-							<div class="business__text">
-								CRM-системы — это сложный продукт. Мы помогаем нашим партнерам разобраться во всех тонкостях работы программы, а также даем ценные рекомендации по работе на рынке IT-услуг. Для разработчиков и внедренцев у нас есть маркетинговая поддержка.
+							<div class="business__block-text">
+								<div class="business__subtitle subtitle">Помощь партнерам</div>
+								<div class="business__text">
+									CRM-системы — это сложный продукт. Мы помогаем нашим партнерам разобраться во всех тонкостях работы программы, а также даем ценные рекомендации по работе на рынке IT-услуг. Для разработчиков и внедренцев у нас есть маркетинговая поддержка.
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>-->
+			</div>
 			<div class="money">
 				<div class="money__col">
 					<div class="money__title">Как получить деньги</div>

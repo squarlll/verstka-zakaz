@@ -1142,3 +1142,7 @@ body {
     display: none;
   }
 }
+
+.header-bottom {
+  margin-top: 0 !important;
+}

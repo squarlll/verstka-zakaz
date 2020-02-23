@@ -130,7 +130,7 @@ body{
 			margin-bottom: 20px;
 			max-width: 350px;
 			font-size: 35px;
-			line-height: 1.2;
+			line-height: 1;
 		}
 		&__text{
 			padding: 0 20px;
@@ -158,7 +158,7 @@ body{
 	}
 	&__title{
 		font-family: 'SanFrancisco Semibold', sans-serif;
-		max-width: 741px;
+		max-width: 841px;
 		background: linear-gradient(to right,#4B48F5, #890041);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
@@ -581,6 +581,7 @@ body{
 			font-size: 18px;
 		}
 		&__button{
+			padding: 13px 13px;
 			max-width: 300px;
 			a{
 				font-size: 18px;
@@ -626,7 +627,7 @@ body{
 }
 @media screen and (max-width: 1239px){
 	.any-sites{
-		margin-top: 50px;
+		margin-top: 100px;
 		margin-bottom: 0;
 	}
 }
@@ -651,10 +652,12 @@ body{
 @media screen and (max-width: 730px){
 	.any-sites{
 		&__title{
-			line-height: 1.5;
+			margin-bottom: 30px;
+			line-height: 1.3;
 			font-size: 30px;
 		}
 		&__subtitle{
+			margin-bottom: 10px;
 			font-size: 25px;
 			text-align: center;
 		}
@@ -764,14 +767,8 @@ body{
 			max-width: 600px;
 		}
 		&__button{
-			margin: 0 auto;
-		}
-	}
-}
-@media screen and (max-width: 730px){
-	.all-unter-controll{
-		&__button{
 			max-width: 300px;
+			padding: 13px 12px;
 			a{
 				font-size: 18px;
 			}
@@ -1049,6 +1046,9 @@ body{
 	}
 	&__image{
 		margin-left: -350px;
+		img{
+			max-width: 100%;
+		}
 	}
 	&__row-2{
 		margin-top: -110px;
@@ -1091,6 +1091,135 @@ body{
 		    top: -75px;
 		}
 	}
+	@media screen and (max-width: 1760px){
+		&__title{
+			font-size: 60px;
+		}
+		&__image{
+			margin-left: -130px;
+		}
+		&__text{
+			margin-left: -110px;
+		}
+		&__result{
+			width: 600px;
+			left: -115px;
+		}
+	}
+	@media screen and (max-width: 1240px){
+		&__title{
+			font-size: 50px;
+		}
+		&__row-1{
+			flex-direction: column;
+		}
+		&__text{
+			order: 1;
+			margin: 0 auto -20px;
+			text-align: center;
+		}
+		&__subtitle{
+			margin: 0 auto;
+		}
+		&__image{
+			display: flex;
+			justify-content: center;
+			order: 2;
+			margin: 0 auto;
+			img{
+				max-width: 130%;
+			}
+		}
+		&__row-2{
+		}
+		&__problem{
+			text-align: center;
+			margin: 0 auto;
+		}
+		&__things{
+			flex-direction: column;
+			align-items: center;
+			margin: 40px auto 0;
+			text-align: center;
+			.things-arrow{
+				margin-top: 30px;
+			}
+			.things-arrow::after{
+			content: url('../img/layout/Arrow-27.svg');
+			position: absolute;
+			right: 0;
+			left: 0;
+			top: 230px;
+			}
+		}
+		&__result{
+			margin: 250px auto 0;
+			left: 0;
+			&::after{
+				top: -60px;
+			}
+		}
+	}
+	@media screen and (max-width: 860px){
+		&__problem{
+			padding: 0 15px;
+			margin-top: 40px;
+			font-size: 30px;
+		}
+		&__things{
+			.things-arrow::after{
+			left: 0;
+			top: 170px;
+			}
+		}
+	}
+	@media screen and (max-width: 660px){
+		&__text{
+			margin-bottom: 0;
+		}
+		&__title{
+			font-size: 30px;
+		}
+		&__subtitle{
+			font-size: 20px;
+			max-width: 500px;
+		}
+		&__problem{
+			margin-top: 60px;
+			font-size: 25px;
+		}
+		&__result{
+			width: 100%;
+			margin: 190px auto 0;
+			padding: 0 5px;
+			font-size: 18px;
+			&::after{
+				display: none;
+			}
+		}
+	}
+	@media screen and (max-width: 400px){
+		&__text{
+			margin-bottom: 0;
+		}
+		&__title{
+			font-size: 25px;
+		}
+		&__subtitle{
+			font-size: 18px;
+			max-width: 500px;
+		}
+		&__problem{
+			margin-top: 80px;
+			font-size: 20px;
+		}
+		&__things{
+			.things-arrow::after{
+			left: 0;
+			top: 190px;
+			}
+		}
+	}
 }
 .things__text{
 	max-width: 378px;
@@ -1101,6 +1230,10 @@ body{
 	line-height: 124.1%;
 	color: #828282;
 	letter-spacing: -.4px;
+	@media screen and (max-width: 860px){
+		font-size: 20px;
+		margin: 0 auto;
+	}
 }
 .free-connection ~ .footer{
 	background: #000;

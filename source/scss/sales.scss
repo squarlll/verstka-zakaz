@@ -95,7 +95,7 @@ body{
 	&-img{
 		text-align: center;
 		img{
-			max-width: 1438px;
+			max-width: 100%;
 		}
 	}
 }
@@ -105,49 +105,33 @@ body{
 			text-align: center;
 			font-size: 80px;
 		}
-		&-img{
-			img{
-				max-width: 1038px;
-			}
-		}
 	}
 }	
 @media screen and (max-width: 1050px){
 	.control{
 		&__title{
+			margin-bottom: 0;
 			font-size: 60px;
 		}
-		&-img{
-			img{
-				max-width: 738px;
-			}
-		}
 	}
 }
-@media screen and (max-width: 770px){
-	.control{
-		&__title{
-			font-size: 35px;
-			margin-bottom: 0;
-			letter-spacing: 0px;
-		}
-		&-img{
-			img{
-				max-width: 438px;
-			}
-		}
-	}
-}
-@media screen and (max-width: 460px){
+@media screen and (max-width: 735px){
 	.control{
 		&__title{
 			font-size: 25px;
-			margin-bottom: 0;
+			margin-bottom: 10px;
+			letter-spacing: 0px;
+			line-height: 1.1;
 		}
-		&-img{
-			img{
-				max-width: 310px;
-			}
+	}
+}
+@media screen and (max-width: 600px){
+	.control{
+		&__title{
+			padding: 0 10px;
+			font-size: 15px;
+			margin-bottom: 10px;
+			line-height: 1!important;
 		}
 	}
 }
@@ -1353,15 +1337,7 @@ body{
 		letter-spacing: -1.1px;
 		@media screen and (max-width: 1050px){
 			font-size: 20px;
-			line-height: 24px;
-		}
-		@media screen and (max-width: 650px){
-			font-size: 16px;
-			line-height: 20px;
-		}
-		@media screen and (max-width: 360px){
-			font-size: 14px;
-			line-height: 18px;
+			line-height: 1.1;
 		}
 	}
 	@media screen and (max-width: 1580px){

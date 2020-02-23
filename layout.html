@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
 	<!-- fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap&subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap&subset=cyrillic" rel="stylesheet">
 	<!-- styles -->
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/fonts.css">
@@ -35,37 +36,40 @@
 					</form>
 					<li>
 						<a class="header__link possibility" href="#">
-							Возможности
+							<div>Возможности</div>
+							<i class="fas fa-angle-right"></i>
 						</a>
 					</li>
 					<li>
-						<a class="header__link" href="#">
+						<a class="header__link header__cost" href="#">
 							Цены
 						</a>
 					</li>
 					<li>
-						<a class="header__link" href="#">
+						<a class="header__link header__introduction" href="#">
 							Внедрение
 						</a>
 					</li>
 					<li>
-						<a class="header__link" href="#">
+						<a class="header__link header__development" href="#">
 							Разработка
 						</a>
 					</li>
 					<li>
-						<a class="header__link" href="#">
-							Контакты
+						<a class="header__link header__numbers" href="#">
+							Номера
 						</a>
 					</li>
 					<li>
-						<a class="header__link" href="#">
-							Помощь
+						<a class="header__link header__contact" href="#">
+							<div>Контакты</div>
+							<i class="fas fa-angle-right"></i>
 						</a>
 					</li>
 				</ul>
 
-				<ul class="menu__second-level">
+				<!-- mobile menu possibility -->
+				<ul class="menu__second-level mobile-menu__possibility">
 					<div class="second-level__back">
 						<i class="fas fa-chevron-left"></i>
 						<div>Возможности</div>
@@ -125,10 +129,81 @@
 							<div class="level__item-img">
 								<img src="img/header/smartphone-1.svg" alt="">
 							</div>
-							<div class="header__item-text">
+							<div class="level__item-text">
 								Коллбэк Виджет
 							</div>
 						</a>
+					</li>
+				</ul>
+
+				<!-- mobile menu contacts -->
+				<ul class="menu__second-level mobile-menu__contacts">
+					<div class="second-level__back">
+						<i class="fas fa-chevron-left"></i>
+						<div>Контакты</div>
+					</div>
+					<li>
+						<a href="#" class="level__item">
+							<div class="level__item-img">
+								<img src="img/header/svg/telegram.svg" alt="">
+							</div>
+							<div class="level__item-text">
+								Телеграм
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="level__item">
+							<div class="level__item-img">
+								<img src="img/header/svg/vk.svg" alt="">
+							</div>
+							<div class="level__item-text">
+								Вконтакте
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="level__item">
+							<div class="level__item-img">
+								<img src="img/header/svg/viber.svg" alt="">
+							</div>
+							<div class="level__item-text">
+								Вайбер
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="level__item">
+							<div class="level__item-img">
+								<img src="img/header/svg/instagram.svg" alt="">
+							</div>
+							<div class="level__item-text">
+								Инстаграм
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="level__item">
+							<div class="level__item-img">
+								<img src="img/header/svg/facebook.svg" alt="">
+							</div>
+							<div class="level__item-text">
+								Фейсбук
+							</div>
+						</a>
+					</li>
+					<li>
+						<div class="header__info">
+							<div class="header__tel">
+								<a href="tel:+74951453350">+7 (495) 145-33-50</a>
+							</div>
+							<div class="header__email">
+								<a href="mailto:info@5crm.ru">info@5crm.ru</a>
+							</div>
+							<div class="header__location">
+								<a href="#">Мытищи, Шараповский<br>проезд строение 7</a>
+							</div>
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -148,7 +223,7 @@
 	</div>
 </header>
 <div class="header-bottom">
-	<div class="header-bottom__wrapper">
+	<div class="header-bottom__possibility menu-bottom_active">
 		<a href="#" class="header__item">
 			<div class="header__item-img">
 				<img src="img/header/desk-1.svg" alt="">
@@ -197,6 +272,59 @@
 				Коллбэк Виджет
 			</div>
 		</a>
+	</div>
+	<div class="header-bottom__contact">
+		<a href="#" class="header__item">
+			<div class="header__item-img">
+				<img src="img/header/svg/telegram.svg" alt="">
+			</div>
+			<div class="header__item-text">
+				Телеграм
+			</div>
+		</a>
+		<a href="#" class="header__item">
+			<div class="header__item-img">
+				<img src="img/header/svg/vk.svg" alt="">
+			</div>
+			<div class="header__item-text">
+				Вконтакте
+			</div>
+		</a>
+		<a href="#" class="header__item">
+			<div class="header__item-img">
+				<img src="img/header/svg/viber.svg" alt="">
+			</div>
+			<div class="header__item-text">
+				Вайбер
+			</div>
+		</a>
+		<a href="#" class="header__item">
+			<div class="header__item-img">
+				<img src="img/header/svg/instagram.svg" alt="">
+			</div>
+			<div class="header__item-text">
+				Инстаграм
+			</div>
+		</a>
+		<a href="#" class="header__item">
+			<div class="header__item-img">
+				<img src="img/header/svg/facebook.svg" alt="">
+			</div>
+			<div class="header__item-text">
+				Фейсбук
+			</div>
+		</a>
+		<div class="header__info">
+			<div class="header__tel">
+				<a href="tel:+74951453350">+7 (495) 145-33-50</a>
+			</div>
+			<div class="header__email">
+				<a href="mailto:info@5crm.ru">info@5crm.ru</a>
+			</div>
+			<div class="header__location">
+				<a href="#">Мытищи, Шараповский<br>проезд строение 7</a>
+			</div>
+		</div>
 	</div>
 </div>
 	<div class="layout-main">

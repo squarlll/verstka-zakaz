@@ -1,6 +1,5 @@
 html {
   overflow-x: hidden;
-  -webkit-text-size-adjust: none;
 }
 
 body {
@@ -2726,7 +2725,7 @@ body {
 
 .cases__item {
   height: 540px;
-  margin-top: 60px;
+  margin-top: 59px;
 }
 
 .cases__item:first-child {
@@ -2749,6 +2748,7 @@ body {
 }
 
 .cases__item:nth-child(3) {
+  margin-top: 58px;
   width: 265px;
   margin-left: -5px;
   background: url("../img/index/Mask-Group-3.png") center no-repeat;
@@ -2799,8 +2799,6 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
   }
   .cases__title {
     margin: 0 auto 40px;
@@ -2815,32 +2813,35 @@ body {
     margin-top: 20px;
   }
   .cases__item:first-child {
-    width: 50%;
+    width: 20%;
   }
   .cases__item:first-child .cases__subtitle {
     margin-left: 0px;
   }
   .cases__item:nth-child(2) {
-    width: 50%;
+    width: 20%;
     margin-left: 0;
   }
   .cases__item:nth-child(2) .cases__subtitle {
     margin-left: 0px;
   }
   .cases__item:nth-child(3) {
-    width: 50%;
+    margin-top: 19px;
+    width: 20%;
     margin-left: 0px;
   }
   .cases__item:nth-child(3) .cases__subtitle {
     margin-left: 0px;
   }
   .cases__item:nth-child(4) {
+    width: 20%;
     margin-left: 0px;
   }
   .cases__item:nth-child(4) .cases__subtitle {
     margin-left: 0px;
   }
   .cases__item:nth-child(5) {
+    width: 20%;
     margin-left: 0px;
     margin-right: 0px;
   }
@@ -2848,6 +2849,64 @@ body {
     margin-left: 0px;
     margin-bottom: -75px;
     line-height: 1.3;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .cases__subtitle {
+    font-size: 18px;
+  }
+  .cases__item {
+    height: 320px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .cases__subtitle {
+    font-size: 16px;
+  }
+  .cases__content {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .cases__item:first-child {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    width: 33.3%;
+    min-background-size: 100%;
+  }
+  .cases__item:nth-child(2) {
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4;
+    width: 50%;
+    margin-top: 0;
+    min-background-size: 100%;
+  }
+  .cases__item:nth-child(3) {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+    margin-top: 20px;
+    width: 33.3%;
+    min-background-size: 100%;
+  }
+  .cases__item:nth-child(4) {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    width: 33.3%;
+    margin-top: 20px;
+    min-background-size: 100%;
+  }
+  .cases__item:nth-child(5) {
+    -webkit-box-ordinal-group: 6;
+    -ms-flex-order: 5;
+    order: 5;
+    width: 50%;
+    margin-top: 0;
+    background-size: 100%;
   }
 }
 
