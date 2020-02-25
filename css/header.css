@@ -595,12 +595,12 @@
 }
 
 .menu__second-level .level__item-text {
-  padding-left: 20px;
+  padding-left: 13px;
 }
 
 .menu__second-level .level__item-img img {
-  min-width: 45px;
-  max-width: 45px;
+  min-width: 25px;
+  max-width: 25px;
 }
 
 .second-level-active {
