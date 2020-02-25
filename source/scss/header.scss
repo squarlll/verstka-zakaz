@@ -43,7 +43,7 @@
     	letter-spacing: -.1px;
     }
 	&__inner{
-		max-width: 1437px;
+		max-width: 1000px;
 		width: calc(100% - 44px);
 		height: 100%;
 		margin: auto;
@@ -98,6 +98,10 @@
 		display: -ms-flex;
 		display: -o-flex;
 		display: flex;
+		width: 100%;
+	}
+	&__logo{
+		margin-right: 10px;
 	}
 	&__menu {
 		display: -webkit-flex;
@@ -105,7 +109,7 @@
 		display: -ms-flex;
 		display: -o-flex;
 		display: flex;
-		margin-left: 44px;
+		width: 100%;
 	}
 	&__menu ul{
 		display: -webkit-flex;
@@ -113,8 +117,8 @@
 		display: -ms-flex;
 		display: -o-flex;
 		display: flex;
-		justify-content: space-between;
-		width: 628px;
+		justify-content: space-around;
+		width: 100%;
 		max-width: 100%;
 		transition: .5s ease-out;
 		z-index: 111111111111111111;
@@ -131,7 +135,6 @@
 		margin-right: 14px;
 	}
 	&__link{
-		font-family: 'Montserrat', sans-serif;
 		font-weight: 400;
 		font-size: 16px;
 		line-height: 20px;
@@ -154,12 +157,17 @@
 		display: -o-flex;
 		display: flex;
 		align-items: center;
+		margin-left: 10px;
 	}
 	&__avatar{
-		width: 24px;
-		height: 24px;
+		width: 28px;
+		height: 28px;
 		overflow: hidden;
 		border-radius: 50%;
+		& img{
+			width: 28px;
+			height: 28px;
+		}
 	}
 	&__form{
 		display: none;
@@ -245,7 +253,6 @@
 		justify-content: flex-end;
 		&-text{
 			margin-top: 10px;
-			font-family: 'Montserrat', sans-serif;
 			font-size: 12px;
 			line-height: 15px;
 			color: #333;
@@ -256,7 +263,6 @@
 		margin: 0px 53px;
 	}
 	&__info{
-		font-family: 'Montserrat', sans-serif;
 		font-size: 12px;
 		line-height: 15px;
 		letter-spacing: .3px;
@@ -275,7 +281,7 @@
 			left: -22px;
 			transform: translate(0, -50%)
 		}
-		@media screen and (max-width: 910px) {
+		@media screen and (max-width: 767px) {
 			margin: 44px 0 0 0;
 			text-align: center;
 			& div a{
@@ -320,7 +326,7 @@
 		}
 	}
 }
-@media screen and (max-width: 910px){
+@media screen and (max-width: 767px){
 	.header{
 		&__inner{
 			width: 100%;
@@ -450,17 +456,16 @@
 		align-items: center;
 		border-bottom: none!important;
 		margin: 17px 0;
-		font-family: 'Montserrat', sans-serif;
 		font-size: 16px;
 		line-height: 20px!important;
 		letter-spacing: 0;
 	}
 	.level__item-text{
-		padding-left: 30px;
+		padding-left: 20px;
 	}
 	.level__item-img img{
-		min-width: 65px;
-		max-width: 65px;
+		min-width: 45px;
+		max-width: 45px;
 	}
 }
 .second-level-active{
@@ -499,7 +504,7 @@
 		text-align: center;
 	}
 }
-@media screen and (min-width: 911px){
+@media screen and (min-width: 768px){
 	.header__menu ul li{
 		display: -webkit-flex;
 		display: -moz-flex;
