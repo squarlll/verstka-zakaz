@@ -40,7 +40,7 @@
     	line-height: 1.1667;
     	color: #FFF;
     	padding-bottom: 43px;
-    	letter-spacing: -.4px;
+    	letter-spacing: -.1px;
     }
 	&__inner{
 		max-width: 1437px;
@@ -419,7 +419,7 @@
 	}
 }
 .menu-active{
-	height: 100vh!important;
+	height: calc(100vh - 67px)!important;
 	display: block;
 }
 .hamburger-active{
@@ -470,11 +470,10 @@
 	display: none!important;
 }
 .second-level__back{
-	padding-top: 17px;
-	color: #fff;
+	margin-top: 17px;
+	color: #6e6e73;
 	text-align: center;
-	line-height: 25px;
-	font-size: 25px;
+	font-size: 18px;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -485,12 +484,16 @@
 	max-width: 584px;
 	margin: auto;
 	position: relative;
+	background: #1d1d1f;
+	width: 100%;
+	padding: 9px;
+    border-radius: 8px;
 	i{
-		color: #fff;
-		font-size: 22px;
+		color: #6e6e73;
+		font-size: 14px;
 		position: absolute;
-		left: -20px;
-		padding: 20px;
+		left: 3px;
+		padding: 10px;
 	}
 	& div{
 		text-align: center;

@@ -3,7 +3,6 @@ html {
 }
 
 body {
-  background: #FBFBFB;
   overflow: hidden;
 }
 
@@ -15,7 +14,7 @@ body {
 
 .block-subtitle {
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.166666666666667;
   color: #828282;
 }
 
@@ -23,7 +22,7 @@ body {
 .title {
   font-family: 'SanFrancisco Semibold';
   font-size: 80px;
-  line-height: 94px;
+  line-height: 1.175;
 }
 
 .title h2 {
@@ -75,8 +74,21 @@ body {
   text-align: center;
 }
 
+.crm-img {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .crm-img img {
-  max-width: 100%;
+  max-width: 125%;
 }
 
 @media screen and (max-width: 1239px) {
@@ -185,7 +197,7 @@ body {
   max-width: 671px;
   margin-left: 275px;
   margin-top: -150px;
-  letter-spacing: -.5px;
+  letter-spacing: -.2px;
   position: relative;
 }
 
@@ -775,13 +787,13 @@ body {
   max-width: 795px;
   font-weight: 400;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.166666666666667;
   color: #828282;
 }
 
 @media screen and (max-width: 1880px) {
   .cross-cutting-analytics-1 {
-    margin-top: 100px;
+    margin-top: 10px;
   }
 }
 
@@ -869,7 +881,7 @@ body {
 
 /* unique system */
 .unique-system {
-  margin-top: 300px;
+  margin-top: 50px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -1638,7 +1650,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 500px;
+  margin-top: 50px;
 }
 
 .calltracking__text {
@@ -1657,7 +1669,7 @@ body {
   font-size: 25px;
   line-height: 136%;
   color: #828282;
-  letter-spacing: -.5px;
+  letter-spacing: -.1px;
   max-width: 618px;
 }
 
@@ -1828,8 +1840,11 @@ body {
   .calltracking__title {
     font-size: 26px;
   }
+}
+
+@media screen and (max-width: 660px) {
   .calltracking__subtitle {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
@@ -1837,8 +1852,11 @@ body {
   .calltracking__title {
     font-size: 22px;
   }
+}
+
+@media screen and (max-width: 560px) {
   .calltracking__subtitle {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -1846,8 +1864,11 @@ body {
   .calltracking__title {
     font-size: 17px;
   }
+}
+
+@media screen and (max-width: 360px) {
   .calltracking__subtitle {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -1909,7 +1930,7 @@ body {
 .segmentation__text {
   font-weight: 400;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.166666666666667;
   color: #828282;
 }
 
@@ -2117,7 +2138,7 @@ body {
   max-width: 700px;
   font-weight: 400;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.166666666666667;
   color: #828282;
 }
 
@@ -2358,7 +2379,7 @@ body {
   max-width: 334px;
   font-weight: 400;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.166666666666667;
   color: #828282;
 }
 
@@ -2480,7 +2501,7 @@ body {
   max-width: 536px;
   font-weight: 400;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.166666666666667;
   color: #828282;
 }
 
@@ -3054,7 +3075,7 @@ body {
   max-width: 546px;
   font-weight: 400;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.166666666666667;
   color: #828282;
 }
 
@@ -3205,4 +3226,89 @@ body {
   .look .look__item {
     margin-top: 15px;
   }
+}
+
+.footer {
+  text-align: center;
+  padding: 144px 10px;
+  margin-top: 193px;
+  color: #fff;
+}
+
+@media screen and (max-width: 910px) {
+  .footer {
+    margin-top: 80px;
+    padding: 90px 10px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .footer {
+    margin-top: 60px;
+    padding: 60px 10px;
+  }
+}
+
+.cases ~ .footer {
+  color: #333;
+}
+
+.cases ~ .footer .footer__button-wrapper {
+  display: inline-block;
+  position: relative;
+  background: -webkit-linear-gradient(339.56deg, #F58948 -0.39%, #F0704D 6.36%, #D57AA5 37.78%);
+  background: -o-linear-gradient(339.56deg, #F58948 -0.39%, #F0704D 6.36%, #D57AA5 37.78%);
+  background: linear-gradient(110.44deg, #F58948 -0.39%, #F0704D 6.36%, #D57AA5 37.78%);
+  border-radius: 30px;
+  padding: 1px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cases ~ .footer .footer__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  padding: 19px 25px;
+  color: #fff;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.cases ~ .footer .footer__button a {
+  font-size: 24px;
+  background: -webkit-linear-gradient(339.56deg, #F58948 -0.39%, #F0704D 6.36%, #D57AA5 37.78%);
+  background: -o-linear-gradient(339.56deg, #F58948 -0.39%, #F0704D 6.36%, #D57AA5 37.78%);
+  background: linear-gradient(110.44deg, #F58948 -0.39%, #F0704D 6.36%, #D57AA5 37.78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+@media screen and (max-width: 444px) {
+  .cases ~ .footer .footer__button a {
+    font-size: 16.3px;
+  }
+}
+
+.cases ~ .footer .footer__title span {
+  background: -webkit-linear-gradient(339.56deg, #F58948 -0.39%, #F0704D 6.36%, #D57AA5 37.78%);
+  background: -o-linear-gradient(339.56deg, #F58948 -0.39%, #F0704D 6.36%, #D57AA5 37.78%);
+  background: linear-gradient(110.44deg, #F58948 -0.39%, #F0704D 6.36%, #D57AA5 37.78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cases ~ .footer .footer__button-wrapper {
+  margin: 57px auto 0;
+  display: inline-block;
+  position: relative;
+  border-radius: 30px;
+  padding: 1px;
+  text-align: center;
+}
+
+.cases ~ .footer .footer__button {
+  background: #FBFBFB;
 }

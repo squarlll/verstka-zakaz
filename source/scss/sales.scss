@@ -1,8 +1,9 @@
+$button-body:#EEE3F4;
 html{
 	overflow-x: hidden;
 }
 body{
-	background: #EEE3F4;
+	background: $button-body;
 	overflow: hidden;
 }
 /* blocks BEM */
@@ -21,63 +22,63 @@ body{
 	font-size: 80px;
 	line-height: 94px;
 }
-@mixin gradient() {
-	background: linear-gradient(to right,#4B48F5 -0.39%, #890041 37.78%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-@mixin gradient-3() {
-	background: linear-gradient(105.52deg, #80E0FF -0.39%, #855AFF 37.78%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
 @mixin text{
 	font-weight: 400;
 	font-size: 25px;
 	line-height: 28px;
 	color: #828282;
 }
+@mixin gradient($property) {
+	background: $property;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+@mixin button($property) {
+	&__button-wrapper {
+		display: inline-block;
+		position: relative;
+		background: $property;
+		border-radius: 30px;
+		padding: 1px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	&__button{
+		display: flex;
+		text-align: center;
+		padding: 19px 25px;
+		color: #fff;
+		border-radius: 30px;
+		cursor: pointer;
+		& a{
+			font-size: 24px;
+			background: $property;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			margin: 0;
+			@media screen and (max-width: 444px) {
+				font-size: 15.8px;
+			}
+		}
+	}
+	&__title span{
+		background: $property;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
 .title{
 	@include title();
 	p{
-		@include gradient();
+		@include gradient(linear-gradient(to right,#4B48F5 -0.39%, #890041 37.78%));
 		display: inline-block;
 	}
 }
 .title-3{
 	@include title();
 	p{
-		@include gradient-3();
+		@include gradient(linear-gradient(to right,#4B48F5 -0.39%, #890041 37.78%));
 		display: inline-block;
-	}
-}
-@mixin button($background, $border-color){
-	font-size: 24px;
-	line-height: 28px;
-	margin-top: 45px;
-	max-width: 470px;
-	display: flex;
-	align-items: center;
-	position: relative;
-	border-radius: 100px;
-	box-sizing: border-box;
-	$border: 1px;
-	background: $background;
-	background-clip: padding-box;
-	border: solid $border transparent;
-	transition: 1s;
-	&:before {
-	content: '';
-	position: absolute;
-	top: 0; right: 0; bottom: 0; left: 0;
-	z-index: -1;
-	margin: -$border;
-	border-radius: inherit;
-	background: $border-color;
-	}
-	& a{
-	@include gradient();
-	padding: 18px 35px;
 	}
 }
 /* Control */
@@ -93,9 +94,14 @@ body{
 		letter-spacing: -3px;
 	}
 	&-img{
-		text-align: center;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
 		img{
-			max-width: 100%;
+			max-width: 101%;
 		}
 	}
 }
@@ -144,6 +150,7 @@ body{
 	width: 100%;
 	height: 1363px;
 	background: url('../img/sales/iPhone-XS-Mockup-1.jpg') center / cover no-repeat;
+	@include button(linear-gradient(105.52deg, #80E0FF -0.39%, #855AFF 37.78%));
 	&__content{
 		margin-left: 240px;
 	}
@@ -153,21 +160,22 @@ body{
 		max-width: 625px;
 		line-height: 95.4%;
 		letter-spacing: -4px;
+		& p{
+			@include gradient(linear-gradient(105.52deg, #80E0FF -0.39%, #855AFF 37.78%));
+		}
 	}
 	&__text{
 		margin-top: 23px;
 		max-width: 591px;
 		@include text();
 	}
+	&__button-wrapper{
+		margin-top: 51px;
+	}
 	&__button{
-		@include button(#000, linear-gradient(105.52deg, #80E0FF -0.39%, #855AFF 37.78%));
-		margin-right: -105px;
-		margin-top: 50px;
 		max-width: 346px;
 		text-align: center;
-		& a{
-			@include gradient-3();
-		}
+		background: #000;
 	}
 }
 @media screen and (max-width: 900px){
@@ -176,9 +184,6 @@ body{
 		text-align: center;
 		&__content{
 			margin-left: 0;
-		}
-		&__button{
-			margin: 50px auto 0;
 		}
 	}
 }
@@ -196,12 +201,6 @@ body{
 		&__text{
 			padding: 0 10px;
 			font-size: 18px;
-		}
-		&__button{
-			max-width: 306px;
-			a{
-				padding: 18px 15px;
-			}
 		}
 	}
 }
@@ -286,8 +285,7 @@ body{
 }
 @media screen and (max-width: 1300px){
 	.statistics{
-		&__block-text{
-		}
+		margin: 100px auto 0;
 		&__title{
 			margin-left: 0;
 			margin-top: -90px;
@@ -722,7 +720,7 @@ body{
 
 /* role */
 .role{
-	margin-top: 0px;
+	margin-top: 145px;
 	overflow: hidden;
 	&__text{
 		max-width: 1437px;
@@ -733,16 +731,10 @@ body{
 	&__title{
 		font-family: 'SanFrancisco Semibold';
 		font-size: 80px;
-		line-height: 95.4%;
-		background: linear-gradient(90.21deg, #02A5A2 0%, #0471BF 53.21%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
-	&__subtitle{
-		max-width: 929px;
-		font-size: 25px;
-		line-height: 34px;
-		color: #828282;
+		& span {
+			display: block;
+			@include gradient(linear-gradient(85.71deg, #F0704D 23.65%, #B50B00 104.3%));
+		}
 	}
 	&__functional{
 		display: -webkit-flex;
@@ -754,6 +746,15 @@ body{
 		flex-direction: column;
 		padding-top: 300px;
 		padding-right: 185px;
+		@media screen and (max-width: 1000px) {
+			padding-top: 200px;
+		}
+		@media screen and (max-width: 510px) {
+			padding-top: 100px;
+		}
+	}
+	@media screen and (max-width: 1239px) {
+		margin-top: 30px;
 	}
 	.functional{
 		&__image-wrapper{
@@ -1223,16 +1224,14 @@ body{
 	&__inner{
 		max-width: 1097px;
 		font-size: 40px;
-		line-height: 47px;
+		line-height: 1.175;
 		color: #828282;
 		font-family: 'SanFrancisco Semibold', sans-serif;
 		@media screen and (max-width: 1250px){
 			font-size: 28px;
-			line-height: 35px;
 		}
 		@media screen and (max-width: 767px){
 			font-size: 20px;
-			line-height: 32px;
 		}
 	}
 	@media screen and (max-width: 1436px){
@@ -1376,4 +1375,19 @@ body{
 	@media screen and (max-width: 900px){
 		display: none;
 	}
+}
+
+/* Footer */
+.right-decisions ~ .footer{
+	& .footer{
+		color: #000;
+		@include button (linear-gradient(to right, #4B48F5 -0.39%, #890041 37.78%));
+		&__button{
+			background:$button-body;
+			&-wrapper{
+				margin-top: 57px;
+			}
+		}
+	}
+	color: #000!important;
 }

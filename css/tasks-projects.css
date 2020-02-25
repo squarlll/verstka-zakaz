@@ -732,3 +732,70 @@ body {
     line-height: 21px;
   }
 }
+
+.footer {
+  color: #000;
+}
+
+.footer__button-wrapper {
+  display: inline-block;
+  position: relative;
+  background: -webkit-gradient(linear, left top, right top, from(#80E0FF), to(#855AFF));
+  background: -webkit-linear-gradient(left, #80E0FF, #855AFF);
+  background: -o-linear-gradient(left, #80E0FF, #855AFF);
+  background: linear-gradient(to right, #80E0FF, #855AFF);
+  border-radius: 30px;
+  padding: 1px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  padding: 19px 25px;
+  color: #fff;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.footer__button a {
+  font-size: 24px;
+  background: -webkit-gradient(linear, left top, right top, from(#80E0FF), to(#855AFF));
+  background: -webkit-linear-gradient(left, #80E0FF, #855AFF);
+  background: -o-linear-gradient(left, #80E0FF, #855AFF);
+  background: linear-gradient(to right, #80E0FF, #855AFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+@media screen and (max-width: 444px) {
+  .footer__button a {
+    font-size: 16.5px;
+  }
+}
+
+.footer__title span {
+  background: -webkit-gradient(linear, left top, right top, from(#80E0FF), to(#855AFF));
+  background: -webkit-linear-gradient(left, #80E0FF, #855AFF);
+  background: -o-linear-gradient(left, #80E0FF, #855AFF);
+  background: linear-gradient(to right, #80E0FF, #855AFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer__button-wrapper {
+  margin: 57px auto 0;
+  display: inline-block;
+  position: relative;
+  border-radius: 30px;
+  padding: 1px;
+  text-align: center;
+}
+
+.footer__button {
+  background: #E5F2F9;
+}

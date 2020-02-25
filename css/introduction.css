@@ -16,7 +16,7 @@ body {
 
 .block-subtitle {
   font-size: 24px;
-  line-height: 28px;
+  line-height: 116.6666666666667%;
   color: #828282;
 }
 
@@ -50,7 +50,7 @@ body {
 .subtitle {
   font-weight: 700;
   font-size: 80px;
-  line-height: 80px;
+  line-height: 100%;
 }
 
 /* Introduction */
@@ -70,7 +70,7 @@ body {
   max-width: 1030px;
   margin: 0 auto;
   font-size: 40px;
-  line-height: 47px;
+  line-height: 117.5%;
   color: #828282;
 }
 
@@ -162,13 +162,13 @@ body {
   margin-bottom: 22px;
   font-weight: 500;
   font-size: 40px;
-  line-height: 47px;
+  line-height: 117.5%;
 }
 
 .stages__text {
   font-weight: 400;
   font-size: 30px;
-  line-height: 35px;
+  line-height: 166.6666667%;
   color: #828282;
 }
 
@@ -339,13 +339,13 @@ body {
   max-width: 808px;
   font-weight: 400;
   font-size: 25px;
-  line-height: 29px;
+  line-height: 116%;
   color: #828282;
 }
 
 .cost__button {
   font-size: 24px;
-  line-height: 28px;
+  line-height: 116.6666666666667%;
   margin-top: 45px;
   max-width: 470px;
   display: -webkit-box;
@@ -536,13 +536,13 @@ body {
   max-width: 625px;
   font-weight: 400;
   font-size: 25px;
-  line-height: 29px;
+  line-height: 116%;
   color: #828282;
 }
 
 .additional-services__button {
   font-size: 24px;
-  line-height: 28px;
+  line-height: 116.6666666666667%;
   margin-top: 45px;
   max-width: 470px;
   display: -webkit-box;
@@ -724,7 +724,7 @@ body {
   max-width: 590px;
   font-weight: 400;
   font-size: 25px;
-  line-height: 29px;
+  line-height: 116%;
   color: #828282;
 }
 
@@ -817,7 +817,7 @@ body {
 
 .gift__button {
   font-size: 24px;
-  line-height: 28px;
+  line-height: 116.6666666666667%;
   margin-top: 45px;
   max-width: 470px;
   display: -webkit-box;
@@ -908,7 +908,7 @@ body {
   margin: 0 auto 80px;
   font-weight: 700;
   font-size: 60px;
-  line-height: 100.19%;
+  line-height: 100%;
 }
 
 .team-img img {
@@ -939,4 +939,72 @@ body {
     font-size: 25px;
     margin-bottom: 20px;
   }
+}
+
+.footer {
+  background: #000;
+  color: #fff;
+}
+
+.footer__button-wrapper {
+  display: inline-block;
+  position: relative;
+  background: -webkit-gradient(linear, left top, right top, from(#F58948), to(#D57AA5));
+  background: -webkit-linear-gradient(left, #F58948, #D57AA5);
+  background: -o-linear-gradient(left, #F58948, #D57AA5);
+  background: linear-gradient(to right, #F58948, #D57AA5);
+  border-radius: 30px;
+  padding: 1px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  padding: 19px 25px;
+  color: #fff;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.footer__button a {
+  font-size: 24px;
+  background: -webkit-gradient(linear, left top, right top, from(#F58948), to(#D57AA5));
+  background: -webkit-linear-gradient(left, #F58948, #D57AA5);
+  background: -o-linear-gradient(left, #F58948, #D57AA5);
+  background: linear-gradient(to right, #F58948, #D57AA5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+@media screen and (max-width: 444px) {
+  .footer__button a {
+    font-size: 16.5px;
+  }
+}
+
+.footer__title span {
+  background: -webkit-gradient(linear, left top, right top, from(#F58948), to(#D57AA5));
+  background: -webkit-linear-gradient(left, #F58948, #D57AA5);
+  background: -o-linear-gradient(left, #F58948, #D57AA5);
+  background: linear-gradient(to right, #F58948, #D57AA5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer__button-wrapper {
+  margin: 57px auto 0;
+  display: inline-block;
+  position: relative;
+  border-radius: 30px;
+  padding: 1px;
+  text-align: center;
+}
+
+.footer__button {
+  background: #000;
 }

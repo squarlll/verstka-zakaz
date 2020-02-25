@@ -43,6 +43,69 @@ body{
 	line-height: 28px;
 	color: #828282;
 }
+@mixin button($property) {
+	&__button-wrapper {
+		display: inline-block;
+		position: relative;
+		background: $property;
+		border-radius: 30px;
+		padding: 1px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	&__button{
+		display: flex;
+		text-align: center;
+		padding: 19px 25px;
+		color: #fff;
+		border-radius: 30px;
+		cursor: pointer;
+		& a{
+			font-size: 24px;
+			background: $property;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			margin: 0;
+			@media screen and (max-width: 444px) {
+				font-size: 16.5px;
+			}
+		}
+	}
+	&__title span{
+		background: $property;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+@mixin button1($background, $border-color, $btn-text-color){
+	font-size: 24px;
+	line-height: 116.6666666666667%;
+	margin-top: 45px;
+	max-width: 470px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	border-radius: 100px;
+	box-sizing: border-box;
+	$border: 1px;
+	background: $background;
+	background-clip: padding-box;
+	border: solid $border transparent;
+	transition: 1s;
+	&:before {
+	content: '';
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	z-index: -1;
+	margin: -$border;
+	border-radius: inherit;
+	background: $border-color;
+	}
+	& a{
+	color: $btn-text-color;
+	padding: 18px 35px;
+	}
+}
 .title{
 	@include title();
 	p{
@@ -668,5 +731,22 @@ body{
 			font-size: 18px;
 			line-height: 21px;
 		}
+	}
+}
+
+// footer
+.footer{
+	color: #000;
+	@include button(linear-gradient(to right, #80E0FF, #855AFF));
+	&__button-wrapper {
+	    margin: 57px auto 0;
+	    display: inline-block;
+	    position: relative;
+	    border-radius: 30px;
+	    padding: 1px;
+	    text-align: center;
+	}
+	&__button{
+		background: #E5F2F9;
 	}
 }

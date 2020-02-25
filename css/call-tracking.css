@@ -671,7 +671,7 @@ body {
 }
 
 .advertising-budget-img img {
-  max-width: 100%;
+  max-width: 96%;
 }
 
 @media screen and (max-width: 1150px) {
@@ -913,6 +913,10 @@ body {
 .forget-it ~ .function-wrapper {
   margin-top: -2px;
   padding-bottom: 189px;
+}
+
+.function-wrapper {
+  margin-top: -30px;
 }
 
 .numbers ~ .footer .footer__button-wrapper {

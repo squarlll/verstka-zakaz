@@ -1,5 +1,5 @@
 body{
-    background: #f4f4f4;
+    background: #fff;
 }
 .scroll {
     position: fixed;
@@ -136,6 +136,11 @@ body{
     @media screen and (max-width: 400px) {
         &__title h1{
             font-size: 33px;
+        }
+    }
+    @media screen and (max-height: 780px){
+        &__title h1{
+            font-size: 120px;
         }
     }
 }
@@ -923,4 +928,7 @@ body{
 }
 .header-bottom{
     margin-top: 0!important;
+    background-color: rgba(255,255,255,0.5);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
 }

@@ -12,7 +12,7 @@ body{
 }
 .block-subtitle{
 	font-size: 24px;
-	line-height: 28px;
+	line-height: 116.6666666666667%;
 	color: #828282;
 }
 /* mixins */
@@ -34,7 +34,7 @@ body{
 @mixin text{
 	font-weight: 400;
 	font-size: 25px;
-	line-height: 29px;
+	line-height: 116%;
 	color: #828282;
 }
 .title{
@@ -54,11 +54,50 @@ body{
 .subtitle{
 	font-weight: 700;
 	font-size: 80px;
-	line-height: 80px;
+	line-height: 100%;
 }
-@mixin button($background, $border-color, $btn-text-color){
+@mixin gradient($property) {
+	background: $property;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+@mixin button($property) {
+	&__button-wrapper {
+		display: inline-block;
+		position: relative;
+		background: $property;
+		border-radius: 30px;
+		padding: 1px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	&__button{
+		display: flex;
+		text-align: center;
+		padding: 19px 25px;
+		color: #fff;
+		border-radius: 30px;
+		cursor: pointer;
+		& a{
+			font-size: 24px;
+			background: $property;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			margin: 0;
+			@media screen and (max-width: 444px) {
+				font-size: 16.5px;
+			}
+		}
+	}
+	&__title span{
+		background: $property;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+@mixin button1($background, $border-color, $btn-text-color){
 	font-size: 24px;
-	line-height: 28px;
+	line-height: 116.6666666666667%;
 	margin-top: 45px;
 	max-width: 470px;
 	display: flex;
@@ -99,7 +138,7 @@ body{
 		max-width: 1030px;
 		margin: 0 auto;
 		font-size: 40px;
-		line-height: 47px;
+		line-height: 117.5%;
 		color: #828282;
 	}
 	@media screen and (max-width: 1000px){
@@ -178,12 +217,12 @@ body{
 		margin-bottom: 22px;
 		font-weight: 500;
 		font-size: 40px;
-		line-height: 47px;
+		line-height: 117.5%;
 	}
 	&__text{
 		font-weight: 400;
 		font-size: 30px;
-		line-height: 35px;
+		line-height: 166.6666667%;
 		color: #828282;
 	}
 	&-img{
@@ -331,7 +370,7 @@ body{
 		@include text();
 	}
 	&__button{
-		@include button(#F4F4F4, #2D9CDB, #2D9CDB);
+		@include button1(#F4F4F4, #2D9CDB, #2D9CDB);
 		margin-top: 80px;
 		width: 440px;
 		a{
@@ -477,7 +516,7 @@ body{
 		@include text();
 	}
 	&__button{
-		@include button(#F4F4F4, #2D9CDB, #2D9CDB);
+		@include button1(#F4F4F4, #2D9CDB, #2D9CDB);
 		margin-top: 80px;
 		width: 440px;
 		a{
@@ -691,7 +730,7 @@ body{
 		}
 	}
 	&__button{
-		@include button(#F4F4F4, #27AE60, #27AE60);
+		@include button1(#F4F4F4, #27AE60, #27AE60);
 		max-width: 270px;
 		margin: 0 auto;
 		a{
@@ -739,7 +778,7 @@ body{
 		margin: 0 auto 80px;
 		font-weight: 700;
 		font-size: 60px;
-		line-height: 100.19%;
+		line-height: 100%;
 	}
 	&-img{
 		img{
@@ -768,5 +807,23 @@ body{
 			font-size: 25px;
 			margin-bottom: 20px;
 		}
+	}
+}
+
+// footer
+.footer{
+	background:#000;
+	color: #fff;
+	@include button(linear-gradient(to right, #F58948, #D57AA5));
+	&__button-wrapper {
+	    margin: 57px auto 0;
+	    display: inline-block;
+	    position: relative;
+	    border-radius: 30px;
+	    padding: 1px;
+	    text-align: center;
+	}
+	&__button{
+		background: #000;
 	}
 }

@@ -1,3 +1,4 @@
+$button-body:#F5E9DD;
 html{
 	overflow-x: hidden;
 }
@@ -38,20 +39,27 @@ body{
 		text-align: center;
 	}
 	&__button{
-		display: inline-block;
+		display: flex;
 		text-align: center;
-		padding: 16px 35px;
+		padding: 19px 25px;
 		color: #fff;
-		background: #F5E9DD;
 		border-radius: 30px;
 		cursor: pointer;
 		& a{
-			font-size: 18px;
-			background: linear-gradient(to right, #4B48F5 -0.39%, #890041 37.78%);
+			font-size: 24px;
+			background: $property;
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 			margin: 0;
+			@media screen and (max-width: 444px) {
+				font-size: 16.3px;
+			}
 		}
+	}
+	&__title span{
+		background: $property;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 }
 @mixin gradient($property) {
@@ -112,6 +120,7 @@ body{
 }	
 @media screen and (max-width: 1000px){
 	.widget{
+		margin-top: 100px;
 		&__title{
 			font-size: 80px;
 		}
@@ -461,7 +470,8 @@ body{
 		@include text();
 	}
 	&__button{
-		max-width: 420px;
+		max-width: 421px;
+		background: $button-body;
 		&-wrapper{
 			margin-top: 38px;
 		}
@@ -532,9 +542,6 @@ body{
 			padding: 0 10px;
 			margin: 0 auto;
 			font-size: 20px;
-		}
-		&__button{
-			max-width: 410px;
 		}
 		&__social{
 			margin: 0 auto;
@@ -690,7 +697,8 @@ body{
 		margin-bottom: 75px;
 	}
 	&__button{
-		max-width: 420px;
+		max-width: 421px;
+		background: $button-body;
 	}
 }
 @media screen and (max-width: 1450px){
@@ -781,7 +789,7 @@ body{
 	flex-direction: column;
 	align-items: center;
 	margin-top: -20px;
-	@include button (linear-gradient(to right,#4B48F5 -0.39%, #890041 37.78%));
+	@include button(linear-gradient(to right, #4B48F5 -0.39%, #890041 37.78%));
 	&__title{
 		margin-bottom: 40px;
 		text-align: center;
@@ -795,6 +803,7 @@ body{
 	&__button{
 		max-width: 220px;
 		margin: auto;
+		background: $button-body;
 		&-wrapper{
 			margin-top: 55px;
 		}
@@ -1238,22 +1247,16 @@ body{
 .free-connection ~ .footer{
 	background: #000;
 	color: #fff;
-	margin-top: 183px;
-	padding: 144px 10px 147px 10px;
 	& .footer{
 		@include button(linear-gradient(to right, #F58948, #D57AA5));
-	}
-	& .title span{
-		@include gradient(linear-gradient(to right, #F58948, #D57AA5));
-	}
-	& .footer__button-wrapper{
-		margin-top: 57px;
+		&__button{
+			background:$button-body;
+			&-wrapper{
+				margin-top: 57px;
+			}
+		}
 	}
 	& .button{
 		background: #000;
-		& a{
-			@include gradient(linear-gradient(to right, #F58948, #D57AA5));
-			
-		}
 	}
 }

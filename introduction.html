@@ -12,10 +12,12 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/introduction.css">
+	<link rel="stylesheet" href="css/device+functions.css">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
+	<!-- header -->
 	<header class="header">
 	<div class="header__inner">
 		<div class="header__navigation">
@@ -32,37 +34,40 @@
 					</form>
 					<li>
 						<a class="header__link possibility" href="#">
-							Возможности
+							<div>Возможности</div>
+							<i class="fas fa-angle-right"></i>
 						</a>
 					</li>
 					<li>
-						<a class="header__link" href="#">
+						<a class="header__link header__cost" href="#">
 							Цены
 						</a>
 					</li>
 					<li>
-						<a class="header__link" href="#">
+						<a class="header__link header__introduction" href="#">
 							Внедрение
 						</a>
 					</li>
 					<li>
-						<a class="header__link" href="#">
+						<a class="header__link header__development" href="#">
 							Разработка
 						</a>
 					</li>
 					<li>
-						<a class="header__link" href="#">
-							Контакты
+						<a class="header__link header__numbers" href="#">
+							Номера
 						</a>
 					</li>
 					<li>
-						<a class="header__link" href="#">
-							Помощь
+						<a class="header__link header__contact" href="#">
+							<div>Контакты</div>
+							<i class="fas fa-angle-right"></i>
 						</a>
 					</li>
 				</ul>
 
-				<ul class="menu__second-level">
+				<!-- mobile menu possibility -->
+				<ul class="menu__second-level mobile-menu__possibility">
 					<div class="second-level__back">
 						<i class="fas fa-chevron-left"></i>
 						<div>Возможности</div>
@@ -80,40 +85,40 @@
 					<li>
 						<a href="#" class="level__item">
 							<div class="level__item-img">
-								<img src="img/header/desk-1.svg" alt="">
+								<img src="img/header/daily-tasks-1.svg" alt="">
 							</div>
 							<div class="level__item-text">
-								Управление продажами
+								Задачи и проекты
 							</div>
 						</a>
 					</li>
 					<li>
 						<a href="#" class="level__item">
 							<div class="level__item-img">
-								<img src="img/header/desk-1.svg" alt="">
+								<img src="img/header/time-call-1.svg" alt="">
 							</div>
 							<div class="level__item-text">
-								Управление продажами
+								Виртуальная ATC
 							</div>
 						</a>
 					</li>
 					<li>
 						<a href="#" class="level__item">
 							<div class="level__item-img">
-								<img src="img/header/desk-1.svg" alt="">
+								<img src="img/header/Group-172.svg" alt="">
 							</div>
 							<div class="level__item-text">
-								Управление продажами
+								Коллтрекинг
 							</div>
 						</a>
 					</li>
 					<li>
 						<a href="#" class="level__item">
 							<div class="level__item-img">
-								<img src="img/header/desk-1.svg" alt="">
+								<img src="img/header/social-media-2.svg" alt="">
 							</div>
 							<div class="level__item-text">
-								Управление продажами
+								Сквозная аналитика
 							</div>
 						</a>
 					</li>
@@ -122,10 +127,84 @@
 							<div class="level__item-img">
 								<img src="img/header/smartphone-1.svg" alt="">
 							</div>
-							<div class="header__item-text">
+							<div class="level__item-text">
 								Коллбэк Виджет
 							</div>
 						</a>
+					</li>
+				</ul>
+				
+				
+				
+
+				<!-- mobile menu contacts -->
+				<ul class="menu__second-level mobile-menu__contacts">
+					<div class="second-level__back">
+						<i class="fas fa-chevron-left"></i>
+						<div>Контакты</div>
+					</div>
+					<li>
+						<a href="#" class="level__item">
+							<div class="level__item-img">
+								<img src="img/header/svg/telegram.svg" alt="">
+							</div>
+							<div class="level__item-text">
+								Телеграм
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="level__item">
+							<div class="level__item-img">
+								<img src="img/header/svg/vk.svg" alt="">
+							</div>
+							<div class="level__item-text">
+								Вконтакте
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="level__item">
+							<div class="level__item-img">
+								<img src="img/header/svg/viber.svg" alt="">
+							</div>
+							<div class="level__item-text">
+								Вайбер
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="level__item">
+							<div class="level__item-img">
+								<img src="img/header/svg/instagram.svg" alt="">
+							</div>
+							<div class="level__item-text">
+								Инстаграм
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="level__item">
+							<div class="level__item-img">
+								<img src="img/header/svg/facebook.svg" alt="">
+							</div>
+							<div class="level__item-text">
+								Фейсбук
+							</div>
+						</a>
+					</li>
+					<li>
+						<div class="header__info">
+							<div class="header__tel">
+								<a href="tel:+74951453350">+7 (495) 145-33-50</a>
+							</div>
+							<div class="header__email">
+								<a href="mailto:info@5crm.ru">info@5crm.ru</a>
+							</div>
+							<div class="header__location">
+								<a href="#">Мытищи, Шараповский<br>проезд строение 7</a>
+							</div>
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -145,7 +224,7 @@
 	</div>
 </header>
 <div class="header-bottom">
-	<div class="header-bottom__wrapper">
+	<div class="header-bottom__possibility menu-bottom_active">
 		<a href="#" class="header__item">
 			<div class="header__item-img">
 				<img src="img/header/desk-1.svg" alt="">
@@ -195,13 +274,68 @@
 			</div>
 		</a>
 	</div>
+	<div class="header-bottom__contact">
+		<a href="#" class="header__item">
+			<div class="header__item-img">
+				<img src="img/header/svg/telegram.svg" alt="">
+			</div>
+			<div class="header__item-text">
+				Телеграм
+			</div>
+		</a>
+		<a href="#" class="header__item">
+			<div class="header__item-img">
+				<img src="img/header/svg/vk.svg" alt="">
+			</div>
+			<div class="header__item-text">
+				Вконтакте
+			</div>
+		</a>
+		<a href="#" class="header__item">
+			<div class="header__item-img">
+				<img src="img/header/svg/viber.svg" alt="">
+			</div>
+			<div class="header__item-text">
+				Вайбер
+			</div>
+		</a>
+		<a href="#" class="header__item">
+			<div class="header__item-img">
+				<img src="img/header/svg/instagram.svg" alt="">
+			</div>
+			<div class="header__item-text">
+				Инстаграм
+			</div>
+		</a>
+		<a href="#" class="header__item">
+			<div class="header__item-img">
+				<img src="img/header/svg/facebook.svg" alt="">
+			</div>
+			<div class="header__item-text">
+				Фейсбук
+			</div>
+		</a>
+		<div class="header__info">
+			<div class="header__tel">
+				<a href="tel:+74951453350">+7 (495) 145-33-50</a>
+			</div>
+			<div class="header__email">
+				<a href="mailto:info@5crm.ru">info@5crm.ru</a>
+			</div>
+			<div class="header__location">
+				<a href="#">Мытищи, Шараповский<br>проезд строение 7</a>
+			</div>
+		</div>
+	</div>
 </div>
+	<!-- introduction -->
 	<div class="introduction">
 		<div class="introduction__title title">Внедрение 5CRM</div>
 		<div class="introduction__text">
 			Настроим CRM-систему под ваш бизнес. Выберите нужные функции и расскажите нам о своих бизнес-процессах, а остальное мы сделаем сами.
 		</div>
 	</div>
+	<!-- stages -->
 	<div class="stages">
 		<div class="stages__title subtitle">Этапы внедрения</div>
 		<div class="stages__row">
@@ -246,6 +380,7 @@
 			</div>
 		</div>
 	</div>
+	<!-- cost -->
 	<div class="cost">
 		<div class="cost__title title">Стоимость внедрения от 30 000 рублей</div>
 		<div class="cost__content">
@@ -268,6 +403,7 @@
 			</div>
 		</div>
 	</div>
+	<!-- additional services -->
 	<div class="additional-services">
 		<div class="additional-services__col-1">
 			<div class="additional-services__block-info">
@@ -320,6 +456,85 @@
 			<img src="img/introduction/team.jpg" alt="">
 		</div>
 	</div>
+	<!-- device -->
+<div class="device">
+	<div class="device__title block-title">
+		<div class="device__title-inner">
+			Работайте на любых устройствах
+		</div>
+	</div>
+	<div class="device-wrapper">
+		<div class="device__item">
+			<img src="img/telephony/Mockup-5.png" alt="">
+		</div>
+		<div class="device__item">
+			<img src="img/telephony/Black-2.png" alt="">
+		</div>
+		<div class="device__item">
+			<img src="img/telephony/Mockup-1.png" alt="">
+		</div>
+	</div>
+</div>
+
+<!-- function -->
+<div class="function-wrapper">
+	<div class="function">
+		<div class="function__text">
+			<div class="function__title">
+				Используя 5CRM, ВЫ ПОЛУЧАЕТЕ
+			</div>
+			<div class="function__subtitle">
+				Полный набор функций уже включен в базовую комплектацию.
+			</div>
+		</div>
+		<div class="function__wrapper">
+			<div class="function__item">
+				<div class="function__img">
+					<img src="img/telephony/Mockup-2.png" alt="ipad">
+				</div>
+				<div class="item__title">
+					Воронки продаж
+				</div>
+				<div class="item__subtitle">
+					CRM автоматически фиксирует заявки через сайты и звонки. Менеджеры получают подсказки на каждом этапе воронки.
+				</div>
+			</div>
+			<div class="function__item">
+				<div class="function__img">
+					<img src="img/telephony/Front&Back-3.png" alt="ipad">
+				</div>
+				<div class="item__title">
+					Управление задачами
+				</div>
+				<div class="item__subtitle">
+					Этапы проектов, сроки, результаты в режиме реального времени.
+				</div>
+			</div>
+			<div class="function__item">
+				<div class="function__img">
+					<img src="img/telephony/Portrait-1.png" alt="">
+				</div>
+				<div class="item__title">
+					Сквозная аналитика
+				</div>
+				<div class="item__subtitle">
+					Удобный инструмент для контроля и оптимизации бюджета.
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<!-- footer -->
+	<footer class="footer">
+	<div class="footer__title title">
+		<span>Тысячи клиентов</span> уже применяют<br>наши инструменты. Попробуй и ты
+	</div>
+	<div class="footer__button-wrapper">
+		<div class="footer__button button">
+			<a href="#.">Попробовать бесплатно 15 дней</a>
+		</div>
+	</div>
+</footer>
 	<!-- scripts -->
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/5crm.js"></script>

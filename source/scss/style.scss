@@ -3,7 +3,6 @@ html{
 	overflow-x: hidden;
 }
 body{
-	background: $button-body;
 	overflow: hidden;
 }
 /* blocks BEM */
@@ -13,25 +12,25 @@ body{
 }
 .block-subtitle{
 	font-size: 24px;
-	line-height: 28px;
+	line-height: 1.166666666666667;
 	color: #828282;
 }
 /* mixins */
 @mixin title{
 	font-family: 'SanFrancisco Semibold';
 	font-size: 80px;
-	line-height: 94px;
+	line-height: 1.175;
 }
 @mixin subtitle{
 	font-family: 'SanFrancisco Semibold';
 	font-size: 60px;
-	line-height: 70px;
+	line-height: 1.166666666666667;
 	color: #000000;
 }
 @mixin text{
 	font-weight: 400;
 	font-size: 24px;
-	line-height: 28px;
+	line-height: 1.166666666666667;
 	color: #828282;
 }
 @mixin gradient($property) {
@@ -54,17 +53,23 @@ body{
 		text-align: center;
 		padding: 19px 25px;
 		color: #fff;
-		background: #F5E9DD;
 		border-radius: 30px;
 		cursor: pointer;
 		& a{
-			font-size: 18px;
-			background: linear-gradient(to right,
-			#4B48F5 -0.39%, #890041 37.78%);
+			font-size: 24px;
+			background: $property;
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 			margin: 0;
+			@media screen and (max-width: 444px) {
+				font-size: 16.3px;
+			}
 		}
+	}
+	&__title span{
+		background: $property;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 }
 .title{
@@ -96,8 +101,14 @@ body{
 		text-align: center;
 	}
 	&-img{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
 		img{
-			max-width: 100%;
+			max-width: 125%;
 		}
 	}
 	@media screen and (max-width: 1239px){
@@ -186,7 +197,7 @@ body{
 		max-width: 671px;
 		margin-left: 275px;
 		margin-top: -150px;
-		letter-spacing: -.5px;
+		letter-spacing: -.2px;
 		position: relative;
 		&::after{
 			content: url('../img/index/Vector-4.svg');
@@ -714,23 +725,12 @@ body{
 			}
 		}
 	}
-	&__col-block-text{
-
-	}
-	&__title{
-
-	}
 	&__text{
 		max-width: 795px;
 		@include text();
 	}
-	&-img{
-		img{
-
-		}
-	}
 	@media screen and (max-width: 1880px){
-		margin-top: 100px;
+		margin-top: 10px;
 	}
 	@media screen and (max-width: 1650px){
 		margin-left: 300px;
@@ -815,7 +815,7 @@ body{
 }
 /* unique system */
 .unique-system{
-	margin-top: 300px;
+	margin-top: 50px;
 	padding-left: 15px;
 	padding-right: 15px;
 	&__title {
@@ -1438,7 +1438,7 @@ body{
 	display: -o-flex;
 	display: flex;
 	align-items: center;
-	margin-top: 500px;
+	margin-top: 50px;
 	&__text{
 		max-width: 559px;
 	}
@@ -1453,7 +1453,7 @@ body{
 		font-size: 25px;
 		line-height: 136%;
 		color: #828282;
-		letter-spacing: -.5px;
+		letter-spacing: -.1px;
 		max-width: 618px;
 	}
 	&__types{
@@ -1584,24 +1584,30 @@ body{
 		&__title{
 			font-size: 26px;
 		}
+	}
+	@media screen and (max-width: 660px){
 		&__subtitle{
-			font-size: 18px;
+			font-size: 20px;
 		}
 	}
 	@media screen and (max-width: 640px){
 		&__title{
 			font-size: 22px;
 		}
+	}
+	@media screen and (max-width:560px){
 		&__subtitle{
-			font-size: 16px;
+			font-size: 18px;
 		}
 	}
 	@media screen and (max-width: 370px){
 		&__title{
 			font-size: 17px;
 		}
+	}
+	@media screen and (max-width:360px){
 		&__subtitle{
-			font-size: 14px;
+			font-size: 16px;
 		}
 	}
 }
@@ -2763,5 +2769,39 @@ margin-bottom: 100px;
 		.look__item{
 			margin-top: 15px;
 		}		
+	}
+}
+
+
+// footer
+.footer{
+	text-align: center;
+	padding: 144px 10px;
+	margin-top: 193px;
+	color: #fff;
+	@media screen and (max-width: 910px) {
+		margin-top: 80px;
+		padding: 90px 10px;
+	}
+	@media screen and (max-width: 430px) {
+		margin-top: 60px;
+		padding: 60px 10px;
+	}
+}
+.cases ~ .footer{
+	color: #333;
+	& .footer{
+		@include button(linear-gradient(110.44deg, #F58948 -0.39%, #F0704D 6.36%, #D57AA5 37.78%));
+	}
+	& .footer__button-wrapper {
+	    margin: 57px auto 0;
+	    display: inline-block;
+	    position: relative;
+	    border-radius: 30px;
+	    padding: 1px;
+	    text-align: center;
+	}
+	& .footer__button{
+		background: $button-body;
 	}
 }

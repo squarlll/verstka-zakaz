@@ -15,7 +15,7 @@ body {
 
 .block-subtitle {
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.166666666666667;
   color: #828282;
 }
 
@@ -23,7 +23,7 @@ body {
 .title {
   font-family: 'SanFrancisco Semibold';
   font-size: 80px;
-  line-height: 94px;
+  line-height: 1.175;
 }
 
 .title h2 {
@@ -62,7 +62,6 @@ body {
 .what__title {
   max-width: 100%;
   margin-left: 10px;
-  letter-spacing: -2.5px;
 }
 
 .what__block-1 {
@@ -80,7 +79,7 @@ body {
 .what__block-1 .block-1__text h2 {
   font-weight: 400;
   font-size: 24px;
-  line-height: 1.667;
+  line-height: 1.1667;
   color: #828282;
 }
 
@@ -93,7 +92,7 @@ body {
 .what__block-1 .block-1__subtitle {
   font-family: 'SanFrancisco Semibold';
   font-size: 60px;
-  line-height: 70px;
+  line-height: 1.166666666666667;
   color: #000000;
   margin-bottom: 12px;
 }
@@ -150,7 +149,7 @@ body {
     line-height: 1.3;
   }
   .what .block-1__subtitle {
-    margin-bottom: -15px;
+    margin-bottom: 5px;
   }
 }
 
@@ -171,7 +170,7 @@ body {
   position: relative;
   font-weight: 500;
   font-size: 45px;
-  line-height: 53px;
+  line-height: 1.177777777777778;
   text-align: center;
 }
 
@@ -238,30 +237,17 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    margin-top: 30px;
   }
-  .what-facilitate .facilitate__item:first-child {
-    top: -10px;
-    left: 0px;
+  .what-facilitate .facilitate__item {
+    left: 0 !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    margin-bottom: 25px;
   }
-  .what-facilitate .facilitate__item:first-child:after {
-    left: -40px;
-    top: -70px;
-  }
-  .what-facilitate .facilitate__item:nth-child(2) {
-    top: 195px;
-    left: 20px;
-  }
-  .what-facilitate .facilitate__item:nth-child(2):after {
-    left: -140px;
-    top: -115px;
-  }
-  .what-facilitate .facilitate__item:last-child {
-    top: 380px;
-    left: 8px;
-  }
-  .what-facilitate .facilitate__item:last-child:after {
-    top: -70px;
-    left: 0;
+  .what-facilitate .facilitate__item::after {
+    display: none;
   }
 }
 
@@ -307,7 +293,7 @@ body {
 
 @media screen and (max-width: 600px) {
   .what-facilitate {
-    margin-top: 50px;
+    margin-top: 10px;
   }
   .what-facilitate .facilitate__title {
     padding: 0 10px;
@@ -356,9 +342,6 @@ body {
 }
 
 @media screen and (max-width: 400px) {
-  .what-facilitate {
-    margin-top: 50px;
-  }
   .what-facilitate .facilitate__title {
     font-size: 30px;
   }
@@ -410,7 +393,7 @@ body {
   max-width: 495px;
   font-weight: 400;
   font-size: 24px;
-  line-height: 1.667;
+  line-height: 1.1667;
   color: #828282;
 }
 
@@ -419,7 +402,7 @@ body {
   max-width: 562px;
   font-family: 'SanFrancisco Semibold';
   font-size: 60px;
-  line-height: 70px;
+  line-height: 1.166666666666667;
   color: #000000;
 }
 
@@ -436,6 +419,7 @@ body {
 @media screen and (max-width: 1239px) {
   .what__block-2 {
     margin-top: 250px;
+    margin-bottom: 30px;
   }
   .what__block-2 .block-2__text {
     margin-top: 0;
@@ -507,14 +491,19 @@ body {
 }
 
 .what .block-img img {
-  max-width: 120%;
+  max-width: 131%;
+}
+
+@media screen and (max-width: 1760px) {
+  .what-facilitate {
+    margin-bottom: 60px;
+  }
+  .what__block-2 {
+    margin-top: 0;
+  }
 }
 
 /* Calls */
-.calls {
-  margin-top: 10px;
-}
-
 .calls__title-block {
   max-width: 1437px;
   margin: auto;
@@ -523,7 +512,7 @@ body {
 .calls__title-block a {
   font-weight: 400;
   font-size: 24px;
-  line-height: 1.667;
+  line-height: 1.1667;
   color: #4F4F4F;
 }
 
@@ -546,7 +535,7 @@ body {
   max-width: 546px;
   font-weight: 400;
   font-size: 24px;
-  line-height: 1.667;
+  line-height: 1.1667;
   color: #828282;
 }
 
@@ -579,7 +568,7 @@ body {
 
 @media screen and (max-width: 1200px) {
   .calls__block img {
-    max-width: 125%;
+    max-width: 131%;
   }
 }
 
@@ -588,7 +577,7 @@ body {
   max-width: 642px;
   font-weight: 400;
   font-size: 24px;
-  line-height: 1.667;
+  line-height: 1.1667;
   color: #828282;
   font-size: 25px;
   margin-left: -210px;
@@ -626,26 +615,40 @@ body {
   text-align: center;
   padding: 19px 25px;
   color: #fff;
-  background: #F5E9DD;
   border-radius: 30px;
   cursor: pointer;
 }
 
 .calls__forwarding .forwarding__button a {
-  font-size: 18px;
-  background: -webkit-gradient(linear, left top, right top, color-stop(-0.39%, #4B48F5), color-stop(37.78%, #890041));
-  background: -webkit-linear-gradient(left, #4B48F5 -0.39%, #890041 37.78%);
-  background: -o-linear-gradient(left, #4B48F5 -0.39%, #890041 37.78%);
-  background: linear-gradient(to right, #4B48F5 -0.39%, #890041 37.78%);
+  font-size: 24px;
+  background: -webkit-gradient(linear, left top, right top, from(#4B48F5), to(#890041));
+  background: -webkit-linear-gradient(left, #4B48F5, #890041);
+  background: -o-linear-gradient(left, #4B48F5, #890041);
+  background: linear-gradient(to right, #4B48F5, #890041);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;
 }
 
+@media screen and (max-width: 444px) {
+  .calls__forwarding .forwarding__button a {
+    font-size: 16.3px;
+  }
+}
+
+.calls__forwarding .forwarding__title span {
+  background: -webkit-gradient(linear, left top, right top, from(#4B48F5), to(#890041));
+  background: -webkit-linear-gradient(left, #4B48F5, #890041);
+  background: -o-linear-gradient(left, #4B48F5, #890041);
+  background: linear-gradient(to right, #4B48F5, #890041);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .calls__forwarding .forwarding__title {
   font-family: 'SanFrancisco Semibold';
   font-size: 60px;
-  line-height: 70px;
+  line-height: 1.166666666666667;
   color: #000000;
   font-size: 55px;
 }
@@ -656,7 +659,7 @@ body {
   margin: auto;
   font-weight: 400;
   font-size: 24px;
-  line-height: 1.667;
+  line-height: 1.1667;
   color: #828282;
 }
 
@@ -690,6 +693,12 @@ body {
   max-width: 1437px;
 }
 
+@media screen and (max-width: 1239px) {
+  .calls__forwarding {
+    margin-top: 30px;
+  }
+}
+
 /* Control */
 .control {
   max-width: 1437px;
@@ -703,7 +712,7 @@ body {
 
 .control__title {
   font-size: 80px;
-  line-height: 94px;
+  line-height: 1.175;
   font-family: 'SanFrancisco Semibold', sans-serif;
 }
 
@@ -716,10 +725,10 @@ body {
 .control__text {
   font-weight: 400;
   font-size: 24px;
-  line-height: 1.667;
+  line-height: 1.1667;
   color: #828282;
   margin-top: 20px;
-  line-height: 29px;
+  line-height: 1.10;
 }
 
 .control__title-text {
@@ -727,6 +736,15 @@ body {
   margin-bottom: 25px;
   max-width: 546px;
   color: #828282 !important;
+}
+
+@media screen and (max-width: 1239px) {
+  .control {
+    margin-top: 30px;
+  }
+  .control__col-2 {
+    margin-top: 20px;
+  }
 }
 
 .control__block {
@@ -762,7 +780,7 @@ body {
   max-width: 642px;
   font-weight: 400;
   font-size: 24px;
-  line-height: 1.667;
+  line-height: 1.1667;
   color: #828282;
   font-size: 25px;
 }
@@ -797,7 +815,7 @@ body {
 .control__forwarding .forwarding__title {
   font-family: 'SanFrancisco Semibold';
   font-size: 60px;
-  line-height: 70px;
+  line-height: 1.166666666666667;
   color: #000000;
   font-size: 55px;
 }
@@ -808,7 +826,7 @@ body {
   margin: auto;
   font-weight: 400;
   font-size: 24px;
-  line-height: 1.667;
+  line-height: 1.1667;
   color: #828282;
 }
 
@@ -828,7 +846,25 @@ body {
 }
 
 .control__forwarding .forwarding__img {
-  max-width: 100%;
+  max-width: 120%;
+}
+
+@media screen and (max-width: 660px) {
+  .control__text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .control__text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .control__text {
+    font-size: 16px;
+  }
 }
 
 /* calltracking */
@@ -853,7 +889,6 @@ body {
 .calltracking__image {
   position: relative;
   max-width: 985px;
-  max-height: 750px;
   overflow: visible;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -885,31 +920,34 @@ body {
 .calltracking__image img {
   display: block;
   max-width: 100vw;
-  margin-left: -173px;
 }
 
 @media screen and (max-width: 1400px) {
   .calltracking__image img {
-    margin-left: 0;
-    max-width: 120%;
+    max-width: 131%;
   }
 }
 
 .calltracking__about {
-  padding-top: 120px;
+  margin-top: -100px;
+}
+
+@media screen and (max-width: 650px) {
+  .calltracking__about {
+    margin-top: -50px;
+  }
 }
 
 .calltracking__title {
   font-size: 60px;
   font-family: 'SanFrancisco Semibold';
-  line-height: 70px;
 }
 
 .calltracking__subtitle {
   max-width: 641px;
   padding-top: 36px;
   font-family: Roboto;
-  line-height: 29px;
+  line-height: 1.16;
   color: #828282;
 }
 
@@ -942,7 +980,25 @@ body {
   .calltracking__subtitle {
     padding-top: 20px;
     font-size: 18px;
-    line-height: 19px;
+    line-height: 1.1;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .calltracking__subtitle {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .calltracking__subtitle {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .calltracking__subtitle {
+    font-size: 16px !important;
   }
 }
 
@@ -958,7 +1014,7 @@ body {
 
 /* application */
 .application {
-  padding-top: 173px;
+  margin-top: 173px;
   width: calc(100% - 20px);
   max-width: 1413px;
   margin: auto;
@@ -973,7 +1029,6 @@ body {
 }
 
 .application__title {
-  line-height: 78px;
   max-width: 477px;
 }
 
@@ -1062,57 +1117,66 @@ body {
   top: -7px;
 }
 
-@media screen and (max-width: 767px) {
-  .block-title {
-    font-size: 50px !important;
-    line-height: 48px !important;
+@media screen and (max-width: 1239px) {
+  .application {
+    margin-top: 30px;
+  }
+  .application .block-title {
+    font-size: 50px;
     max-width: 100%;
   }
-  .application__subtitle {
+  .application .application__subtitle {
     margin-top: 26px;
     max-width: 100%;
-    font-size: 15px;
   }
-  .application__about {
+  .application .application__about {
     width: 100%;
     max-width: 100%;
     text-align: center;
   }
-  .application__button {
-    margin: 26px auto 0 auto;
+  .application .application__button {
+    margin: 26px auto 0;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .application__title {
+    font-size: 40px !important;
+  }
+  .application__subtitle {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .application__subtitle {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .application__subtitle {
+    font-size: 16px;
   }
 }
 
 @media screen and (max-width: 420px) {
   .block-title {
     font-size: 40px !important;
-    line-height: 38px !important;
+  }
+}
+
+.device {
+  margin-top: 400px;
+}
+
+@media screen and (max-width: 1239px) {
+  .device {
+    margin-top: 96px;
   }
 }
 
 /* Footer */
-.footer {
-  padding-top: 180px;
-  padding-bottom: 105px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin: 0 auto;
-  color: #fff;
-}
-
-.footer__title {
-  line-height: 102.4%;
-  text-align: center;
-}
-
 .calls ~ .footer {
   color: #000 !important;
 }
@@ -1137,13 +1201,12 @@ body {
   text-align: center;
   padding: 19px 25px;
   color: #fff;
-  background: #F5E9DD;
   border-radius: 30px;
   cursor: pointer;
 }
 
 .calls ~ .footer .footer__button a {
-  font-size: 18px;
+  font-size: 24px;
   background: -webkit-gradient(linear, left top, right top, color-stop(-0.39%, #4B48F5), color-stop(37.78%, #890041));
   background: -webkit-linear-gradient(left, #4B48F5 -0.39%, #890041 37.78%);
   background: -o-linear-gradient(left, #4B48F5 -0.39%, #890041 37.78%);
@@ -1151,6 +1214,21 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 0;
+}
+
+@media screen and (max-width: 444px) {
+  .calls ~ .footer .footer__button a {
+    font-size: 16.3px;
+  }
+}
+
+.calls ~ .footer .footer__title span {
+  background: -webkit-gradient(linear, left top, right top, color-stop(-0.39%, #4B48F5), color-stop(37.78%, #890041));
+  background: -webkit-linear-gradient(left, #4B48F5 -0.39%, #890041 37.78%);
+  background: -o-linear-gradient(left, #4B48F5 -0.39%, #890041 37.78%);
+  background: linear-gradient(to right, #4B48F5 -0.39%, #890041 37.78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .calls ~ .footer .footer__button {

@@ -219,6 +219,7 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    margin-bottom: 0;
   }
   .additional-features__item {
     width: 713px;
@@ -520,7 +521,7 @@ body {
 
 .free-connection__button {
   font-size: 24px;
-  line-height: 28px;
+  line-height: 116.6666666666667%;
   margin-top: 45px;
   max-width: 470px;
   display: -webkit-box;
@@ -653,8 +654,8 @@ body {
 
 /* Communication-prices */
 .communication-prices {
-  max-width: 1680px;
-  margin: -20px auto 0;
+  max-width: 1700px;
+  margin: -20px auto 100px;
 }
 
 .communication-prices__title {
@@ -670,6 +671,7 @@ body {
 }
 
 .communication-prices__row {
+  padding: 0 10px;
   margin-top: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -683,16 +685,17 @@ body {
   max-width: 293px;
 }
 
-.communication-prices__item:nth-child(2) .communication-prices__subtitle .communication-prices__subtitle {
+.communication-prices__item:nth-child(2) .communication-prices__subtitle {
   max-width: 289px;
 }
 
-.communication-prices__item:nth-child(3) .communication-prices__subtitle .communication-prices__subtitle {
-  max-width: 360px;
+.communication-prices__item:nth-child(3) .communication-prices__subtitle {
+  max-width: 399px;
 }
 
-.communication-prices__item:last-child .communication-prices__subtitle .communication-prices__subtitle {
-  max-width: 355px;
+.communication-prices__item:last-child .communication-prices__subtitle {
+  max-width: 389px;
+  margin-bottom: 50px;
 }
 
 .communication-prices__subtitle {
@@ -713,6 +716,131 @@ body {
 .communication-prices__price span {
   display: inline-block;
   font-size: 90px;
+}
+
+@media screen and (max-width: 1550px) {
+  .communication-prices__title {
+    margin-left: 30px;
+  }
+  .communication-prices__price {
+    font-size: 40px;
+  }
+  .communication-prices__price span {
+    font-size: 60px;
+  }
+  .communication-prices__subtitle {
+    font-size: 25px;
+  }
+  .communication-prices__row {
+    padding: 0 30px;
+  }
+  .communication-prices__item:first-child .communication-prices__subtitle {
+    max-width: 173px;
+  }
+  .communication-prices__item:nth-child(2) .communication-prices__subtitle {
+    max-width: 139px;
+  }
+  .communication-prices__item:nth-child(3) .communication-prices__subtitle {
+    max-width: 269px;
+  }
+  .communication-prices__item:last-child .communication-prices__subtitle {
+    margin-bottom: 40px;
+    max-width: 279px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .communication-prices__title {
+    margin: 0 auto;
+    font-size: 60px;
+    text-align: center;
+  }
+  .communication-prices__row {
+    padding: 0;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .communication-prices__item {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .communication-prices__item:first-child .communication-prices__subtitle {
+    max-width: 273px;
+  }
+  .communication-prices__item:nth-child(2) .communication-prices__subtitle {
+    max-width: 239px;
+  }
+  .communication-prices__item:nth-child(3) .communication-prices__subtitle {
+    max-width: 349px;
+  }
+  .communication-prices__item:last-child .communication-prices__subtitle {
+    margin-bottom: 45px;
+    max-width: 359px;
+  }
+  .communication-prices__price {
+    margin: 25px auto 0;
+    font-size: 40px;
+  }
+  .communication-prices__price span {
+    font-size: 80px;
+  }
+  .communication-prices__subtitle {
+    margin: 0 auto;
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .communication-prices__title {
+    font-size: 40px;
+  }
+  .communication-prices__row {
+    margin-top: 20px;
+  }
+  .communication-prices__price {
+    margin-top: 30px;
+  }
+  .communication-prices__item {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  .communication-prices__item:first-child .communication-prices__subtitle {
+    max-width: 273px;
+  }
+  .communication-prices__item:nth-child(2) .communication-prices__subtitle {
+    max-width: 239px;
+  }
+  .communication-prices__item:nth-child(3) .communication-prices__subtitle {
+    max-width: 349px;
+  }
+  .communication-prices__item:last-child .communication-prices__subtitle {
+    margin-bottom: 0px;
+    max-width: 359px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .communication-prices__row {
+    margin-top: 0;
+  }
+  .communication-prices__item {
+    margin-bottom: 40px;
+  }
+  .communication-prices__price {
+    margin-top: 20px;
+    font-size: 30px;
+  }
+  .communication-prices__price span {
+    font-size: 50px;
+  }
+  .communication-prices__subtitle {
+    font-size: 25px;
+  }
 }
 
 /* Interesting */
@@ -849,4 +977,72 @@ body {
     max-width: 515px;
     font-size: 18px;
   }
+}
+
+.footer {
+  background: #000;
+  color: #fff;
+}
+
+.footer__button-wrapper {
+  display: inline-block;
+  position: relative;
+  background: -webkit-gradient(linear, left top, right top, from(#F58948), to(#D57AA5));
+  background: -webkit-linear-gradient(left, #F58948, #D57AA5);
+  background: -o-linear-gradient(left, #F58948, #D57AA5);
+  background: linear-gradient(to right, #F58948, #D57AA5);
+  border-radius: 30px;
+  padding: 1px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  padding: 19px 25px;
+  color: #fff;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.footer__button a {
+  font-size: 24px;
+  background: -webkit-gradient(linear, left top, right top, from(#F58948), to(#D57AA5));
+  background: -webkit-linear-gradient(left, #F58948, #D57AA5);
+  background: -o-linear-gradient(left, #F58948, #D57AA5);
+  background: linear-gradient(to right, #F58948, #D57AA5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+@media screen and (max-width: 444px) {
+  .footer__button a {
+    font-size: 16.3px;
+  }
+}
+
+.footer__title span {
+  background: -webkit-gradient(linear, left top, right top, from(#F58948), to(#D57AA5));
+  background: -webkit-linear-gradient(left, #F58948, #D57AA5);
+  background: -o-linear-gradient(left, #F58948, #D57AA5);
+  background: linear-gradient(to right, #F58948, #D57AA5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer__button-wrapper {
+  margin: 57px auto 0;
+  display: inline-block;
+  position: relative;
+  border-radius: 30px;
+  padding: 1px;
+  text-align: center;
+}
+
+.footer__button {
+  background: #000;
 }
