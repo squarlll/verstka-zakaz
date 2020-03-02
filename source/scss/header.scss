@@ -1,6 +1,13 @@
-.header{
+
+.html-fixed{
+	max-height: 100vh !important;
+}
+.html-scroll{
+	overflow-y: scroll;
+}
+.header {
 	height: 67px;
-    z-index: 11111;
+    z-index: 111111111111111111111111111111111111111111111;
     width: 100%;
     background: rgba(0, 0, 0, .8);
     transition-delay: .5s;
@@ -99,9 +106,16 @@
 		display: -o-flex;
 		display: flex;
 		width: 100%;
+		height: 100%;
 	}
 	&__logo{
 		margin-right: 10px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		align-items: center;
 	}
 	&__menu {
 		display: -webkit-flex;
@@ -149,6 +163,9 @@
 		& i{
 			display: none;
 			margin-right: 10px;
+		}
+		&:hover{
+			cursor: pointer;
 		}
 	}
 	&__client{
@@ -297,22 +314,10 @@
 			left: -22px;
 			transform: translate(0, -50%)
 		}
-		@media screen and (max-width: 767px) {
-			margin: 44px 0 0 0;
-			text-align: center;
-			& div a{
-				justify-content: center;
-			}
-			&::before{
-				width: 100%;
-				height: 1px;
-				background: #828282;
-				top: -22px;
-				left: 50%;
-				transform: translate(-50%, 0)
-			}
+		@media screen and (max-width: 860px) {
+			margin: 0;
 		}
-		@media screen and (max-width: 910px) {
+		@media screen and (max-width: 767px) {
 			margin: 0;
 			text-align: left;
 			& div a{
@@ -321,6 +326,71 @@
 			&::before{
 				display: none;
 			}
+		}
+	}
+	&__search-quick{
+		position: absolute;
+		top: 67px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		max-width: 682.656px;
+		width: 66.66667%;
+		max-height: calc(100% - 44px);
+		line-height: 2;
+		background:#fff;
+		border-radius: 0 0 18px 18px;
+		transition: none!important;
+		&-inner{
+			margin: 0 40px;
+			padding: 24px 0 18px;
+			transition: none!important;
+		}
+		&-wrapper{
+			position: absolute;
+			width: 100vw;
+			height: 100vh;
+			background: rgba(0, 0, 0, .48);
+			opacity: 0;
+			transition-property: opacity;
+			transition: .5s;
+			z-index: -1111;
+			&-active{
+				opacity: 1;
+				z-index: 1111111111;
+			}
+			@media screen and (max-width: 767px) {
+				display: none;
+			}
+		}
+	}
+}
+.db{
+	display: block;
+}
+.db1{
+	display: block;
+}
+.search-quick__title{
+	font-size: 12px;
+    line-height: 1.33337;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    text-transform: uppercase;
+    color: #6e6e73;
+}
+.search-quick__links{
+	padding-top: 5px;
+}
+.search-quick__item{
+	margin: 6px -32px;
+	& a{
+	    color: #1d1d1f;
+	    display: block;
+		padding: 0 48px;
+		font-size: 14px;
+		&:hover{			
+    		color: #0167CC;
+    		background: #F5F5F7;
 		}
 	}
 }
@@ -350,6 +420,83 @@
 	}
 	&__item{
 
+	}
+}
+.desktop{
+	&__form{
+		display: none;
+		max-width: 682.656px;
+		width: 66.66667vw;
+		margin: auto;
+		position: relative;
+		height: 100%;
+		& img{
+			position: absolute;
+			top: 50%;
+			left: 19px;
+			transform: translate(-50%, -50%);
+			color: #fff;
+			font-size: 15px;
+			color: #86868b;
+		}
+		&-active{
+			display: block;
+		}
+		.form__button{
+			width: 38px;
+			height: 100%;
+			background:none;
+			position: absolute;
+			right: 0;
+		}
+		.button__wrapper{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -32%);
+			& span{
+			    height: 18px;
+			    width: 1px;
+			    background: #86868b;
+			    position: absolute;
+			    display: block;
+			    border-radius: 0.5px;
+			    top: 11px;
+			    z-index: 1;
+			}
+			.form__button-left{
+				right: 12px;
+				-webkit-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+				-webkit-transform-origin: 0 100%;
+				transform-origin: 0 100%;
+			}
+			.form__button-right{
+				left: 12px;
+				-webkit-transform: rotate(45deg);
+				transform: rotate(45deg);
+				-webkit-transform-origin: 100% 100%;
+				transform-origin: 100% 100%;
+			}
+		}
+		@media screen and (max-width: 767px) {
+			display: none;
+		}
+	}
+	&__input{
+		height: 100%;
+		max-width: 100%;
+		width: 100%;
+		padding: 0 38px 0 39px;
+		background:transparent;
+		font-size: 17px;
+		line-height: 1.29412;
+		color: #fff;
+		&::placeholder{
+			color: #6E6E73;
+		}
 	}
 }
 /* media */
@@ -410,7 +557,7 @@
 			width: 100vw;
 			position: absolute;
 			left: 0;
-			top: 33px;
+			top: 67px;
 			height: 0;
 			display: block;
 			overflow-y: auto;

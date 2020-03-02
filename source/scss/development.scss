@@ -8,7 +8,7 @@ body{
 }
 .front {
     z-index: 500;
-    width: 17500px;
+    width: 900vw;
 }
 .page {
     position: absolute;
@@ -153,7 +153,7 @@ body{
     display: -o-flex;
     display: flex;
     flex-direction: column;
-    left: 1920px;
+    left: 100vw;
     margin-top: 120px;
     &__title{
         font-family: 'SanFrancisco Semibold';
@@ -184,9 +184,6 @@ body{
             max-width: 140%;
             margin-top: -20px;
         }
-    }
-    @media screen and (max-width: 1920px) {
-        left: 100vw;
     }
     @media screen and (max-width: 1400px) {
         &__title {
@@ -238,7 +235,7 @@ body{
     justify-content: center;
     font-size: 40px;
     line-height: 117.5%;
-    left: 3840px;
+    left: 200vw;
     color: #828282;
     &__inner{
         max-width: 1134px;
@@ -251,9 +248,6 @@ body{
     & strong{
         font-family: 'SanFrancisco Semibold', sans-serif;
         color: #333;
-    }
-    @media screen and (max-width: 1920px) {
-        left: 200vw;
     }
     @media screen and (max-width: 1400px) {
         font-size: 36px;
@@ -281,7 +275,7 @@ body{
     display: -o-flex;
     display: flex;
     align-items: center;
-    left: 5760px;
+    left: 300vw;
     &__col{
         max-width: 100%;
         margin-top: 50px;
@@ -308,9 +302,6 @@ body{
     &__image-2 {
         margin-top: -700px;
         margin-left: -550px;
-    }
-    @media screen and (max-width: 1920px) {
-        left: 300vw;
     }
     @media screen and (max-width: 1400px) {
         &__image-2 {
@@ -370,7 +361,7 @@ body{
     display: -o-flex;
     display: flex;
     align-items: center;
-    left: 7680px;
+    left: 400vw;
     &__inner{
         font-family: 'SanFrancisco Semibold', sans-serif;
         color: #828282;
@@ -382,9 +373,6 @@ body{
         & strong{
             color: #333;
         }
-    }
-    @media screen and (max-width: 1920px) {
-        left: 400vw;
     }
     @media screen and (max-width: 1919px) {
         padding-top: 400px;
@@ -433,11 +421,11 @@ body{
     display: -o-flex;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     font-family: 'Segoe Script', sans-serif;
     font-size: 40px;
     line-height: 100%;
-    left: 9600px;
+    left: 500vw;
     &__col-1{
         display: -webkit-flex;
         display: -moz-flex;
@@ -477,9 +465,6 @@ body{
     }
     .col-1__text,.col-2__text{
         max-width: 576px;
-    }
-    @media screen and (max-width: 1920px) {
-        left: 500vw;
     }
     @media screen and (max-width: 1500px) {
         &__col-2{
@@ -549,7 +534,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    left: 11520px;
+    left: 600vw;
     text-align: center;
     &__title{
         font-family: 'SanFrancisco Semibold';
@@ -564,9 +549,6 @@ body{
         max-width: 900px;
         width: calc(100% - 20px);
         margin: 24px auto 0;
-    }
-    @media screen and (max-width: 1920px) {
-        left: 600vw;
     }
     @media screen and (max-width: 1400px) {
         &__title{
@@ -623,7 +605,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    left: 13440px;
+    left: 700vw;
     &__first-line{
         display: -webkit-flex;
         display: -moz-flex;
@@ -665,9 +647,6 @@ body{
         & span{
             color: #333;
         }
-    }
-    @media screen and (max-width: 1920px) {
-        left: 700vw;
     }
     @media screen and (max-width: 1400px) {
         &__last-line{
@@ -758,7 +737,7 @@ body{
     display: -o-flex;
     display: flex;
     align-items: center;
-    left: 15360px;
+    left: 800vw;
     margin-left: 400px;
     width: 150vw !important;
     margin-top: 180px;
@@ -792,9 +771,6 @@ body{
     .col__image{
         margin-bottom: -262px;
         padding-top: 83px;
-    }
-    @media screen and (max-width: 1920px) {
-        left: 800vw;
     }
     @media screen and (max-width: 1830px) {
         margin-left: 600px;

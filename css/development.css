@@ -10,7 +10,7 @@ body {
 
 .front {
   z-index: 500;
-  width: 17500px;
+  width: 900vw;
 }
 
 .page {
@@ -136,7 +136,7 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  left: 1920px;
+  left: 100vw;
   margin-top: 120px;
 }
 
@@ -178,12 +178,6 @@ body {
 .who-needs__image img {
   max-width: 140%;
   margin-top: -20px;
-}
-
-@media screen and (max-width: 1920px) {
-  .who-needs {
-    left: 100vw;
-  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -244,7 +238,7 @@ body {
   justify-content: center;
   font-size: 40px;
   line-height: 117.5%;
-  left: 3840px;
+  left: 200vw;
   color: #828282;
 }
 
@@ -261,12 +255,6 @@ body {
 .necessary strong {
   font-family: 'SanFrancisco Semibold', sans-serif;
   color: #333;
-}
-
-@media screen and (max-width: 1920px) {
-  .necessary {
-    left: 200vw;
-  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -316,7 +304,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  left: 5760px;
+  left: 300vw;
 }
 
 .technical-assignment__col {
@@ -349,12 +337,6 @@ body {
 .technical-assignment__image-2 {
   margin-top: -700px;
   margin-left: -550px;
-}
-
-@media screen and (max-width: 1920px) {
-  .technical-assignment {
-    left: 300vw;
-  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -424,7 +406,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  left: 7680px;
+  left: 400vw;
 }
 
 .programming__inner {
@@ -439,12 +421,6 @@ body {
 
 .programming__inner strong {
   color: #333;
-}
-
-@media screen and (max-width: 1920px) {
-  .programming {
-    left: 400vw;
-  }
 }
 
 @media screen and (max-width: 1919px) {
@@ -508,13 +484,13 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-family: 'Segoe Script', sans-serif;
   font-size: 40px;
   line-height: 100%;
-  left: 9600px;
+  left: 500vw;
 }
 
 .customer-developer__col-1 {
@@ -577,12 +553,6 @@ body {
 
 .customer-developer .col-1__text, .customer-developer .col-2__text {
   max-width: 576px;
-}
-
-@media screen and (max-width: 1920px) {
-  .customer-developer {
-    left: 500vw;
-  }
 }
 
 @media screen and (max-width: 1500px) {
@@ -682,7 +652,7 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  left: 11520px;
+  left: 600vw;
   text-align: center;
 }
 
@@ -704,12 +674,6 @@ body {
   max-width: 900px;
   width: calc(100% - 20px);
   margin: 24px auto 0;
-}
-
-@media screen and (max-width: 1920px) {
-  .guarantee {
-    left: 600vw;
-  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -779,7 +743,7 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  left: 13440px;
+  left: 700vw;
 }
 
 .cost-1__first-line {
@@ -835,12 +799,6 @@ body {
 
 .cost-1__last-line span {
   color: #333;
-}
-
-@media screen and (max-width: 1920px) {
-  .cost-1 {
-    left: 700vw;
-  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -945,7 +903,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  left: 15360px;
+  left: 800vw;
   margin-left: 400px;
   width: 150vw !important;
   margin-top: 180px;
@@ -988,12 +946,6 @@ body {
 .cost-2 .col__image {
   margin-bottom: -262px;
   padding-top: 83px;
-}
-
-@media screen and (max-width: 1920px) {
-  .cost-2 {
-    left: 800vw;
-  }
 }
 
 @media screen and (max-width: 1830px) {

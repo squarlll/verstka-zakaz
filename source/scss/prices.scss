@@ -36,20 +36,27 @@ $button-body: #E5E5E5;
 		text-align: center;
 	}
 	&__button{
-		display: inline-block;
+		display: flex;
 		text-align: center;
-		padding: 16px 35px;
+		padding: 19px 25px;
 		color: #fff;
-		background: $button-body;
 		border-radius: 30px;
 		cursor: pointer;
 		& a{
-			font-size: 18px;
-			background: linear-gradient(to right, #4B48F5 -0.39%, #890041 37.78%);
+			font-size: 24px;
+			background: $property;
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 			margin: 0;
+			@media screen and (max-width: 470px) {
+				font-size: 15.8px;
+			}
 		}
+	}
+	&__title span{
+		background: $property;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 }
 @mixin gradient($property) {
@@ -95,17 +102,29 @@ body{
 		@include subtitle();
 	}
 	&__button{
-		max-width: 310px;
+		background:$button-body;
 		&-wrapper{
-			margin: 170px 0;
-		}
-		a{
-			padding: 18px 70px;
-			letter-spacing: 0px;
+			margin-top: 88px;
 		}
 	}
 	@media screen and (max-width: 1440px){
 		padding: 0 10px;
+	}
+	@media screen and (max-width: 1200px){
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: column;
+		&__subtitle{
+			float: none;
+			text-align: center;
+			margin-right: 0;
+		}
+		&__button-wrapper{
+			margin-top: 30px;
+		}
 	}
 	@media screen and (max-width: 1080px){
 		text-align: center;
@@ -168,8 +187,8 @@ body{
 }
 /* Phone-numbers */
 .phone-numbers{
-	max-width: 1400px;
-	margin: -100px auto 0;
+	max-width: 1437px;
+	margin: 62px auto 0;
 	&__title{
 		margin-bottom: 65px;
 		@include title-1();

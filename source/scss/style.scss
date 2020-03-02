@@ -61,8 +61,8 @@ body{
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 			margin: 0;
-			@media screen and (max-width: 444px) {
-				font-size: 16px;
+			@media screen and (max-width: 470px) {
+				font-size: 15.8px;
 			}
 		}
 	}
@@ -741,7 +741,6 @@ body{
 	margin-left: 620px;
 	&__col{
 		&:first-child{
-			margin-top: 80px;
 			.cross-cutting-analytics-1-img img{
 				transform: rotate(-12.87deg);
 				margin-top: 80px;
@@ -751,17 +750,24 @@ body{
 		&:last-child{
 			.cross-cutting-analytics-1-img img{
 				margin-left: -100px;
+				@media screen and (max-width: 1200px) {
+					display: none;
+				}
 			}
 		}
+	}
+	&__title{
+		margin-right: -100px;
 	}
 	&__text{
 		max-width: 795px;
 		@include text();
 	}
 	@media screen and (max-width: 1880px){
-		margin-top: 10px;
+		margin-top: 100px;
 	}
 	@media screen and (max-width: 1650px){
+		margin-top: 100px;
 		margin-left: 300px;
 		&__col-block-text{
 			margin-left: 100px;
@@ -796,6 +802,7 @@ body{
 		&__text{
 			margin: 0 auto;
 			text-align: center;
+			font-size: 20px;
 		}
 		&__col{
 			&:first-child{
@@ -840,6 +847,16 @@ body{
 			font-size: 20px;
 		}
 	}
+	@media screen and (max-width: 767px){
+		&__text{
+			font-size: 18px;
+		}
+	}
+	@media screen and (max-width: 640px){
+		&__text{
+			font-size: 16px;
+		}
+	}
 	@media screen and (max-width: 570px){
 		&__title{
 			font-size: 35px;
@@ -848,13 +865,17 @@ body{
 		&__text{
 			margin-top: 10px;
 			max-width: 400px;
-			font-size: 20px;
 		}
 	}
 	@media screen and (max-width: 415px){
 		&__title{
 			font-size: 26px;
 			line-height: 1.1;
+		}
+	}
+	@media screen and (max-width: 370px){
+		&__text{
+			font-size: 14px;
 		}
 	}
 }
@@ -875,12 +896,12 @@ body{
 		}
 	}
 	@media screen and (max-width: 767px){
+		margin-top: 0;
 		&__title{
 			font-size: 34px;
 		}
 	}
 	@media screen and (max-width: 680px){
-		margin-top: 50px;
 		&__title{
 			text-align: center;
 		}
@@ -889,9 +910,6 @@ body{
 		&__title{
 			font-size: 23px;
 		}
-	}
-	@media screen and (max-width: 570px){
-		margin-top: 100px;
 	}
 	@media screen and (max-width: 370px){
 		&__title{
@@ -1197,10 +1215,7 @@ body{
 		}
 	}
 	@media screen and (max-width: 900px){
-		margin-top: -50px;
-	}
-	@media screen and (max-width: 520px){
-		margin-top: -20px;
+		margin-top: 0px;
 	}
 	@media screen and (max-width: 1200px){
 		&__title{
@@ -1354,6 +1369,7 @@ body{
 		}
 	}
 	@media screen and (max-width: 767px){
+		margin-top: 60px;
 		&__title{
 			font-size: 40px;
 		}
@@ -1549,7 +1565,7 @@ body{
 		}
 	}
 	@media screen and (max-width: 1239px){
-		margin-top: 250px;
+		margin-top: 150px;
 		&__title{
 			text-align: center;
 		}
@@ -1607,8 +1623,10 @@ body{
 			}
 		} 
 	}
+	@media screen and (max-width: 768px){
+		margin-top: 80px;
+	}
 	@media screen and (max-width: 700px){
-		margin-top: 200px;
 		.type_dynamic__title{
 			margin-top: -60px;
 		} 
@@ -1617,7 +1635,6 @@ body{
 		}
 	}
 	@media screen and (max-width: 590px){
-		margin-top: 100px;
 		.type_dynamic__title{
 			margin-top: -50px;
 			font-size: 25px;
@@ -1651,30 +1668,24 @@ body{
 		&__title{
 			font-size: 26px;
 		}
-	}
-	@media screen and (max-width: 660px){
 		&__subtitle{
-			font-size: 20px;
+			font-size: 18px;
 		}
 	}
 	@media screen and (max-width: 640px){
 		&__title{
 			font-size: 22px;
 		}
-	}
-	@media screen and (max-width:560px){
 		&__subtitle{
-			font-size: 18px;
+			font-size: 16px;
 		}
 	}
 	@media screen and (max-width: 370px){
 		&__title{
 			font-size: 17px;
 		}
-	}
-	@media screen and (max-width:360px){
 		&__subtitle{
-			font-size: 16px;
+			font-size: 14px;
 		}
 	}
 }
@@ -2051,6 +2062,9 @@ body{
 			}
 		}
 	}
+	@media screen and (max-width: 768px){
+		margin-bottom: 50px;
+	}
 	@media screen and (max-width: 700px){
 		margin-top: -50px;
 		&__row{
@@ -2302,7 +2316,7 @@ margin-bottom: 100px;
 		margin: 0 auto 100px;
 	}
 	&__title{
-		max-width: 1354px;
+		max-width: 1400px;
 		margin-bottom: 70px;
 		@include gradient(linear-gradient(104.09deg, 
 		#F58948 -0.39%, #F0704D 6.36%, #D57AA5 37.78%));
@@ -2381,13 +2395,13 @@ margin-bottom: 100px;
 			margin: 0 auto;
 		}
 	}
-	@media screen and (max-width: 675px){
+	@media screen and (max-width: 710px){
 		&__title{
 			max-width: 600px;
 			font-size: 25px;
 		}
 	}
-	@media screen and (max-width: 666px){
+	@media screen and (max-width: 710px){
 		&__row{
 			padding-left: 15px;
 			padding-right: 15px;
@@ -2477,24 +2491,31 @@ margin-bottom: 100px;
 				margin-bottom: -95px;
 			}
 		}
+		&:nth-child(6){
+			width: 265px;
+			background: url("../img/index/Mask-Group-4.png") center no-repeat;
+			.cases__subtitle{
+				margin-left: 20px;
+			}
+		}
 	}
 	&-img{
 		img{
 			max-width: 100%;
 		}
 	}
-	@media screen and (max-width: 1430px){
+	@media screen and (max-width: 1730px){
 		&__subtitle{
 			font-size: 25px;
 		}
 	}
-	@media screen and (max-width: 1230px){
+	@media screen and (max-width: 1470px){
 		&__subtitle{
 			font-size: 20px;
 			line-height: 1.3;
 		}
 	}
-	@media screen and (max-width: 1080px){
+	@media screen and (max-width: 1220px){
 		&__content{
 			justify-content: center;
 		}
@@ -2523,7 +2544,7 @@ margin-bottom: 100px;
 				}
 			}
 			&:nth-child(3){
-				margin-top: 20px;
+				margin-top: 19px;
 				width: 20%;
 				margin-left: 0px;
 				.cases__subtitle{
@@ -2549,15 +2570,18 @@ margin-bottom: 100px;
 			}
 		}
 	}
-	@media screen and (max-width: 880px){
+	@media screen and (max-width: 1030px){
 		&__subtitle{
 			font-size: 18px;
 		}
 		&__item{
 			height: 320px;
+			&:nth-child(3){
+				margin-top: 20px;
+			}
 		}
 	}
-	@media screen and (max-width: 730px){
+	@media screen and (max-width: 900px){
 		&__title{
 			font-size: 60px;
 		}
@@ -2598,8 +2622,17 @@ margin-bottom: 100px;
 			}
 			&:nth-child(5){
 				order: 5;
-				width: 50%;
-				margin-top: 7px;
+				width: calc(50% - 20px);
+				margin: 7px;
+				background-size: 100%;
+				.cases__subtitle{
+					margin: 0;
+				}
+			}
+			&:nth-child(6){
+				order: 5;
+				width: calc(50% - 20px);
+				margin: 7px;
 				background-size: 100%;
 				.cases__subtitle{
 					margin: 0;
@@ -2646,7 +2679,7 @@ margin-bottom: 100px;
 		position: absolute;
 		top: 210px;
 		right: 200px;
-		max-width: 595px;
+		max-width: 640px;
 		font-weight: 700;
 		font-size: 60px;
 		line-height: 70px;
@@ -2845,6 +2878,21 @@ margin-bottom: 100px;
 			.look__item{
 				&:first-child{	
 					margin-top: 15px;
+				}
+				&:last-child{
+					@media screen and (max-width: 1239px) {
+						.look-img{
+							display: -webkit-flex;
+							display: -moz-flex;
+							display: -ms-flex;
+							display: -o-flex;
+							display: flex;
+							justify-content: center;
+							& img{
+								max-width: 103.5%;
+							}
+						}
+					}
 				}
 			}
 		}

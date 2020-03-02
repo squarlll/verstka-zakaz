@@ -13,10 +13,11 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/header.css">
-	<link rel="stylesheet" href="css/calendar-notifications.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/calendar-notifications.css">
 	<link rel="stylesheet" href="css/tasks-projects.css">
 	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/device+functions.css">
 </head>
 <body> 
 	<div class="wrapper">
@@ -29,39 +30,49 @@
 				</a>
 			</div>
 			<div class="header__menu">
+				<form action="#" class="desktop__form">
+					<img src="img/header/search-1.svg" alt="">
+					<input type="text" class="desktop__input" placeholder="Поиск по сайту">
+					<button class="form__button">
+						<span class="button__wrapper">
+							<span class="form__button-left"></span>
+							<span class="form__button-right"></span>
+						</span>
+					</button>
+				</form>
 				<ul>
 					<form action="#" class="header__form">
 						<i class="fas fa-search"></i>
 						<input type="text" placeholder="Поиск по сайту">
 					</form>
 					<li>
-						<a class="header__link possibility" href="#.">
+						<a class="header__link possibility">
 							<div>Возможности</div>
 							<i class="fas fa-angle-right"></i>
 						</a>
 					</li>
 					<li>
-						<a class="header__link header__cost" href="#.">
+						<a class="header__link header__cost" href="sales.html">
 							Цены
 						</a>
 					</li>
 					<li>
-						<a class="header__link header__introduction" href="#.">
+						<a class="header__link header__introduction" href="introduction.html">
 							Внедрение
 						</a>
 					</li>
 					<li>
-						<a class="header__link header__development" href="#.">
+						<a class="header__link header__development" href="development.html">
 							Разработка
 						</a>
 					</li>
 					<li>
-						<a class="header__link header__numbers" href="#.">
+						<a class="header__link header__numbers" href="mobile-numbers.html">
 							Номера
 						</a>
 					</li>
 					<li>
-						<a class="header__link header__contact" href="#.">
+						<a class="header__link header__contact">
 							<div>Контакты</div>
 							<i class="fas fa-angle-right"></i>
 						</a>
@@ -151,7 +162,7 @@
 						<div>Возможности</div>
 					</div>
 					<li>
-						<a href="#" class="level__item">
+						<a href="sales.html" class="level__item">
 							<div class="level__item-img">
 								<img src="img/header/desk-1.svg" alt="">
 							</div>
@@ -161,7 +172,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="#" class="level__item">
+						<a href="tasks-projects.html" class="level__item">
 							<div class="level__item-img">
 								<img src="img/header/daily-tasks-1.svg" alt="">
 							</div>
@@ -171,7 +182,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="#" class="level__item">
+						<a href="telephony.html" class="level__item">
 							<div class="level__item-img">
 								<img src="img/header/time-call-1.svg" alt="">
 							</div>
@@ -181,7 +192,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="#" class="level__item">
+						<a href="call-tracking.html" class="level__item">
 							<div class="level__item-img">
 								<img src="img/header/Group-172.svg" alt="">
 							</div>
@@ -191,7 +202,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="#" class="level__item">
+						<a href="analytics.html" class="level__item">
 							<div class="level__item-img">
 								<img src="img/header/social-media-2.svg" alt="">
 							</div>
@@ -201,7 +212,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="#" class="level__item">
+						<a href="callback.html" class="level__item">
 							<div class="level__item-img">
 								<img src="img/header/smartphone-1.svg" alt="">
 							</div>
@@ -211,9 +222,6 @@
 						</a>
 					</li>
 				</ul>
-				
-				
-				
 
 				<!-- mobile menu contacts -->
 				<!-- <ul class="menu__second-level mobile-menu__contacts">
@@ -301,9 +309,35 @@
 		<span></span>
 	</div>
 </header>
+<div class="header__search-quick-wrapper">
+	<div class="header__search-quick">
+		<div class="header__search-quick-inner">
+			<div class="search-quick__title">
+				Быстрый поиск
+			</div>
+			<ul class="search-quick__links">
+				<li class="search-quick__item">
+					<a href="#">Псмиажрж</a>
+				</li>
+				<li class="search-quick__item">
+					<a href="#">Псмиажрж</a>
+				</li>
+				<li class="search-quick__item">
+					<a href="#">Псмиажрж</a>
+				</li>
+				<li class="search-quick__item">
+					<a href="#">Псмиажрж</a>
+				</li>
+				<li class="search-quick__item">
+					<a href="#">Псмиажрж</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
 <div class="header-bottom">
 	<div class="header-bottom__possibility menu-bottom_active">
-		<a href="#" class="header__item">
+		<a href="sales.html" class="header__item">
 			<div class="header__item-img">
 				<img src="img/header/desk-1.svg" alt="">
 			</div>
@@ -311,7 +345,7 @@
 				Управление продажами
 			</div>
 		</a>
-		<a href="#" class="header__item">
+		<a href="tasks-projects.html" class="header__item">
 			<div class="header__item-img">
 				<img src="img/header/daily-tasks-1.svg" alt="">
 			</div>
@@ -319,7 +353,7 @@
 				Задачи и проекты
 			</div>
 		</a>
-		<a href="#" class="header__item">
+		<a href="telephony.html" class="header__item">
 			<div class="header__item-img">
 				<img src="img/header/time-call-1.svg" alt="">
 			</div>
@@ -327,7 +361,7 @@
 				Виртуальная ATC
 			</div>
 		</a>
-		<a href="#" class="header__item">
+		<a href="call-tracking.html" class="header__item">
 			<div class="header__item-img">
 				<img src="img/header/Group-172.svg" alt="">
 			</div>
@@ -335,7 +369,7 @@
 				Коллтрекинг
 			</div>
 		</a>
-		<a href="#" class="header__item">
+		<a href="analytics.html" class="header__item">
 			<div class="header__item-img">
 				<img src="img/header/social-media-2.svg" alt="">
 			</div>
@@ -343,7 +377,7 @@
 				Сквозная аналитика
 			</div>
 		</a>
-		<a href="#" class="header__item">
+		<a href="callback.html" class="header__item">
 			<div class="header__item-img">
 				<img src="img/header/smartphone-1.svg" alt="">
 			</div>
@@ -425,6 +459,7 @@
 				</div>
 			</div>
 		</div>
+		<!-- personal -->
 		<div class="personal">
 			<div class="personal__title title"><p>Личные</p></div>
 			<div class="personal__subtitle subtitle">Ни одна задача не потеряется.</div>
@@ -432,52 +467,98 @@
 				<img src="img/tasks-projects/image-150.png" alt="">
 			</div>
 		</div>
-		<div class="team">
-			<div class="team__content">
-				<div class="team__col-1">
-					<div class="team__title title">Командные</div>
-					<div class="team__img-block">
-						<div class="team__subtitle-1 subtitle">Доска для работы отдела</div>
-						<div class="team-img-1">
+		<!-- team -->
+		<div class="team-1">
+			<div class="team-1__content">
+				<div class="team-1__col-1">
+					<div class="team-1__title title">Командные</div>
+					<div class="team-1__img-block">
+						<div class="team-1__subtitle-1 subtitle">Доска для работы отдела</div>
+						<div class="team-1-img-1">
 							<img src="img/tasks-projects/image-147.png" alt="">
 						</div>
 					</div>
 				</div>
-				<div class="team__col-2">
-					<div class="team__img-block">
-						<div class="team-img-2">
+				<div class="team-1__col-2">
+					<div class="team-1__img-block">
+						<div class="team-1-img-2">
 							<img src="img/tasks-projects/Front&Back-1.png" alt="">
 						</div>
-						<div class="team__subtitle-2 subtitle">проектной команды</div>
+						<div class="team-1__subtitle-2 subtitle">проектной команды</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="difficult-tasks">
-			<div class="difficult-tasks__col-1">
-				<div class="difficult-tasks__title title">
-					Сложные задачи в несколько этапов
+		<!-- tasks -->
+		<div class="tasks-wrapper">
+			<div class="tasks">
+				<div class="tasks__row">
+					<div class="tasks__text">
+						<div class="tasks__title">
+							Сложные задачи в несколько этапов
+						</div>
+						<div class="tasks__subtitle">
+							Если перед вами стоит задача, подразумевающая выполнение нескольких подзадач, вам пригодится чек-лист. Определите последовательность шагов и отмечайте выполнение промежуточных этапов.
+						</div>
+					</div>
+					<div class="tasks__checklist">
+						<img src="img/layout/Group-166.png" alt="">
+					</div>
 				</div>
-				<div class="difficult-tasks__text">
-					Если перед вами стоит задача, подразумевающая выполнение нескольких подзадач, вам пригодится чек-лист. Определите последовательность шагов и отмечайте выполнение промежуточных этапов.
+				<div class="tasks__row">
+					<div class="tasks__catalog">
+						<img src="img/layout/Group-165.png" alt="">
+					</div>
+					<div class="tasks__calls">
+						<img src="img/layout/Group-169.png" alt="">
+					</div>
 				</div>
-				<div class="difficult-tasks-img-1">
-					<img src="img/tasks-projects/Frame-4.png" alt="">
-				</div>
-			</div>
-			<div class="difficult-tasks__col-2">
-				<div class="difficult-tasks-img-2">
-					<img src="img/tasks-projects/checklist.png" alt="">
+				<div class="tasks__row">
+					<div class="tasks__image">
+						<img src="img/layout/Rectangle-221.png" alt="">
+					</div>
+					<div class="tasks-3__text">
+						<div class="tasks-3__title">
+							Общение
+						</div>
+						<div class="tasks__subtitle">
+							Вносите правки, прикрепляйте документы, задавайте вопросы и получайте ответы в карточке задачи. Не надо тратить время на поиски нужной информации в почте, блокноте или каждый раз спрашивать у коллег.
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
+
+		<!-- team -->
+		<div class="team">
+			<div class="team__text">
+				<div class="team__title">
+					<span>Соберите</span> супер-команду
+				</div>
+				<div class="team__subtitle">
+					Для многих задач нужны профессионалы из разных отделов. Пригласите разнопрофильных специалистов для работы над кейсом.
+				</div>
+				<div class="team__button-wrapper">
+					<div class="team__button button">
+						<a href="#.">
+							Попробовать бесплатно 15 дней
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="team__images">
+				<img src="img/layout/Rectangle-251.png" alt="man">
+				<img src="img/layout/Rectangle-250.png" alt="team">
+			</div>
+		</div>
+
 		<div class="calendar">
 	<div class="calendar__row-1">
 		 <div class="calendar__tablet-1">
 		 	<img src="img/layout/Front&Back-2.png" alt="">
 		 </div>
 		 <calendar class="calendar__block-text">
-		 	<div class="calendar__title title">Календарь дел и встреч</div>
+		 	<div class="calendar__title">Календарь дел и встреч</div>
 		 	<div class="calendar__text">
 		 		Создайте встречу, выберите время, место и тему обсуждения. Составьте список необходимых людей и им придет приглашение. Если на выбранное время у кого-то из участников уже запланирована встреча или отпуск, система оповестит вас об этом и предложит выбрать другое время.
 		 	</div>
@@ -503,12 +584,13 @@
 		</div>
 	</div>
 	<div class="notifications__block-text">
-		<div class="notifications__title title">Уведомления</div>
+		<div class="notifications__title">Уведомления</div>
 		<div class="notifications__text">
 			Как только задача или встреча создана, всем задействованным сотрудникам приходит оповещение через SMS, email или Telegram. У недобросовестных коллег не будет возможности сделать вид, что они не знали о поставленных задачах.
 		</div>
 	</div>
 </div>
+		<!-- distance -->
 		<div class="distance">
 			<div class="distance__col-1">
 				<div class="distance__block-text">
@@ -524,6 +606,75 @@
 				<div class="distance-img-3"><img src="img/tasks-projects/Rectangle 253.jpg" alt=""></div>
 			</div>
 		</div>
+		 <!-- device -->
+<div class="device">
+	<div class="device__title block-title">
+		<div class="device__title-inner">
+			Работайте на любых устройствах
+		</div>
+	</div>
+	<div class="device-wrapper">
+		<div class="device__item">
+			<img src="img/telephony/Mockup-5.png" alt="">
+		</div>
+		<div class="device__item">
+			<img src="img/telephony/Black-2.png" alt="">
+		</div>
+		<div class="device__item">
+			<img src="img/telephony/Mockup-1.png" alt="">
+		</div>
+	</div>
+</div>
+
+<!-- function -->
+<div class="function-wrapper">
+	<div class="function">
+		<div class="function__text sticky-content">
+			<div class="function__title">
+				Используя 5CRM, ВЫ ПОЛУЧАЕТЕ
+			</div>
+			<div class="function__subtitle">
+				Полный набор функций уже включен в базовую комплектацию.
+			</div>
+		</div>
+		<div class="function__wrapper">
+			<div class="function__item">
+				<div class="function__img">
+					<img src="img/telephony/Mockup-2.png" alt="ipad">
+				</div>
+				<div class="item__title">
+					Воронки продаж
+				</div>
+				<div class="item__subtitle">
+					CRM автоматически фиксирует заявки через сайты и звонки. Менеджеры получают подсказки на каждом этапе воронки.
+				</div>
+			</div>
+			<div class="function__item">
+				<div class="function__img">
+					<img src="img/telephony/Front&Back-3.png" alt="ipad">
+				</div>
+				<div class="item__title">
+					Управление задачами
+				</div>
+				<div class="item__subtitle">
+					Этапы проектов, сроки, результаты в режиме реального времени.
+				</div>
+			</div>
+			<div class="function__item">
+				<div class="function__img">
+					<img src="img/telephony/Portrait-1.png" alt="">
+				</div>
+				<div class="item__title">
+					Сквозная аналитика
+				</div>
+				<div class="item__subtitle">
+					Удобный инструмент для контроля и оптимизации бюджета.
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+		 <!-- footer -->
 		 <footer class="footer">
 	<div class="footer__title title">
 		<span>Тысячи клиентов</span> уже применяют<br>наши инструменты. Попробуй и ты
