@@ -708,19 +708,18 @@
 	display: -o-flex;
 	display: flex;
 	align-items: center;
-	justify-content: center;
 	max-width: 584px;
 	margin: auto;
 	position: relative;
 	background: #1d1d1f;
 	width: 100%;
-	padding: 9px;
+	padding: 9px 9px 9px 30px;
     border-radius: 8px;
 	i{
 		color: #6e6e73;
 		font-size: 14px;
 		position: absolute;
-		left: 3px;
+		left: 0px;
 		padding: 10px;
 	}
 	& div{
