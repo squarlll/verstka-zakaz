@@ -16,7 +16,7 @@ body{
 @mixin title{
 	font-family: 'SanFrancisco Semibold';;
 	font-size: 80px;
-	line-height: 94px;
+	line-height: 1.175;
 }
 @mixin gradient($property) {
 	background: $property;
@@ -26,12 +26,11 @@ body{
 @mixin text{
 	font-weight: 400;
 	font-size: 25px;
-	line-height: 28px;
+	line-height: 1.12;
 	color: #828282;
 }
 .title{
 	@include title();
-	letter-spacing: -1px;
 	p{
 		@include gradient(linear-gradient(to right,#4B48F5 -0.39%, #890041 37.78%));
 		display: inline-block;
@@ -39,7 +38,6 @@ body{
 }
 .title-2{
 	@include title();
-	letter-spacing: -.5px;
 	p{
 		@include gradient(linear-gradient(to right,#4B48F5 -0.39%, #890041 37.78%));
 		display: inline-block;
@@ -109,13 +107,13 @@ body{
 .crm__title{
 	font-family: 'SanFrancisco Semibold';;
 	font-size: 100px;
-	line-height: 117px;
+	line-height: 1.17;
 	margin-left: 527px;
 }
 .crm__subtitle{
 	max-width: 999px;
 	font-size: 40px;
-	line-height: 47px;
+	line-height: 1.175;
 	color: #828282;
 	margin-left: 521px;
 	margin-top: 22px;
@@ -123,11 +121,9 @@ body{
 @media screen and (max-width: 1700px){
 	.crm__title{
 		font-size: 80px;
-		line-height: 97px;
 	}
 	.crm__subtitle{
 		font-size: 25px;
-		line-height: 32px;
 	}
 }
 @media screen and (max-width: 1475px){
@@ -136,11 +132,9 @@ body{
 	}
 	.crm__title{
 		font-size: 65px;
-		line-height: 82px;
 	}
 	.crm__subtitle{
 		font-size: 20px;
-		line-height: 27px;
 	}
 	.layout-main__img{
 		&:nth-child(2){
@@ -167,11 +161,9 @@ body{
 	}
 	.crm__title{
 		font-size: 50px;
-		line-height: 67px;
 	}
 	.crm__subtitle{
 		font-size: 18px;
-		line-height: 25px;
 	}
 }
 @media screen and (max-width: 960px){
@@ -188,7 +180,6 @@ body{
 			padding-right: 10px;
 			margin-bottom: -30px;
 			font-size: 20px;
-			letter-spacing: -.5px;
 		}
 		&__content {
 			padding-right: 10px;
@@ -201,8 +192,16 @@ body{
 			max-width: 100%;
 			text-align: justify;
 			font-size: 20px;
-			line-height: 29px;
+			line-height: 1.2;
 		}
+	}
+	.layout-main__img{
+		&:first-child{
+			display: none;
+		}
+	}
+	.main__crm{
+		padding-top: 100px;
 	}
 }
 @media screen and (max-width: 920px){
@@ -213,27 +212,14 @@ body{
 	}
 	.crm__title{
 		font-size: 42px;
-		line-height: 59px;
 	}
 	.crm__subtitle{
 		font-size: 15px;
-		line-height: 22px;
-	}
-}
-@media screen and (max-width: 690px){
-	.layout-main__img{
-		&:first-child{
-			display: none;
-		}
-	}
-	.main__crm{
-		padding-top: 100px;
 	}
 }
 @media screen and (max-width: 480px){
 	.crm__title{
 		font-size: 26px;
-		line-height: 43px;
 	}
 }
 
@@ -257,7 +243,7 @@ body{
 	}
 	&__subtitle{
 		font-size: 25px;
-		line-height: 34px;
+		line-height: 1.25;
 		text-align: center;
 		color: #828282;
 		max-width: 929px;
@@ -282,8 +268,15 @@ body{
 			@media screen and (max-width: 1760px){
 				margin-left: 0;
 				margin: auto;
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 				& img{
-					max-width: 100%;
+					max-width: 139%;
 				}
 			}
 		}
@@ -297,7 +290,7 @@ body{
 		}
 	}
 	@media screen and (max-width: 960px){
-		padding-top: 100px;
+		padding-top: 60px;
 	}
 }
 @media screen and (max-width: 1760px){
@@ -310,7 +303,7 @@ body{
 	margin: -26px auto 0 auto;
 	&-inner{
 		font-size: 25px;
-		line-height: 136.69%;
+		line-height: 1.25;
 		color: #828282;
 		max-width: 736px;
 		letter-spacing: -.5px;
@@ -332,11 +325,9 @@ body{
 	}
 	.idea__subtitle{
 		font-size: 22px;
-		line-height: 31px;
 	}
 	.idea__text-inner{
 		font-size: 22px;
-		line-height: 31px;
 	}
 }
 @media screen and (max-width: 921px){
@@ -345,11 +336,9 @@ body{
 	}
 	.idea__subtitle{
 		font-size: 18px;
-		line-height: 27px;
 	}
 	.idea__text-inner{
 		font-size: 18px;
-		line-height: 27px;
 	}
 }
 @media screen and (max-width: 767px){
@@ -358,11 +347,14 @@ body{
 	}
 	.idea__subtitle{
 		font-size: 16px;
-		line-height: 24px;
 	}
 	.idea__text-inner{
 		font-size: 16px;
-		line-height: 24px;
+	}
+}
+@media screen and (max-width: 960px){
+	.idea-wrapper {
+		padding-bottom: 60px;
 	}
 }
 @media screen and (max-width: 540px){
@@ -371,11 +363,9 @@ body{
 	}
 	.idea__subtitle{
 		font-size: 14px;
-		line-height: 22px;
 	}
 	.idea__text-inner{
 		font-size: 14px;
-		line-height: 22px;
 	}
 }
 /* Functions */
@@ -396,16 +386,15 @@ body{
 	&__content{
 		overflow: hidden;
 		img{
-			max-width: 100%;
-			min-width: 100%;
+			max-width: 139%;
 		}
 	}
 	&__text{
 		max-width: 1337px;
-		margin: -176px auto 0 auto;
+		margin: -125px auto 0 auto;
 		@include text();
 		font-size: 25px;
-		line-height: 34px;
+		line-height: 1.2;
 		color: #828282;
 		letter-spacing: -.5px;
 		&-inner{
@@ -444,7 +433,6 @@ body{
 		margin-top: -25px;
 		max-width: 400px;
 		font-size: 14px;
-		line-height: 24px;
 	}
 	.functions__content img{
 		margin-bottom: 0;
@@ -452,24 +440,82 @@ body{
 }
 /* Pros */
 .pros{
-	max-width: 1437px;
-	margin: 167px auto 0;
+	width: 100%;
+	max-width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	&-wrapper{
+		max-width: 1437px;
+		margin: 167px auto 0;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	&__title{
+		margin-bottom: 40px;
+	}
+	&__item{
+		max-width: 33.3333%;
+		width: 354px;
+	}
+	&__subtitle{
+		font-size: 24px;
+		line-height: 1.166666666666667;
+		color: #828282;
+		margin-top: 10px;
+	}
+	&__title_blue{
+		font-size: 60px;
+		line-height: 1.166666666666667;
+		@include gradient(linear-gradient(90.07deg, #02A5A2 0%, #0471BF 53.21%));
+		font-family: 'SanFrancisco Semibold', sans-serif;
+	}
 }
 @media screen and (max-width: 1340px){
 	.pros{
-		margin-left: 30px;
 		&__title{
 			font-size: 60px;
-			line-height: 1.3;
+		}
+		&__title_blue{
+			font-size: 50px;
+		}
+	}
+}
+@media screen and (max-width: 1239px){
+	.pros{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		&__title{
+			text-align: center;
+		}
+		&__subtitle{
+			font-size: 20px;
+		}
+		&__item{
+			width: 700px;
+			max-width: 100%;
+			text-align: center;
+			margin-bottom: 20px;
 		}
 	}
 }
 @media screen and (max-width: 960px){
 	.pros{
-		margin-left: 10px;
+		&-wrapper{
+			margin-top: 60px;
+		}
 		&__title{
 			font-size: 35px;
-			line-height: 1.3;
+		}
+		&__subtitle{
+			font-size: 18px;
+		}
+		&__title_blue{
+			font-size: 40px;
 		}
 	}
 }
@@ -477,7 +523,9 @@ body{
 	.pros{
 		&__title{
 			font-size: 25px;
-			line-height: 1.3;
+		}
+		&__title_blue{
+			font-size: 35px;
 		}
 	}
 }
@@ -485,13 +533,15 @@ body{
 	.pros{
 		&__title{
 			font-size: 18px;
-			line-height: 1.3;
+		}
+		&__title_blue{
+			font-size: 30px;
 		}
 	}
 }
 /* Call-tracking */
 .call-tracking{
-	margin-top: 399px;
+	margin-top: 161px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -509,7 +559,7 @@ body{
 		font-weight: 400;
 		max-width: 1050px;
 		font-size: 30px;
-		line-height: 50px;
+		line-height: 1.2;
 		color: #4F4F4F;
 	}
 }
@@ -522,17 +572,18 @@ body{
 }
 @media screen and (max-width: 1060px){
 	.call-tracking{
+		margin-top: 100px;
 		&__title{
 			font-size: 60px;
 		}
 		&__text{
 			font-size: 20px;
-			line-height: 1.6;
 		}
 	}
 }
 @media screen and (max-width: 730px){
 	.call-tracking{
+		margin-top: 60px;
 		&__title{
 			font-size: 50px;
 		}
@@ -552,51 +603,124 @@ body{
 		}
 	}
 }
-/* Analytics */
-.analytics{
-	max-width: 1437px;
-	margin: 258px auto 0;
-	&__title{
 
+/* Advertising */
+.advertising{
+	margin: 0 auto;
+	max-width: 1550px;
+	display: flex;
+	justify-content: center;
+	&__col-1{
+		margin-top: 100px;
+		margin-right: -300px;
+	}
+	&__title{
+		margin-bottom: -30px;
+		margin-left: 180px;
+	}
+	&-img-1{
+		img{
+			max-width: 100%;
+		}
+	}
+	&__col-2{
+		margin-right: -130px;
+	}
+	&-img-2{
+		img{
+			max-width: 100%;
+		}
+	}
+	&__text{
+		margin-top: -100px;
+		margin-left: 200px;
+		max-width: 467px;
+		@include text();
 	}
 }
-@media screen and (max-width: 1760px){
-	.analytics{
-		margin-top: 960px;
+@media screen and (max-width: 1530px){
+	.advertising{
+		&__col-1{
+			margin-right: -100px;
+		}
+		&__col-2{
+			margin-right: -30px;
+		}
+		&__text{
+			padding-right: 10px;
+			margin-top: -60px;
+			margin-left: 110px;
+		}
 	}
 }
-@media screen and (max-width: 1100px){
-	.analytics{
-		margin-top: 600px;
-	}
-}
-@media screen and (max-width: 680px){
-	.analytics{
-		margin-top: 300px;
-	}
-}
-@media screen and (max-width: 850px){
-	.analytics{
+@media screen and (max-width: 1340px){
+	.advertising{
 		&__title{
 			font-size: 60px;
 		}
 	}
 }
-@media screen and (max-width: 650px){
-	.analytics{
-		&__title{
-			font-size: 40px;
+@media screen and (max-width: 1239px){
+	.advertising{
+		flex-direction: column;
+		align-items: center;
+		&__col-1{
+			margin-top: 0;
+			margin-right: 0;
+		}
+		&__col-2{
+			margin-top: -130px;
+			margin-right: 0;
+		}
+		&__text{
+			padding: 0;
+			margin-top: -100px;
+			margin-left: 200px;
+		}
+		&-img-1{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img{
+				max-width: 130%;
+			}
+		}
+		&-img-2{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img{
+				max-width: 158% !important;
+			}
 		}
 	}
 }
-@media screen and (max-width: 430px){
-	.analytics{
+@media screen and (max-width: 940px){
+	.advertising{
+		&__title{
+			margin: 0;
+			text-align: center;
+			font-size: 40px;
+		}
+		&__col-2{
+			margin-top: -20px;
+		}
+		&__text{
+			max-width: 350px;
+			margin: -20px auto 0;
+			padding: 0 10px;
+			text-align: center;
+			font-size: 18px;
+		}
+	}
+}
+@media screen and (max-width: 500px){
+	.advertising{
 		&__title{
 			font-size: 30px;
 		}
 	}
 }
-
 /* Widget */
 .widget {
 	max-width: 1437px;
@@ -736,8 +860,9 @@ body{
 			display: -o-flex;
 			display: flex;
 			justify-content: center;
+			align-items: center;
 			& img{
-				max-width: 120%;
+				max-width: 139%;
 			}
 		}
 		&__step-1{
@@ -909,15 +1034,13 @@ body{
 	&__title{
 		margin-right: -100px;
 		max-width: 874px;
-		line-height: 80px;
-		letter-spacing: -3px;
+		line-height: 1;
 	}
 	&__text{
 		margin-top: 30px;
 		margin-bottom: 39px;
 		max-width: 829px;
 		@include text();
-		line-height: 34px;
 	}
 	&__text-img{
 		margin-top: 170px;
@@ -981,21 +1104,23 @@ body{
 	@media screen and (max-width: 1200px){
 		&__title{
 			font-size: 65px;
-			line-height: 65px;
 		}
 		&__text{
 			font-size: 22px;
-			line-height: 31px;
 		}
 	}
 	@media screen and (max-width: 991px){
 		&__title{
 			font-size: 55px;
-			line-height: 55px;
 		}
 		&__text{
 			font-size: 18px;
-			line-height: 27px;
+		}
+	}
+	@media screen and (max-width: 960px){
+		padding-top: 60px;
+		&__text-img{
+			margin-top: 20px;
 		}
 	}
 	@media screen and (max-width: 600px){
@@ -1007,12 +1132,9 @@ body{
 	@media screen and (max-width: 580px){
 		&__title{
 			font-size: 40px;
-			line-height: 40px;
-			letter-spacing: -.9px;
 		}
 		&__text{
 			font-size: 16px;
-			line-height: 25px;
 		}
 	}
 	@media screen and (max-width: 450px){
@@ -1034,11 +1156,9 @@ body{
 		}
 		&__title{
 			font-size: 30px;
-			line-height: 30px;
 		}
 		&__text{
 			font-size: 15px;
-			line-height: 24px;
 		}
 	}
 }
@@ -1046,13 +1166,18 @@ body{
 /* Tasks */
 .tasks {
 	max-width: 1437px;
-	margin: 400px auto 0 auto;
+	margin: 0 auto;
 	padding-left: 10px;
 	&-wrapper{
-		padding-top: 445px;
 		width: 100%;
 		max-width: 100%;
 		overflow: hidden;
+	}
+	@media screen and (max-width: 1280px){
+		margin-top: 60px;
+		&__text{
+			text-align: center;
+		}
 	}
 	@media screen and (max-width: 1239px){
 		padding-right: 10px;
@@ -1067,7 +1192,7 @@ body{
 		&:first-child{
 			& .tasks__subtitle{
 				font-size: 25px;
-				line-height: 29px;
+				line-height: 1.16;
 				color: #828282;
 				margin-top: 25px;
 				letter-spacing: -.65px;
@@ -1077,7 +1202,6 @@ body{
 				align-items: center;
 				& .tasks__text{
 					max-width: 100%;
-					text-align: center;
 				}
 				& .tasks__checklist {
 					padding-right: 0;
@@ -1094,33 +1218,27 @@ body{
 				}
 				& .tasks__subtitle{
 					font-size: 18px;
-					line-height: 22px;
 				}
 			}
 			@media screen and (max-width: 921px){
 				& .tasks__title{
 					font-size: 50px;
-					line-height: 95.4%;
 				}
 				& .tasks__subtitle{
 					font-size: 16px;
-					line-height: 20px;
 				}
 			}
 			@media screen and (max-width: 767px){
 				& .tasks__title{
 					font-size: 40px;
-					line-height: 95.4%;
 				}
 			}
 			@media screen and (max-width: 420px){
 				& .tasks__title{
 					font-size: 35px;
-					line-height: 95.4%;
 				}
 				& .tasks__subtitle{
 					font-size: 14px;
-					line-height: 16px;
 				}
 			}
 		}
@@ -1156,15 +1274,18 @@ body{
 		}
 		&:nth-child(3){
 			margin-top: 80px;
+			padding-top: 0;
 			align-items: center;
 			.tasks__subtitle{
 				max-width: 601px;
+			}
+			.tasks__image{
+				margin-top: 0;
 			}
 		}
 	}
 	&__text{
 		max-width: 752px;
-		text-align: center;
 		@media screen and (max-width: 1280px){
 			max-width: calc(100% - 20px);
 		}
@@ -1174,11 +1295,11 @@ body{
 		font-size: 80px;
 		line-height: 95.4%;
 		color: #000;
-		letter-spacing: -3px;
+		letter-spacing: -1px;
 	}
 	&__subtitle{
 		font-size: 25px;
-		line-height: 29px;
+		line-height: 1.16;
 		color: #828282;
 		@media screen and (max-width: 630px){
 			padding-left: 10px;
@@ -1204,6 +1325,7 @@ body{
 			display: -o-flex;
 			display: flex;
 			justify-content: center;
+			align-items: center;
 			& img{
 				max-width: 100%;
 				width: 100%;
@@ -1247,7 +1369,7 @@ body{
 		font-size: 80px;
 		line-height: 95.4%;
 		color: #000;
-		letter-spacing: -3px;
+		letter-spacing: -1px;
 		margin-bottom: 20px;
 	}
 	@media screen and (max-width: 940px){
@@ -1258,7 +1380,7 @@ body{
 		}
 		&__subtitle{
 			font-size: 22px;
-			line-height: 24px;
+			line-height: 1.09;
 			text-align: center;
 			margin: 20px auto 0;
 		}
@@ -1266,31 +1388,26 @@ body{
 	@media screen and (max-width: 690px){
 		&-3__title{
 			font-size: 60px;
-			line-height: 60px;
+			line-height: 1;
 		}
 		&__subtitle{
 			font-size: 20px;
-			line-height: 22px;
 		}
 	}
 	@media screen and (max-width: 500px){
 		&-3__title{
 			font-size: 50px;
-			line-height: 50px;
 		}
 		&__subtitle{
 			font-size: 18px;
-			line-height: 20px;
 		}
 	}
 	@media screen and (max-width: 430px){
 		&-3__title{
 			font-size: 35px;
-			line-height: 35px;
 		}
 		&__subtitle{
 			font-size: 16px;
-			line-height: 18px;
 		}
 	}
 }
@@ -1402,10 +1519,11 @@ body{
 			text-align: center;
 			max-width: 100%;
 			font-size: 70px;
+			line-height: 1;
 		}
 		&__subtitle{
 			font-size: 22px;
-			line-height: 24px;
+			line-height: 1.1;
 			text-align: center;
 			margin: 20px auto 0;
 		}
@@ -1418,58 +1536,47 @@ body{
 	@media screen and (max-width: 690px){
 		&__title{
 			font-size: 60px;
-			line-height: 60px;
 		}
 		&__subtitle{
 			font-size: 20px;
-			line-height: 22px;
 		}
 	}
 	@media screen and (max-width: 500px){
 		&__title{
 			font-size: 50px;
-			line-height: 50px;
 		}
 		&__subtitle{
 			font-size: 18px;
-			line-height: 20px;
 		}
 	}
 	@media screen and (max-width: 430px){
 		&__title{
 			font-size: 35px;
-			line-height: 35px;
 		}
 		&__subtitle{
 			font-size: 16px;
-			line-height: 18px;
 		}
 	}
 }
 @media screen and (max-width: 690px){
 	.tasks__title{
 		font-size: 60px;
-		line-height: 60px;
 	}
 	.tasks__subtitle{
 		font-size: 20px;
-		line-height: 22px;
 	}
 }
 @media screen and (max-width: 500px){
 	.tasks__subtitle{
 		font-size: 18px;
-		line-height: 20px;
 	}
 }
 @media screen and (max-width: 430px){
 	.tasks__title{
 		font-size: 35px;
-		line-height: 35px;
 	}
 	.tasks__subtitle{
 		font-size: 16px;
-		line-height: 18px;
 	}
 }
 /* role */
@@ -1493,8 +1600,9 @@ body{
 	&__subtitle{
 		max-width: 929px;
 		font-size: 25px;
-		line-height: 34px;
+		line-height: 1.25;
 		color: #828282;
+		margin-top: 20px;
 	}
 	&__functional{
 		display: -webkit-flex;
@@ -1508,6 +1616,29 @@ body{
 		padding-right: 185px;
 		@media screen and (max-width: 768px){
 			padding-top: 150px;
+		}
+		@media screen and (max-width: 400px){
+			padding-top: 100px;
+		}
+	}
+	@media screen and (max-width: 1366px){
+		.role__subtitle{
+			font-size: 22px;
+		}
+	}
+	@media screen and (max-width: 921px){
+		.role__subtitle{
+			font-size: 18px;
+		}
+	}
+	@media screen and (max-width: 767px){
+		.role__subtitle{
+			font-size: 16px;
+		}
+	}
+	@media screen and (max-width: 540px){
+		.role__subtitle{
+			font-size: 14px;
 		}
 	}
 	.functional{
