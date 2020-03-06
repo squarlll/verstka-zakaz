@@ -392,6 +392,7 @@ body{
 		&-img{
 			display: flex;
 			justify-content: center;
+			align-items: center;
 			margin-left: 0;
 			img{
 				max-width: 140%;
@@ -527,7 +528,8 @@ body{
 		&-img-1{
 			display: flex;
 			justify-content: center;
-			margin-top: 20px;
+			align-items: center;
+			margin-top: 10px;
 			left: 0;
 			img{
 				max-width: 130%;
@@ -799,6 +801,7 @@ body{
 			.business-img{
 				display: flex;
 				justify-content: center;
+				align-items: center;
 				img{
 					max-width: 135%;
 				}

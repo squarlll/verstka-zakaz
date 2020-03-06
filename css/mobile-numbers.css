@@ -492,9 +492,12 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .numbers-advertising-img img {
-    max-width: 130%;
+    max-width: 138%;
   }
 }
 
@@ -663,11 +666,13 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin-top: -15%;
   }
   .free-connection-img:first-child img {
-    max-width: 137%;
-    min-width: 137%;
+    max-width: 134%;
   }
   .free-connection-img:last-child {
     display: -webkit-flex;
@@ -680,25 +685,25 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin-top: -30%;
   }
   .free-connection-img:last-child img {
     max-width: 150%;
-    min-width: 150%;
   }
 }
 
 @media screen and (max-width: 1300px) and (max-width: 750px) {
   .free-connection-img:last-child img {
     max-width: 155%;
-    min-width: 155%;
   }
 }
 
 @media screen and (max-width: 1300px) and (max-width: 450px) {
   .free-connection-img:last-child img {
     max-width: 160%;
-    min-width: 160%;
   }
 }
 

@@ -78,6 +78,9 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .control-img img {
@@ -507,6 +510,9 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .sales-img img {
     max-width: 130%;
@@ -681,8 +687,26 @@ body {
     -ms-flex-align: center;
     align-items: center;
   }
+  .staff-img {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
   .staff-img img {
-    margin: 0 -13%;
     max-width: 126%;
   }
   .staff__arrow {
@@ -765,7 +789,7 @@ body {
 
 .advertising__col-1 {
   margin-top: 100px;
-  margin-right: -300px;
+  margin-right: -238px;
 }
 
 .advertising__title {
@@ -787,7 +811,7 @@ body {
 
 .advertising__text {
   margin-top: -100px;
-  margin-left: 200px;
+  margin-left: 123px;
   max-width: 467px;
   font-weight: 400;
   font-size: 25px;
@@ -806,7 +830,8 @@ body {
     margin-right: -100px;
   }
   .advertising__col-2 {
-    margin-right: -30px;
+    margin-left: -100px;
+    margin-right: 0;
   }
   .advertising__text {
     padding-right: 10px;
@@ -838,6 +863,7 @@ body {
   .advertising__col-2 {
     margin-top: -130px;
     margin-right: 0;
+    margin-left: 0;
   }
   .advertising__text {
     padding: 0;
@@ -851,6 +877,9 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .advertising-img-1 img {
     max-width: 130%;
@@ -862,6 +891,9 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .advertising-img-2 img {
     max-width: 140% !important;

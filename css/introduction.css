@@ -453,6 +453,9 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .cost-img-2 img {
     max-width: 132%;
@@ -803,6 +806,24 @@ body {
     order: 1;
     margin-top: 50px;
     margin-left: -120px;
+  }
+  .transition-img {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .transition-img img {
+    max-width: 139%;
   }
 }
 

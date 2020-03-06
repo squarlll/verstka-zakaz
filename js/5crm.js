@@ -9,18 +9,26 @@ $(document).ready(function(){
 		$('.header__menu ul:first-child').removeClass('header__menu-hidden')
 	});
     $('.header__search').on('click', function(){
-        $('.desktop__form').addClass('desktop__form-active');
-        $('.header__menu ul:nth-child(2), .header__client, .header__logo').addClass('header__menu-hidden');
+        // $('.header__menu ul:nth-child(2), .header__client, .header__logo').addClass('header__menu-hidden');
         $('body').addClass('html-fixed');
         $('html').addClass('html-scroll');
         $('.header__search-quick-wrapper').addClass('header__search-quick-wrapper-active');
         $('.desktop__input').focus();
+        $('.header__inner').addClass('btns-hidden');
+        $('.desktop__form').addClass('desktop__form-active');
+        $('.header__logo, .header__client').addClass('logo-hidden');
+        // $('.desktop-ul').addClass('desktop-active');
+        $('.desktop-ul').fadeOut();
 
         $('.form__button').on('click', function(){
             $('.desktop__form').removeClass('desktop__form-active');
             $('.header__menu ul:nth-child(2), .header__client, .header__logo').removeClass('header__menu-hidden');
             $('body').removeClass('html-fixed');
             $('.header__search-quick-wrapper').removeClass('header__search-quick-wrapper-active');
+            $('.header__inner').removeClass('btns-hidden');
+            $('.header__logo, .header__client').removeClass('logo-hidden');
+            // $('.desktop-ul').removeClass('desktop-active');
+            $('.desktop-ul').fadeIn(0);
         });
     });
 
@@ -55,17 +63,8 @@ $(document).ready(function(){
             });
         }
     });
-
+    $(".sticky-content").stick_in_parent();
 });
-(function(){
-
-    $('.sticky-content').StickyDL({
-        paddingTop : 155,
-        heightRefElement: '.main-content-end-padding',
-        optionalBottomFix: 40
-    })
-
-})
 $(function() {
     var elem = $.jInvertScroll(['.scroll'],        // an array containing the selector(s) for the elements you want to animate
         {

@@ -49,7 +49,7 @@
 }
 
 .calendar__block-text {
-  margin-top: 6px;
+  margin-top: 150px;
   margin-left: -515px;
 }
 
@@ -206,7 +206,7 @@
     max-width: 100vw;
   }
   .calendar__tablet-1 img {
-    max-width: 297%;
+    max-width: 311%;
   }
   .calendar__row-2 {
     -webkit-box-orient: vertical;
@@ -234,8 +234,8 @@
     position: relative;
     top: 0;
     left: 0;
-    max-width: 130%;
-    width: 130%;
+    max-width: 137%;
+    width: 137%;
   }
   .calendar__tablet-3 {
     display: -webkit-box;
@@ -250,8 +250,8 @@
     margin-top: 0 !important;
   }
   .calendar__tablet-3 img {
-    max-width: 140%;
-    width: 140%;
+    max-width: 148%;
+    width: 148%;
   }
 }
 
@@ -526,7 +526,7 @@
   }
   .notifications__telephone-2 img {
     max-width: 600px;
-    width: 180%;
+    width: 190%;
     margin-top: -71px;
   }
 }

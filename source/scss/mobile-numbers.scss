@@ -462,8 +462,9 @@ body{
 		&-img{
 			display: flex;
 			justify-content: center;
+			align-items: center;
 			img{
-				max-width: 130%;
+				max-width: 138%;
 			}
 		}
 	}
@@ -560,10 +561,10 @@ body{
 				display: -o-flex;
 				display: flex;
 				justify-content: center;
+				align-items: center;
 				margin-top: -15%;
 				img{
-					max-width: 137%;
-					min-width: 137%;
+					max-width: 134%;
 				}
 			}
 			&:last-child{
@@ -573,17 +574,15 @@ body{
 				display: -o-flex;
 				display: flex;
 				justify-content: center;
+				align-items: center;
 				margin-top: -30%;
 				img{
 					max-width: 150%;
-					min-width: 150%;
 					@media screen and (max-width: 750px){
 						max-width: 155%;
-						min-width: 155%;
 					}
 					@media screen and (max-width: 450px){
 						max-width: 160%;
-						min-width: 160%;
 					}
 				}
 			}

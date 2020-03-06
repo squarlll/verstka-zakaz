@@ -422,6 +422,7 @@ body{
 			display: -o-flex;
 			display: flex;
 			justify-content: center;
+			align-items: center;
 			img{
 				max-width: 132%;
 			}
@@ -696,6 +697,18 @@ body{
 				order: 1;
 				margin-top: 50px;
 				margin-left: -120px;
+			}
+		}
+		&-img{
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img{
+				max-width: 139%;
 			}
 		}
 	}

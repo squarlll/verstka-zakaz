@@ -102,7 +102,8 @@ body{
 		display: -o-flex;
 		display: flex;
 		justify-content: center;
-		img{
+		align-items: center;
+		img {
 			max-width: 125%;
 		}
 	}
@@ -112,6 +113,7 @@ body{
 		line-height: 1.17;
 		text-align: center;
 		max-width: 1136px;
+		z-index: -111111111;
 	}
 
 	@media screen and (max-width: 1700px){
@@ -186,6 +188,7 @@ body{
 		display: -o-flex;
 		display: flex;
 		justify-content: center;
+		align-items: center;
 		& img{
 			max-width: 139%;
 		}
@@ -295,7 +298,8 @@ body{
 		display: -o-flex;
 		display: flex;
 		justify-content: center;
-		& img{
+		align-items: center;
+		& img {
 			max-width: 125%;
 		}
 	}
@@ -483,6 +487,7 @@ body{
 			display: -o-flex;
 			display: flex;
 			justify-content: center;
+			align-items: center;
 			& img{
 				margin-top: -60px;
 				position: relative;
@@ -626,6 +631,7 @@ body{
 					display: -o-flex;
 					display: flex;
 					justify-content: center;
+					align-items: center;
 					& img{
 						margin: 0 -10%;
 						max-width: 137%;
@@ -646,6 +652,7 @@ body{
 					display: -o-flex;
 					display: flex;
 					justify-content: center;
+					align-items: center;
 					& img{
 						margin: 0 -50%;
 						max-width: 310%;
@@ -813,6 +820,7 @@ body{
 					display: -o-flex;
 					display: flex;
 					justify-content: center;
+					align-items: center;
 					& img{
 						max-width: 118%;
 						margin: 50px 0 0 15px;
@@ -961,6 +969,7 @@ body{
 		display: -o-flex;
 		display: flex;
 		justify-content: center;
+		align-items: center;
 		& img{
 			max-width: 125%;
 			margin-left: -140px;
@@ -1083,6 +1092,7 @@ body{
 			display: -o-flex;
 			display: flex;
 			justify-content: center;
+			align-items: center;
 			& img{
 				max-width: 148%;
 			}
@@ -1090,6 +1100,12 @@ body{
 		&__text{
 			margin-left: 0;
 			margin-top: 0;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			flex-direction: column;
 		}
 		&__title{
 			text-align: center;
@@ -1187,7 +1203,7 @@ body{
 	@media screen and (max-width: 1239px){
 		flex-direction: column;
 		align-items: center;
-		margin-top: -100px;
+		margin-top: 0;
 		height: 100%;
 		&__text{
 			order: 2;
@@ -1208,6 +1224,7 @@ body{
 			display: -o-flex;
 			display: flex;
 			justify-content: center;
+			align-items: center;
 			& img{
 				position: relative;
 				max-width: 137%;
@@ -1292,6 +1309,7 @@ body{
 			display: -o-flex;
 			display: flex;
 			justify-content: center;
+			align-items: center;
 			& img{
 				max-width: 138%;
 			}
@@ -1299,6 +1317,12 @@ body{
 		&__text{
 			margin-left: 0;
 			margin-top: 0;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			flex-direction: column;
 		}
 		&__title{
 			text-align: center;
@@ -1433,6 +1457,7 @@ body{
 			display: -o-flex;
 			display: flex;
 			justify-content: center;
+			align-items: center;
 			margin-left: 0;
 			& img{
 				max-width: 138%;
@@ -1783,6 +1808,7 @@ body{
 					display: -o-flex;
 					display: flex;
 					justify-content: center;
+					align-items: center;
 					img{
 						max-width: 139%;
 						margin: 0 -10%;
@@ -1803,6 +1829,7 @@ body{
 					display: -o-flex;
 					display: flex;
 					justify-content: center;
+					align-items: center;
 					& img{
 						max-width: 100%;
 						margin: 0  0 0 -17px;
@@ -1847,11 +1874,11 @@ body{
 	&-img{
 		max-width: 100%;
 		position: absolute;
-		top: -20px;
-		left: -980px;
-		transform: rotate(-37.91deg);
-		img{
-		}
+		// top: -20px;
+		// left: -980px;
+		// transform: rotate(-37.91deg);
+		top: -331px;
+		left: -1122px;
 	}
 	&__content{
 		display: flex;
@@ -2888,6 +2915,7 @@ margin-bottom: 100px;
 							display: -o-flex;
 							display: flex;
 							justify-content: center;
+							align-items: center;
 							& img{
 								max-width: 103.5%;
 							}
@@ -2972,6 +3000,15 @@ margin-bottom: 100px;
 	    text-align: center;
 	}
 	& .footer__button{
+		background: $button-body;
+	}
+}
+.more{
+	@include button(linear-gradient(110.44deg, #F58948 -0.39%, #F0704D 6.36%, #D57AA5 37.78%));
+	&__button-wrapper{
+		margin-top: 30px;
+	}
+	&__button{
 		background: $button-body;
 	}
 }

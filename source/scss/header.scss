@@ -116,6 +116,7 @@
 		display: -o-flex;
 		display: flex;
 		align-items: center;
+		transition: .5s;
 	}
 	&__menu {
 		display: -webkit-flex;
@@ -160,6 +161,9 @@
 		display: -o-flex;
 		display: flex;
 		justify-content: space-between;
+		transition: .5s;
+		transform: scale(1);
+		opacity: 1;
 		& i{
 			display: none;
 			margin-right: 10px;
@@ -176,6 +180,9 @@
 		display: flex;
 		align-items: center;
 		margin-left: 10px;
+		& div{
+			transition: .5s;
+		}
 	}
 	&__avatar{
 		width: 28px;
@@ -339,7 +346,7 @@
 		line-height: 2;
 		background:#fff;
 		border-radius: 0 0 18px 18px;
-		transition: none!important;
+		transition: opacity .2s .5s;
 		&-inner{
 			margin: 0 40px;
 			padding: 24px 0 18px;
@@ -351,9 +358,10 @@
 			height: 100vh;
 			background: rgba(0, 0, 0, .48);
 			opacity: 0;
-			transition-property: opacity;
-			transition: .5s;
-			z-index: -1111;
+			// transition-property: opacity;
+			// transition-duration: .2s;
+			transition: opacity .3s .1s;
+			z-index: -1;
 			&-active{
 				opacity: 1;
 				z-index: 1111111111;
@@ -424,9 +432,9 @@
 }
 .desktop{
 	&__form{
-		display: none;
+		transform: scale(0);
 		max-width: 682.656px;
-		width: 66.66667vw;
+		width: 0;
 		margin: auto;
 		position: relative;
 		height: 100%;
@@ -440,7 +448,9 @@
 			color: #86868b;
 		}
 		&-active{
-			display: block;
+			transform: scale(1);
+			width: 66.66667vw;
+			transition-delay: .5s;
 		}
 		.form__button{
 			width: 38px;
@@ -742,4 +752,19 @@
 		display: flex;
 		align-items: center;
 	}
+}
+
+.btns-hidden .header__navigation .header__menu ul li a, .btns-hidden .header__navigation .header__logo, .btns-hidden .header__client div{
+	transform: scale(0);
+	opacity: 0;
+	transition: .5s;
+}
+.logo-hidden{
+	display: none;
+}
+.desktop-ul{
+	transition-delay: .5s;
+}
+.desktop-active{
+	display: none;
 }
