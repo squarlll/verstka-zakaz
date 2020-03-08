@@ -3,33 +3,72 @@ $(document).ready(function(){
 		$('.header__menu ul').toggleClass('menu-active');
 		$(this).toggleClass('hamburger-active');
 		$('.header').toggleClass('header-active');
+        $('.header__form input').toggleClass('mobile-menu_active');
 	});
 	$('.second-level__back').on('click', function(){
 		$('.menu__second-level').removeClass('second-level-active');
 		$('.header__menu ul:first-child').removeClass('header__menu-hidden')
 	});
+    $(function(){
+        $(".header__menu-btn").bind('click', function(e){
+            e.preventDefault();
+            $('body,html').animate({scrollTop: 0}, 0);    
+        });
+    });
+    // desktop search
     $('.header__search').on('click', function(){
         // $('.header__menu ul:nth-child(2), .header__client, .header__logo').addClass('header__menu-hidden');
         $('body').addClass('html-fixed');
         $('html').addClass('html-scroll');
-        $('.header__search-quick-wrapper').addClass('header__search-quick-wrapper-active');
+        $('.header__search-quick').addClass('header__search-quick-active');
         $('.desktop__input').focus();
         $('.header__inner').addClass('btns-hidden');
         $('.desktop__form').addClass('desktop__form-active');
-        $('.header__logo, .header__client').addClass('logo-hidden');
-        // $('.desktop-ul').addClass('desktop-active');
-        $('.desktop-ul').fadeOut();
+        $('.desktop-ul').addClass('desktop-ul-active');
+        $('.header__link').addClass('header__link-active');
+        $('.background').addClass('background-active');
+        $('.desktop__input').addClass('desktop__input-active');
 
         $('.form__button').on('click', function(){
             $('.desktop__form').removeClass('desktop__form-active');
             $('.header__menu ul:nth-child(2), .header__client, .header__logo').removeClass('header__menu-hidden');
             $('body').removeClass('html-fixed');
-            $('.header__search-quick-wrapper').removeClass('header__search-quick-wrapper-active');
+            $('.header__search-quick').removeClass('header__search-quick-active');
             $('.header__inner').removeClass('btns-hidden');
-            $('.header__logo, .header__client').removeClass('logo-hidden');
-            // $('.desktop-ul').removeClass('desktop-active');
-            $('.desktop-ul').fadeIn(0);
+            $('.desktop-ul').removeClass('desktop-ul-active');
+            $('.header__link').removeClass('header__link-active');
+            $('.background').removeClass('background-active');
+            $('.desktop__input').removeClass('desktop__input-active');
+            $('.desktop__input').val('');
         });
+    });
+
+    // mobile search
+    $('.header__form input').focus(function() {
+        $(this).addClass('mobile-search_active');
+        $('.header').addClass('header-search-active');
+        $('.menu-active').addClass('search-ul');
+        $('.mobile-search__close').toggleClass('mobile-search__close_active-1');
+        $('.searchview').addClass('searchview_active');
+        $('.menu-ul').addClass('searchview_hidden');
+
+        $(this).keydown(function(){
+            $('.mobile-search__close').addClass('mobile-search__close_active');
+        });
+
+        $('.mobile-search__close').on('click', function(){
+            $('.header__form input').val('');
+            $(this).removeClass('mobile-search__close_active');
+        })
+    });
+    $('.mobile-search__button').focus(function() {
+        $('.header__form input').removeClass('mobile-search_active')
+        $('.header').removeClass('header-search-active');
+        $('.menu-active').removeClass('search-ul');
+        $('.header__form input').val('');
+        $('.mobile-search__close').removeClass('mobile-search__close_active');
+        $('.searchview').removeClass('searchview_active');
+        $('.menu-ul').removeClass('searchview_hidden');
     });
 
     // MENU
@@ -63,7 +102,6 @@ $(document).ready(function(){
             });
         }
     });
-    $(".sticky-content").stick_in_parent();
 });
 $(function() {
     var elem = $.jInvertScroll(['.scroll'],        // an array containing the selector(s) for the elements you want to animate
@@ -82,3 +120,13 @@ $(function() {
       }
     });
 });
+var isMobile = false;
+jQuery(document).ready(function() {
+    if (jQuery('body').width() <= 1240) {
+        isMobile = true;
+    }
+    if (isMobile) {
+        $('.function__text').removeClass('sticky')
+    }
+});
+$(".sticky-content").stick_in_parent();

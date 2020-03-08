@@ -19,7 +19,8 @@
 </head>
 <body>
 	<!-- header -->
-	<header class="header">
+	<div class="background"></div>
+<header class="header">
 	<div class="header__inner">
 		<div class="header__navigation">
 			<div class="header__logo">
@@ -28,7 +29,7 @@
 				</a>
 			</div>
 			<div class="header__menu">
-				<form action="#" class="desktop__form">
+				<form action="#" class="desktop__form" onsubmit="return false;">
 					<img src="img/header/search-1.svg" alt="">
 					<input type="text" class="desktop__input" placeholder="Поиск по сайту">
 					<button class="form__button">
@@ -39,120 +40,192 @@
 					</button>
 				</form>
 				<ul class="desktop-ul">
-					<form action="#" class="header__form">
-						<i class="fas fa-search"></i>
+					<form action="#" class="header__form" onsubmit="return false;">
+						<img src="img/header/search-1.svg" alt="">
 						<input type="text" placeholder="Поиск по сайту">
+						<button class="mobile-search__close">
+							<span></span>
+						</button>
+						<button class="mobile-search__button">
+							<span>Отменить</span>
+						</button>
 					</form>
-					<li>
-						<a class="header__link possibility">
-							<div>Возможности</div>
-							<i class="fas fa-angle-right"></i>
-						</a>
-					</li>
-					<li>
-						<a class="header__link header__cost" href="sales.html">
-							Цены
-						</a>
-					</li>
-					<li>
-						<a class="header__link header__introduction" href="introduction.html">
-							Внедрение
-						</a>
-					</li>
-					<li>
-						<a class="header__link header__development" href="development.html">
-							Разработка
-						</a>
-					</li>
-					<li>
-						<a class="header__link header__numbers" href="mobile-numbers.html">
-							Номера
-						</a>
-					</li>
-					<li>
-						<a class="header__link header__contact">
-							<div>Контакты</div>
-							<i class="fas fa-angle-right"></i>
-						</a>
-
-						<div class="contact-level mobile-menu__contacts">
-							<div>
-								<a href="#" class="level__item">
-									<div class="level__item-img">
-										<img src="img/header/svg/telegram.svg" alt="">
-									</div>
-									<div class="level__item-text">
-										Телеграм
-									</div>
-								</a>
-							</div>
-							<div>
-								<a href="#" class="level__item">
-									<div class="level__item-img">
-										<img src="img/header/svg/vk.svg" alt="">
-									</div>
-									<div class="level__item-text">
-										Вконтакте
-									</div>
-								</a>
-							</div>
-							<div>
-								<a href="#" class="level__item">
-									<div class="level__item-img">
-										<img src="img/header/svg/viber.svg" alt="">
-									</div>
-									<div class="level__item-text">
-										Вайбер
-									</div>
-								</a>
-							</div>
-							<div>
-								<a href="#" class="level__item">
-									<div class="level__item-img">
-										<img src="img/header/svg/instagram.svg" alt="">
-									</div>
-									<div class="level__item-text">
-										Инстаграм
-									</div>
-								</a>
-							</div>
-							<div>
-								<a href="#" class="level__item">
-									<div class="level__item-img">
-										<img src="img/header/svg/facebook.svg" alt="">
-									</div>
-									<div class="level__item-text">
-										Фейсбук
-									</div>
-								</a>
-							</div>
-							<div>
-								<div class="header__info">
-									<div class="header__tel">
-										<a href="tel:+74951453350">
-											<div class="level__item-img">
-												<img src="img/header/svg/facebook.svg" alt="">
-											</div>
-											<div class="level__item-text">+7 (495) 145-33-50</div>
-										</a>
-									</div>
-									<div class="header__email">
-										<a href="mailto:info@5crm.ru">
-											<div class="level__item-img">
-												<img src="img/header/svg/facebook.svg" alt="">
-											</div>
-											<div class="level__item-text">info@5crm.ru</div>
-										</a>
-									</div>
-									<div class="header__location">
-										<a href="#">Мытищи, Шараповский<br>проезд строение 7</a>
+					<div class="searchview">
+						<li class="searchview__title">
+							<a class="header__link">
+								Быстрый поиск
+							</a>
+						</li>
+						<li>
+							<a class="header__link possibility link-1">
+								Find a Store
+							</a>
+						</li>
+						<li>
+							<a class="header__link header__cost link-2" href="sales.html">
+								Find a Store
+							</a>
+						</li>
+						<li>
+							<a class="header__link header__introduction link-3" href="introduction.html">
+								Find a Store
+							</a>
+						</li>
+						<li>
+							<a class="header__link header__development link-4" href="development.html">
+								Find a Store
+							</a>
+						</li>
+						<li>
+							<a class="header__link header__numbers link-5" href="mobile-numbers.html">
+								Find a Store
+							</a>
+						</li>
+					</div>
+					<div class="menu-ul">
+						<li>
+							<a class="header__link possibility link-1">
+								<div>Возможности</div>
+								<i class="fas fa-angle-right"></i>
+							</a>
+						</li>
+						<li>
+							<a class="header__link header__cost link-2" href="sales.html">
+								Цены
+							</a>
+						</li>
+						<li>
+							<a class="header__link header__introduction link-3" href="introduction.html">
+								Внедрение
+							</a>
+						</li>
+						<li>
+							<a class="header__link header__development link-4" href="development.html">
+								Разработка
+							</a>
+						</li>
+						<li>
+							<a class="header__link header__numbers link-5" href="mobile-numbers.html">
+								Номера
+							</a>
+						</li>
+						<li>
+							<a class="header__link header__contact link-6">
+								<div>Контакты</div>
+								<i class="fas fa-angle-right"></i>
+							</a>
+						
+							<div class="contact-level mobile-menu__contacts">
+								<div>
+									<a href="#" class="level__item">
+										<div class="level__item-img">
+											<img src="img/header/svg/telegram.svg" alt="">
+										</div>
+										<div class="level__item-text">
+											Телеграм
+										</div>
+									</a>
+								</div>
+								<div>
+									<a href="#" class="level__item">
+										<div class="level__item-img">
+											<img src="img/header/svg/vk.svg" alt="">
+										</div>
+										<div class="level__item-text">
+											Вконтакте
+										</div>
+									</a>
+								</div>
+								<div>
+									<a href="#" class="level__item">
+										<div class="level__item-img">
+											<img src="img/header/svg/viber.svg" alt="">
+										</div>
+										<div class="level__item-text">
+											Вайбер
+										</div>
+									</a>
+								</div>
+								<div>
+									<a href="#" class="level__item">
+										<div class="level__item-img">
+											<img src="img/header/svg/instagram.svg" alt="">
+										</div>
+										<div class="level__item-text">
+											Инстаграм
+										</div>
+									</a>
+								</div>
+								<div>
+									<a href="#" class="level__item">
+										<div class="level__item-img">
+											<img src="img/header/svg/facebook.svg" alt="">
+										</div>
+										<div class="level__item-text">
+											Фейсбук
+										</div>
+									</a>
+								</div>
+								<div>
+									<div class="header__info">
+										<div class="header__tel">
+											<a href="tel:+74951453350">
+												<div class="level__item-img">
+													<img src="img/header/svg/facebook.svg" alt="">
+												</div>
+												<div class="level__item-text">+7 (495) 145-33-50</div>
+											</a>
+										</div>
+										<div class="header__email">
+											<a href="mailto:info@5crm.ru">
+												<div class="level__item-img">
+													<img src="img/header/svg/facebook.svg" alt="">
+												</div>
+												<div class="level__item-text">info@5crm.ru</div>
+											</a>
+										</div>
+										<div class="header__location">
+											<a href="#">Мытищи, Шараповский<br>проезд строение 7</a>
+										</div>
 									</div>
 								</div>
 							</div>
-						</ul>
-					</li>
+						</li>
+					</div>
 				</ul>
 
+				<!-- mobile menu searchview -->
+				<div class="mobile-menu-searchview">
+					<div class="mobile-menu-searchresults-wrapper">
+						<ul class="mobile-menu-searchresults">
+							<li>
+								<a href="#">
+									
+								</a>
+							</li>
+							<li>
+								<a href="#">
+								
+								</a>
+							</li>
+							<li>
+								<a href="#">
+								
+								</a>
+							</li>
+							<li>
+								<a href="#">
+								
+								</a>
+							</li>
+							<li>
+								<a href="#">
+								
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 				<!-- mobile menu possibility -->
 				<ul class="menu__second-level mobile-menu__possibility">
 					<div class="second-level__back">
@@ -314,19 +387,19 @@
 				Быстрый поиск
 			</div>
 			<ul class="search-quick__links">
-				<li class="search-quick__item">
+				<li class="search-quick__item search-quick-1">
 					<a href="#">Псмиажрж</a>
 				</li>
-				<li class="search-quick__item">
+				<li class="search-quick__item search-quick-2">
 					<a href="#">Псмиажрж</a>
 				</li>
-				<li class="search-quick__item">
+				<li class="search-quick__item search-quick-3">
 					<a href="#">Псмиажрж</a>
 				</li>
-				<li class="search-quick__item">
+				<li class="search-quick__item search-quick-4">
 					<a href="#">Псмиажрж</a>
 				</li>
-				<li class="search-quick__item">
+				<li class="search-quick__item search-quick-5">
 					<a href="#">Псмиажрж</a>
 				</li>
 			</ul>
@@ -747,6 +820,36 @@
 						которые вы ставите, хранятся только в вашей голове
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
+	<!-- look-closer -->
+	<div class="look-closer">
+		<div class="look-closer__col">
+			<div class="look-closer__title title">Посмотрите поближе</div>
+			<div class="look-closer__img-1">
+				<img src="img/index/Group-93.png" alt="">
+			</div>
+			<div class="look-closer__subtitle">
+				Полная картина вашего бизнеса видна, как на ладони.
+			</div>
+			<div class="more__button-wrapper">
+				<div class="more__button button">
+					<a href="#.">Попробовать бесплатно 15 дней</a>
+				</div>
+			</div>
+		</div>
+		<div class="look-closer__col">
+			<div class="look-closer__img-2">
+				<img src="img/index/Group-194.png" alt="">
+			</div>
+			<div class="look-closer__img-3">
+				<img src="img/index/Group-169.png" alt="">
+			</div>
+		</div>
+		<div class="look-closer__col">
+			<div class="look-closer__img-4">
+				<img src="img/index/задача-5.png" alt="">
 			</div>
 		</div>
 	</div>

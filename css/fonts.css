@@ -27,8 +27,16 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'SanFrancisco Light';
+	src: url('../fonts/SFProDisplay-Light.eot');
+	src: url('../fonts/SFProDisplay-Light.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/SFProDisplay-Light.woff') format('woff'),
+	url('../fonts/SFProDisplay-Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 body{
 	font-family: 'SanFrancisco Regular', sans-serif;
 	font-size: 25px;
-	letter-spacing: -.2px;
 }
