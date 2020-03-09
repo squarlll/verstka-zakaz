@@ -835,6 +835,7 @@ body{
 					display: -o-flex;
 					display: flex;
 					justify-content: center;
+					align-items: center;
 					& img{
 						max-width: 135%;
 						margin: 0px;
@@ -3194,12 +3195,12 @@ margin-bottom: 100px;
 		@include button(linear-gradient(110.44deg, #F58948 -0.39%, #F0704D 6.36%, #D57AA5 37.78%));
 	}
 	& .footer__button-wrapper {
-	    margin: 57px auto 0;
-	    display: inline-block;
-	    position: relative;
-	    border-radius: 30px;
-	    padding: 1px;
-	    text-align: center;
+		margin: 57px auto 0;
+		display: inline-block;
+		position: relative;
+		border-radius: 30px;
+		padding: 1px;
+		text-align: center;
 	}
 	& .footer__button{
 		background: $button-body;
@@ -3213,4 +3214,13 @@ margin-bottom: 100px;
 	&__button{
 		background: $button-body;
 	}
+}
+
+img {
+	opacity: 1;
+	transition: opacity .5s;
+}
+
+img[data-src] {
+	opacity: 0;
 }

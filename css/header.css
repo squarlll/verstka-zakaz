@@ -87,12 +87,11 @@
 
 .header__menu-btn {
   position: absolute;
-  top: 7px;
-  left: 6px;
+  top: 0;
+  left: 0;
   display: none;
-  width: 17px;
-  height: 9px;
-  padding: 10px;
+  width: 44px;
+  height: 100%;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
   -webkit-transition: .5s;
@@ -104,9 +103,9 @@
   -webkit-transition: .5s;
   -o-transition: .5s;
   transition: .5s;
-  -webkit-transform-origin: left;
-  -ms-transform-origin: left;
-  transform-origin: left;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
@@ -121,7 +120,7 @@
   border-radius: 0.5px;
   position: absolute;
   z-index: 1;
-  top: 11px;
+  top: calc(50% - 4px);
 }
 
 .header__menu-btn span:last-child {
@@ -131,7 +130,7 @@
   background: #ccc;
   border-radius: 0.5px;
   position: absolute;
-  top: 19px;
+  top: calc(50% + 4px);
   z-index: 1;
 }
 
@@ -984,24 +983,29 @@
 }
 
 .hamburger-active span {
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  transition: .5s;
-  left: 12px;
+  top: 50%;
 }
 
 .hamburger-active span:first-child {
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  top: 8px;
+  -webkit-transform: rotate(45deg) translate(0, -50%);
+  -ms-transform: rotate(45deg) translate(0, -50%);
+  transform: rotate(45deg) translate(0, -50%);
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  top: 50%;
+  left: calc(50% - 9.7px);
 }
 
 .hamburger-active span:last-child {
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  top: 20px;
+  -webkit-transform: rotate(-45deg) translate(0, -50%);
+  -ms-transform: rotate(-45deg) translate(0, -50%);
+  transform: rotate(-45deg) translate(0, -50%);
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  top: 50%;
+  left: calc(50% - 9px);
 }
 
 /* second-level */

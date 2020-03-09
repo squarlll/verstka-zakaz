@@ -943,6 +943,9 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .cross-cutting-analytics-1__col:last-child .cross-cutting-analytics-1-img img {
     max-width: 135%;
@@ -3907,4 +3910,15 @@ body {
 
 .more__button {
   background: #FBFBFB;
+}
+
+img {
+  opacity: 1;
+  -webkit-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+img[data-src] {
+  opacity: 0;
 }

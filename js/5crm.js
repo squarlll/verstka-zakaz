@@ -120,6 +120,12 @@ $(function() {
       }
     });
 });
+[].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
+    img.setAttribute('src', img.getAttribute('data-src'));
+    img.onload = function() {
+        img.removeAttribute('data-src');
+    };
+});
 var isMobile = false;
 jQuery(document).ready(function() {
     if (jQuery('body').width() <= 1240) {

@@ -64,17 +64,16 @@
 	}
 	&__menu-btn{
 		position: absolute;
-		top: 7px;
-		left: 6px;
+		top: 0;
+		left: 0;
 		display: none;
-		width: 17px;
-		height: 9px;
-		padding: 10px;
+		width: 44px;
+		height: 100%;
 		box-sizing: content-box;
 		transition: .5s;
 		& span{
 			transition: .5s;
-			transform-origin: left;
+			transform-origin: center;
 			left: 50%;
 			transform: translate(-50%, 0);
 		}
@@ -86,7 +85,7 @@
 			border-radius: 0.5px;
 			position: absolute;
 			z-index: 1;
-			top: 11px;
+			top: calc(50% - 4px);
 		}
 		& span:last-child{
 			display: block;
@@ -95,7 +94,7 @@
 			background: #ccc;
 			border-radius: 0.5px;
 			position: absolute;
-			top: 19px;
+			top: calc(50% + 4px);
 			z-index: 1;
 		}
 		&:hover span {
@@ -690,16 +689,19 @@
 }
 .hamburger-active{
 	& span{
-		transition: .5s;
-		left: 12px;
+		top: 50%;
 	}
 	& span:first-child{
-		transform: rotate(45deg);
-		top: 8px;
+		transform: rotate(45deg) translate(0, -50%);
+		transform-origin: center;
+		top: 50%;
+		left: calc(50% - 9.7px);
 	}
 	& span:last-child{
-		transform: rotate(-45deg);
-		top: 20px;
+		transform: rotate(-45deg) translate(0, -50%);
+		transform-origin: center;
+		top: 50%;
+		left: calc(50% - 9px);
 	}
 }
 
