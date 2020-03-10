@@ -43,7 +43,7 @@ body {
 
 .header-bottom {
   position: fixed;
-  top: 67px;
+  top: 44px;
   background: #fff !important;
 }
 
@@ -118,7 +118,7 @@ body {
   }
 }
 
-@media screen and (max-height: 780px) {
+@media screen and (max-height: 780px) and (min-width: 1170px) {
   .development__title h1 {
     font-size: 120px;
   }
