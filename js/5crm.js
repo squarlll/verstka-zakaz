@@ -41,6 +41,18 @@ $(document).ready(function(){
             $('.desktop__input').removeClass('desktop__input-active');
             $('.desktop__input').val('');
         });
+        $('.background').on('click', function(){
+            $('.desktop__form').removeClass('desktop__form-active');
+            $('.header__menu ul:nth-child(2), .header__client, .header__logo').removeClass('header__menu-hidden');
+            $('body').removeClass('html-fixed');
+            $('.header__search-quick').removeClass('header__search-quick-active');
+            $('.header__inner').removeClass('btns-hidden');
+            $('.desktop-ul').removeClass('desktop-ul-active');
+            $('.header__link').removeClass('header__link-active');
+            $('.background').removeClass('background-active');
+            $('.desktop__input').removeClass('desktop__input-active');
+            $('.desktop__input').val('');
+        });
     });
 
     // mobile search

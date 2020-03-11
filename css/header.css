@@ -514,7 +514,7 @@
   height: 127px;
   width: 100%;
   background: #F2F2F2;
-  z-index: 111;
+  z-index: 1;
   font-weight: 500;
   display: none;
 }
@@ -1405,7 +1405,7 @@
 }
 
 .desktop-ul div img {
-  transition: opacity 0.3585s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.68s, transform 0.47s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.203s, -webkit-transform 0.47s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.203s;
+  transition: opacity 0.3285s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.23s, transform 0.4s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.13s, -webkit-transform 0.4s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.13s;
 }
 
 .desktop-ul li:nth-child(2) {
@@ -1591,15 +1591,18 @@
   min-width: 100vw;
   opacity: 0;
   background: rgba(0, 0, 0, 0.48);
-  -webkit-transition: opacity .2s;
-  -o-transition: opacity .2s;
-  transition: opacity .2s;
   z-index: -1;
+  -webkit-transition: opacity .2s, z-index 0s 0.2s;
+  -o-transition: opacity .2s, z-index 0s 0.2s;
+  transition: opacity .2s, z-index 0s 0.2s;
 }
 
 .background-active {
   opacity: 1;
   z-index: 1;
+  -webkit-transition: opacity .2s;
+  -o-transition: opacity .2s;
+  transition: opacity .2s;
 }
 
 .mobile-search__button {
