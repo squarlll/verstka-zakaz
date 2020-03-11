@@ -993,9 +993,9 @@
 		}
 	}
 	& div img{
-		transition: opacity .3345s cubic-bezier(0.52, 0.16, 0.52, 0.84) .15s,
-		transform .4669s cubic-bezier(0.52, 0.16, 0.52, 0.84) .108s,
-		-webkit-transform .4669s cubic-bezier(0.52, 0.16, 0.52, 0.84) .108s;
+		transition: opacity .3585s cubic-bezier(0.52, 0.16, 0.52, 0.84) .68s,
+		transform .47s cubic-bezier(0.52, 0.16, 0.52, 0.84) .203s,
+		-webkit-transform .47s cubic-bezier(0.52, 0.16, 0.52, 0.84) .203s;
 	}
 	& li:nth-child(2){
 		transition: opacity .3345s cubic-bezier(0.52, 0.16, 0.52, 0.84) .15s,
@@ -1028,14 +1028,14 @@
 		-webkit-transform .4205s cubic-bezier(0.52, 0.16, 0.52, 0.84) .043s;
 	}
 	& li:nth-child(8){
-		transition: opacity .21661s cubic-bezier(0.52, 0.16, 0.52, 0.84) .05s,
-		transform .41339s cubic-bezier(0.52, 0.16, 0.52, 0.84) .043s,
-		-webkit-transform .41339s cubic-bezier(0.52, 0.16, 0.52, 0.84) .043s;
+		transition: opacity .20661s cubic-bezier(0.52, 0.16, 0.52, 0.84) .03s,
+		transform .41339s cubic-bezier(0.52, 0.16, 0.52, 0.84) .03s,
+		-webkit-transform .41339s cubic-bezier(0.52, 0.16, 0.52, 0.84) .03s;
 	}
 	& li:nth-child(9){
-		transition: opacity .205s cubic-bezier(0.52, 0.16, 0.52, 0.84) .05s,
-		transform .4101s cubic-bezier(0.52, 0.16, 0.52, 0.84) .043s,
-		-webkit-transform .4101s cubic-bezier(0.52, 0.16, 0.52, 0.84) .043s;
+		transition: opacity .195s cubic-bezier(0.52, 0.16, 0.52, 0.84) .0s,
+		transform .4s cubic-bezier(0.52, 0.16, 0.52, 0.84) .0s,
+		-webkit-transform .4s cubic-bezier(0.52, 0.16, 0.52, 0.84) .0s;
 	}
 }
 .menu-ul{
@@ -1083,9 +1083,9 @@
 		opacity: 1;
 	}
 	& div img{
-		transition: opacity .2591s cubic-bezier(0.32, 0.08, 0.24, 1) .03s,
-		transform .2955s cubic-bezier(0.32, 0.08, 0.24, 1) .02s,
-		-webkit-transform .3455s cubic-bezier(0.32, 0.08, 0.24, 1) .02s;
+		transition: opacity .2791s cubic-bezier(0.32, 0.08, 0.24, 1) .01s,
+		transform .3325s cubic-bezier(0.32, 0.08, 0.24, 1) .0s,
+		-webkit-transform .3455s cubic-bezier(0.32, 0.08, 0.24, 1) .0s;
 	}
 	& li:nth-child(2){
 		transition: opacity .3091s cubic-bezier(0.32, 0.08, 0.24, 1) .03s,
@@ -1118,14 +1118,14 @@
 		-webkit-transform .45318s cubic-bezier(0.32, 0.08, 0.24, 1) .12s;
 	}
 	& li:nth-child(8){
-		transition: opacity .37404s cubic-bezier(0.32, 0.08, 0.24, 1) .13s,
-		transform .48518s cubic-bezier(0.32, 0.08, 0.24, 1) .12s,
-		-webkit-transform .45318s cubic-bezier(0.32, 0.08, 0.24, 1) .12s;
+		transition: opacity .37404s cubic-bezier(0.32, 0.08, 0.24, 1) .15s,
+		transform .48518s cubic-bezier(0.32, 0.08, 0.24, 1) .14s,
+		-webkit-transform .45318s cubic-bezier(0.32, 0.08, 0.24, 1) .14s;
 	}
 	& li:nth-child(9){
-		transition: opacity .38464s cubic-bezier(0.32, 0.08, 0.24, 1) .13s,
-		transform .5132s cubic-bezier(0.32, 0.08, 0.24, 1) .12s,
-		-webkit-transform .45318s cubic-bezier(0.32, 0.08, 0.24, 1) .12s;
+		transition: opacity .38464s cubic-bezier(0.32, 0.08, 0.24, 1) .15s,
+		transform .5132s cubic-bezier(0.32, 0.08, 0.24, 1) .14s,
+		-webkit-transform .45318s cubic-bezier(0.32, 0.08, 0.24, 1) .14s;
 	}
 }
 .desktop-active{

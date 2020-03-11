@@ -1405,7 +1405,7 @@
 }
 
 .desktop-ul div img {
-  transition: opacity 0.3345s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.15s, transform 0.4669s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.108s, -webkit-transform 0.4669s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.108s;
+  transition: opacity 0.3585s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.68s, transform 0.47s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.203s, -webkit-transform 0.47s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.203s;
 }
 
 .desktop-ul li:nth-child(2) {
@@ -1433,11 +1433,11 @@
 }
 
 .desktop-ul li:nth-child(8) {
-  transition: opacity 0.21661s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.05s, transform 0.41339s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.043s, -webkit-transform 0.41339s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.043s;
+  transition: opacity 0.20661s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.03s, transform 0.41339s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.03s, -webkit-transform 0.41339s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.03s;
 }
 
 .desktop-ul li:nth-child(9) {
-  transition: opacity 0.205s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.05s, transform 0.4101s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.043s, -webkit-transform 0.4101s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.043s;
+  transition: opacity 0.195s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0s, transform 0.4s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0s, -webkit-transform 0.4s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0s;
 }
 
 .menu-ul {
@@ -1510,7 +1510,7 @@
 }
 
 .menu-active div img {
-  transition: opacity 0.2591s cubic-bezier(0.32, 0.08, 0.24, 1) 0.03s, transform 0.2955s cubic-bezier(0.32, 0.08, 0.24, 1) 0.02s, -webkit-transform 0.3455s cubic-bezier(0.32, 0.08, 0.24, 1) 0.02s;
+  transition: opacity 0.2791s cubic-bezier(0.32, 0.08, 0.24, 1) 0.01s, transform 0.3325s cubic-bezier(0.32, 0.08, 0.24, 1) 0s, -webkit-transform 0.3455s cubic-bezier(0.32, 0.08, 0.24, 1) 0s;
 }
 
 .menu-active li:nth-child(2) {
@@ -1538,11 +1538,11 @@
 }
 
 .menu-active li:nth-child(8) {
-  transition: opacity 0.37404s cubic-bezier(0.32, 0.08, 0.24, 1) 0.13s, transform 0.48518s cubic-bezier(0.32, 0.08, 0.24, 1) 0.12s, -webkit-transform 0.45318s cubic-bezier(0.32, 0.08, 0.24, 1) 0.12s;
+  transition: opacity 0.37404s cubic-bezier(0.32, 0.08, 0.24, 1) 0.15s, transform 0.48518s cubic-bezier(0.32, 0.08, 0.24, 1) 0.14s, -webkit-transform 0.45318s cubic-bezier(0.32, 0.08, 0.24, 1) 0.14s;
 }
 
 .menu-active li:nth-child(9) {
-  transition: opacity 0.38464s cubic-bezier(0.32, 0.08, 0.24, 1) 0.13s, transform 0.5132s cubic-bezier(0.32, 0.08, 0.24, 1) 0.12s, -webkit-transform 0.45318s cubic-bezier(0.32, 0.08, 0.24, 1) 0.12s;
+  transition: opacity 0.38464s cubic-bezier(0.32, 0.08, 0.24, 1) 0.15s, transform 0.5132s cubic-bezier(0.32, 0.08, 0.24, 1) 0.14s, -webkit-transform 0.45318s cubic-bezier(0.32, 0.08, 0.24, 1) 0.14s;
 }
 
 .desktop-active {
