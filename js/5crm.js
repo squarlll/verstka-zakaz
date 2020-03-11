@@ -16,7 +16,7 @@ $(document).ready(function(){
         });
     });
     // desktop search
-    $('.header__search').on('click', function(){
+    $('.header__search-1').on('click', function(){
         // $('.header__menu ul:nth-child(2), .header__client, .header__logo').addClass('header__menu-hidden');
         $('body').addClass('html-fixed');
         $('html').addClass('html-scroll');

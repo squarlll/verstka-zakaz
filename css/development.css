@@ -11,6 +11,7 @@ body {
 .front {
   z-index: 500;
   width: 900vw;
+  z-index: -1;
 }
 
 .page {
