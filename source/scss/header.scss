@@ -967,9 +967,6 @@
 	&-active{
 		z-index: -1!important;
 	}
-	& li:nth-child(2){
-		padding-top: 17px;
-	}
 	& form{
 		height: 0;
     	transition: height 0.38s cubic-bezier(0.52, 0.16, 0.52, 0.84) 0.15s,
@@ -990,6 +987,9 @@
 		& li{
 			transform: translateY(-40px);
 			opacity: 0;
+		}
+		& li:nth-child(2){
+			padding-top: 17px;
 		}
 	}
 	& div img{
